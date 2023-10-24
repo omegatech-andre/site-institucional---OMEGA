@@ -1,6 +1,8 @@
+import './index.scss'
+
 export default function Page() {
   return (
-    <main>
+    <main className="main">
     </main>
   )
 }

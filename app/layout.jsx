@@ -1,4 +1,4 @@
-import '../styles/globals.scss'
+import '../public/styles/globals.scss'
 
 
 export const metadata = {
