@@ -1,5 +1,4 @@
-import '../public/styles/globals.scss'
-
+import '../styles/globals.scss'
 
 export const metadata = {
   title: 'Ômega Screen | Tintas Serigráficas',
@@ -9,7 +8,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="pt-BR">
-      <body>{children}</body>
+      <body className='raiz'>{children}</body>
     </html>
   )
 }

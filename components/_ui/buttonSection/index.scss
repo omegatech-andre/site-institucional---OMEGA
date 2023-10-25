@@ -1,0 +1,44 @@
+@use '../../../styles/mixins/mixins' as *;
+@use '../../../styles/variables/variables' as *;
+
+.buttonsection{
+    @include box-model($borda-pequena);
+    background-color: $cor-bg-branco;
+    width: 143px;
+    height: 117px;
+    margin: 0px 6px;
+    transition-duration: .3s;
+
+    &__cor{
+        width: 143px;
+        height: 9px;
+    }
+
+    &__content{
+        @include flex-position(
+            flex,
+            column,
+            auto,
+            space-around,
+            center,
+            center
+        );
+        height: 108px;
+
+        img{
+            margin-top: 17px;
+            width: 47px;
+            height: 47px;
+        }
+            
+        h1{
+            font-size: $tam-font-16;
+            margin-bottom: 10px;
+        }
+    }
+
+    &:hover{
+        transform: translateY(-5px);
+        transition-duration: .3s;
+    }
+}

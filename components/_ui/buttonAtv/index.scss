@@ -1,0 +1,11 @@
+@use '../../../styles/mixins/mixins' as *;
+@use '../../../styles/variables/variables' as *;
+
+
+.buttonatv{
+    @include button-model;
+
+    &:hover{
+        @include button-modedl-hover;
+    }
+}

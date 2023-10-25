@@ -1,3 +1,9 @@
+@use '../variables/variables' as *;
+
+
+
+// FLEX-BOX------------------------------------------
+
 @mixin flex-position(
     $display,
     $flex-direction,
@@ -13,6 +19,44 @@
     text-align: $text-align;
     align-items: $align-items;
 }
+
+
+
+// BUTTON-MODEL--------------------------------------
+
+@mixin button-model(){
+    padding: .5rem 1rem;
+    background-color: $cor-bg-vermelho;
+    border-radius: $borda-pequena;
+    border: $borda;
+    box-shadow: $borda-shadow;
+    color: $cor-font-branco;
+    font-size: $tam-font-20;
+    font-weight: 800;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition-duration: .2s;
+}
+
+@mixin button-modedl-hover(){
+    background-color: $cor-bg-vermelho-hover;
+    transition-duration: .2s;
+}
+
+
+
+// BOX-MODEL
+
+@mixin box-model($borda-tam){
+    border-radius: $borda-tam;
+    border: $borda;
+    box-shadow: $borda-shadow;
+    overflow: hidden;
+}
+
+
+
+// MEDIA-QUERY---------------------------------------
 
 @mixin viewport($breakpoints){
     $devices:(
