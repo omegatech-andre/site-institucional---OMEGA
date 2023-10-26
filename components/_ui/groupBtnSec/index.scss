@@ -1,0 +1,17 @@
+@use '../../../styles/mixins/mixins' as *;
+@use '../../../styles/variables/variables' as *;
+
+.groupbtnsec{
+    
+    &__btns{
+        @include flex-position(
+            flex,
+            row,
+            auto,
+            center,
+            center,
+            center
+        );
+        padding-top: 2vh;
+    }
+}

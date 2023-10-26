@@ -1,0 +1,72 @@
+@use '../../../styles/mixins/mixins' as *;
+@use '../../../styles/variables/variables' as *;
+
+.buscadireta{
+    @include flex-position(
+        flex,
+        column,
+        auto,
+        center,
+        center,
+        center
+    );
+    background-color: $cor-bg-cinza-claro;
+
+    &__content{
+        width: 80vw;
+        h1{
+            margin: 1.5rem 0;
+            font-size: $tam-font-42;
+            font-weight: $font-regular;
+        }
+        p{
+            font-weight: $font-medium;
+            font-size: $tam-font-18;
+        }
+        &--btns{
+            margin: 1.5rem 0;
+        }
+        .buttonatv{
+            min-width: 19rem;
+        }
+    }
+}
+
+@include viewport(md){
+    .buscadireta{
+        .buttonatv{
+            min-width: 60vw;
+        }
+        h1{
+            font-size: $tam-font-30;
+        }
+        p{
+            font-size: $tam-font-14;
+        }
+    }
+}
+
+
+@include viewport(sm){
+    .buscadireta{
+        &__content{
+            width: 90vw;
+        }
+        .buttonatv{
+            min-width: 85vw;
+        }
+        h1{
+            font-size: $tam-font-26;
+        }
+    }
+}
+@include viewport(xs){
+    .buscadireta{
+        .buttonatv{
+            min-width: 85vw;
+        }
+        h1{
+            font-size: $tam-font-22;
+        }
+    }
+}

@@ -5,13 +5,13 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  color: $cor-font-preta;
 }
 
 html, body{
   max-width: 100vw;
   overflow-x: hidden;
   font-family: 'Montserrat', sans-serif;
-  color: $cor-font-preta;
   background-color: $cor-bg-branco;
 }
 

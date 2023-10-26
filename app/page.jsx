@@ -1,10 +1,14 @@
-import ButtonSection from '@/components/_ui/buttonSection/ButtonSection'
-import '../styles/variables/_variables.scss'
 import './index.scss'
+import '../styles/variables/_variables.scss'
+import BuscaDireta from '@/components/_ui/buscaDireta/BuscaDireta'
+import ButtonAtv from '@/components/_ui/buttonAtv/ButtonAtv'
 
 export default function Page() {
   return (
-    <main className="main">
+    <main className="mainhome">
+      <div className="mainhome__indicador"></div>
+      <div className="mainhome__content">
+      </div>
     </main>
   )
 }
