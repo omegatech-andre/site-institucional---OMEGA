@@ -1,0 +1,90 @@
+@use '../../../styles/mixins/mixins' as *;
+@use '../../../styles/variables/variables' as *;
+
+.revenda{
+    background-color: $cor-bg-cinza-claro;
+    
+    &__content{
+        width: 80vw;
+        @include flex-position(
+            flex,
+            row,
+            auto,
+            center,
+            center,
+            center
+        );
+    }
+
+    img{
+        width: 200px;
+        height: 200px;
+        margin: 1.5rem 5rem;
+    }
+
+    h1{
+        margin: 1.5rem 0;
+        font-size: $tam-font-42;
+        font-weight: $font-regular;
+    }
+    p{
+        font-weight: $font-medium;
+        font-size: $tam-font-18;
+    }
+    .buttonatv{
+        min-width: 19rem;
+        
+        margin: 1.5rem 0;
+    }
+}
+@include viewport(md){
+    .revenda{
+        &__content{
+            flex-direction: column;
+        }
+        .buttonatv{
+            min-width: 60vw;
+        }
+        img{
+            margin-bottom: 0;
+        }
+        h1{
+            font-size: $tam-font-30;
+        }
+        p{
+            font-size: $tam-font-14;
+        }
+    }
+}
+
+
+@include viewport(sm){
+    .revenda{
+        &__content{
+            width: 90vw;
+        }
+        .buttonatv{
+            min-width: 85vw;
+        }
+        img{
+            width: 150px;
+            height: 150px;
+            margin: 1rem;
+            margin-bottom: 0;
+        }
+        h1{
+            font-size: $tam-font-26;
+        }
+    }
+}
+
+@include viewport(xs){
+    .revenda{
+        .buttonatv{
+            min-width: 85vw;
+        }
+        h1{
+            font-size: $tam-font-22;
+        }
+    }
+}

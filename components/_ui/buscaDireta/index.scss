@@ -2,6 +2,9 @@
 @use '../../../styles/variables/variables' as *;
 
 .buscadireta{
+    background-color: $cor-bg-cinza-claro;
+
+    &__content{
     @include flex-position(
         flex,
         column,
@@ -10,9 +13,6 @@
         center,
         center
     );
-    background-color: $cor-bg-cinza-claro;
-
-    &__content{
         width: 80vw;
         h1{
             margin: 1.5rem 0;
@@ -60,6 +60,7 @@
         }
     }
 }
+
 @include viewport(xs){
     .buscadireta{
         .buttonatv{
