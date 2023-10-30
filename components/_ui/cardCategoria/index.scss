@@ -1,0 +1,57 @@
+@use '../../../styles/mixins/mixins' as *;
+@use '../../../styles/variables/variables' as *;
+
+.cardcategoria{
+    width: 24rem;
+    height: 9rem;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    border: $borda;
+    @include box-model($borda-grande);
+    overflow: hidden;
+    margin: .5rem;
+    transition-duration: .3s;
+    background-size: cover;
+    
+    &__titulo{
+        width: 75%;
+        padding: .5rem;
+        border: $borda;
+        font-size: $tam-font-20;
+        font-weight: $font-extrabold;
+        text-transform: uppercase;
+        background-color: $cor-bg-branco;
+        border-radius: 10px 0 0 0;
+        border-bottom: 0;
+    }
+
+    &:hover{
+        transform: translateY(-5px);
+        transition-duration: .3s;
+    }
+}
+
+@include viewport(xl){
+    .cardcategoria{
+        width: 19rem;
+        height: 8rem;
+        background-size: cover;
+
+        &__titulo{
+            font-size: $tam-font-16;
+        }
+    }
+}
+
+@include viewport(xs){
+    .cardcategoria{
+        width: 16rem;
+        height: 7rem;
+        background-size: cover;
+
+        &__titulo{
+            font-size: $tam-font-14;
+        }
+    }
+}

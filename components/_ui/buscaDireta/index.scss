@@ -5,14 +5,14 @@
     background-color: $cor-bg-cinza-claro;
 
     &__content{
-    @include flex-position(
-        flex,
-        column,
-        auto,
-        center,
-        center,
-        center
-    );
+        @include flex-position(
+            flex,
+            column,
+            auto,
+            center,
+            center,
+            center
+        );
         width: 80vw;
         h1{
             margin: 1.5rem 0;

@@ -1,0 +1,51 @@
+@use '../../../styles/mixins/mixins' as *;
+@use '../../../styles/variables/variables' as *;
+
+.buscacategoria{
+    background-color: $cor-bg-cinza-claro;
+    
+    &__content{
+        @include flex-position(
+            flex,
+            column,
+            auto,
+            center,
+            center,
+            center
+        );
+        width: 80vw;
+        
+        &--paragrafo{
+            margin: 1.5rem 0 0 0;
+            font-weight: $font-regular;
+            font-size: $tam-font-42;
+        }
+
+        &--secbtn{
+            display: flex;
+            flex-direction: row;
+            margin: 1.5rem;
+        }
+    }
+}
+
+@include viewport(lg){
+    .buscacategoria{
+        &__content--secbtn{
+            display: flex;
+            flex-direction: column;
+        }
+
+        p{
+            font-size: $tam-font-30;
+        }
+    }
+}
+
+@include viewport(xs){
+    .buscacategoria{
+        p{
+            font-size: $tam-font-26;
+        }
+    }
+}
