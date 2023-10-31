@@ -1,0 +1,83 @@
+@use '../../../styles/mixins/mixins' as *;
+@use '../../../styles/variables/variables' as *;
+
+.estampador{
+    @include flex-position(
+        flex,
+        column,
+        auto,
+        center,
+        center,
+        center
+    );
+
+    &__cta{
+        position: absolute;
+        left: 10%;
+        width: 31.375rem;
+        height: auto;
+        white-space: wrap;
+        background-color: $cor-bg-branco;
+
+        img{
+            margin: 2rem;
+        }
+
+        h1{
+            color: $cor-font-vermelha;
+            font-size: $tam-font-18;
+            font-weight: $font-medium;
+            padding: 0 2rem;
+        }
+
+        button{
+            margin: 2rem;
+        }
+    }
+}
+
+@include viewport(md){
+    .estampador{
+        &__cta{
+            width: 26.125rem;
+            left: 5%;
+            img{
+                width: 155px;
+                height: 110px;
+                margin: 1.5rem;
+            }
+
+            h1{
+                font-size: $tam-font-16;
+            }
+
+            button{
+                margin: 1.5rem;
+            }
+        }
+    }
+}
+
+@include viewport(sm){
+    .estampador{
+        &__cta{
+            width: 95%;
+            position: static;
+
+            img{
+                width: 100px;
+                height: 70px;
+                margin-top: 0;
+            }
+
+            h1{
+                font-size: $tam-font-14;
+                padding: 0 1rem;
+            }
+
+            button{
+                margin: 1.5rem;
+            }
+        }
+    }
+}

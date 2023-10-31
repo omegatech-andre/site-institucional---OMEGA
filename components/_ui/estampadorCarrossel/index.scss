@@ -1,0 +1,91 @@
+@use '../../../styles/mixins/mixins' as *;
+@use '../../../styles/variables/variables' as *;
+
+@keyframes carrosselDKT{
+    from{
+        transform: translateX(0);
+    }
+    to{
+
+        transform: translate(-2496px);
+    }
+}
+
+@keyframes carrosselTBL{
+    from{
+        transform: translateX(0);
+    }
+    to{
+
+        transform: translate(-2016px);
+    }
+}
+
+@keyframes carrosselMBL{
+    from{
+        transform: translateX(0);
+    }
+    to{
+
+        transform: translate(-1536px);
+    }
+}
+
+
+.carrosselestampador{
+    @include flex-position(
+        flex,
+        column,
+        auto,
+        center,
+        center,
+        center
+    );
+    white-space: nowrap;
+
+    &__content{
+        width: 100vw;
+        overflow: hidden;
+        
+        &--slide{
+            position: relative;
+            @include flex-position(
+                inline-block,
+                row,
+                auto,
+                center,
+                center,
+                center
+            );   
+        }
+        img{
+            animation: carrosselDKT 40s infinite linear;
+            width: 25rem;
+            height: 25rem;
+            margin: 2rem .5rem;
+            @include box-model($borda-pequena);
+        }
+    }
+}
+
+@include viewport(md){
+    .carrosselestampador{
+
+        &__content--slide img{
+            width: 20rem;
+            height: 20rem;
+            animation: carrosselTBL 40s infinite linear;
+        }
+    }
+}
+
+@include viewport(sm){
+    .carrosselestampador{
+        &__content--slide img{
+            width: 15rem;
+            height: 15rem;
+            animation: carrosselMBL 40s infinite linear;
+            margin: 1.5rem .5rem;
+        }
+    }
+}
