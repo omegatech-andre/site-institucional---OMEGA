@@ -10,7 +10,6 @@ export default function RootLayout({ children }) {
   return (
     <html lang="pt-BR">
       <body className='raiz'>
-        <Header/>
         {children}
       </body>
     </html>
