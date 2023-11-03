@@ -1,6 +1,5 @@
 import './index.scss'
 import '../styles/variables/_variables.scss'
-import Footer from '@/components/footer/Footer'
 
 export default function Page() {
   return (
@@ -10,7 +9,6 @@ export default function Page() {
         <div className="mainhome__content">
         </div>
       </main>
-      <Footer/>
     </>
   )
 }
