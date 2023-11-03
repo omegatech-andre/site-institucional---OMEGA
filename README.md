@@ -2,9 +2,9 @@
 
 ### Para roda o projeto é nescessário
 
-```http
-  GET /api/items
+```bahs
+  npm install
 ```
-```http
-  GET /api/items
+```bash
+  npm run dev
 ```
