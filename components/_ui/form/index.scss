@@ -1,0 +1,202 @@
+@use '../../../styles/mixins/mixins' as *;
+@use '../../../styles/variables/variables' as *;
+
+.form{
+  @include flex-position(
+    flex,
+    column,
+    auto,
+    center,
+    center,
+    center
+  );
+  width: 100vw;
+  height: max-content;
+  background-color: $cor-bg-cinza-claro;
+  padding: 2rem;
+  
+  &__content{
+    @include flex-position(
+      flex,
+      row,
+      auto,
+      center,
+      center,
+      center
+    );
+    @include box-model($borda-grande);
+    width: 80vw;
+    height: max-content;
+    background-color: $cor-bg-branco;
+
+    h1{
+      color: $cor-bg-branco;
+    }
+
+    &--left{
+      @include flex-position(
+        flex,
+        row,
+        auto,
+        center,
+        center,
+        center
+      );
+      width: 30vw;
+      height: 80vh;
+      padding: 2rem;
+      background-color: $cor-bg-vermelho;
+
+      h1{
+        font-weight: $font-regular
+      }
+    }
+
+    &--right{
+      @include flex-position(
+        flex,
+        row,
+        auto,
+        center,
+        center,
+        center
+      );
+      width: 50vw;
+      background-color: $cor-bg-branco;
+    }
+
+    &--leftsucsess{
+      @include flex-position(
+        flex,
+        row,
+        auto,
+        center,
+        center,
+        center
+      );
+      width: 30vw;
+      height: 60vh;
+      padding: 2rem;
+      background-color: $cor-bg-verde;
+    }
+
+    &--rightsucsess{
+      @include flex-position(
+        flex,
+        column,
+        auto,
+        center,
+        center,
+        center
+      );
+      width: 50vw;
+      height: 60vh;
+      background-color: $cor-bg-branco;
+      padding: 2rem;
+      gap: 1rem;
+
+      h3{
+        font-size: $tam-font-36;
+        font-weight: $font-regular;
+      }
+
+      p{
+        font-size: $tam-font-18;
+        font-weight: $font-medium;
+      }
+    }
+  }
+}
+
+@include viewport(xl){
+  .form__content{
+    @include flex-position(
+      flex,
+      column,
+      auto,
+      center,
+      center,
+      center
+    );
+
+    &--left{
+      width: 80vw;
+      height: max-content;
+    }
+    
+    &--right{
+      width: 80vw;
+    }
+    
+    &--leftsucsess{
+      height: max-content;
+      width: 80vw;
+      
+      img{
+        width: 14rem;
+      }
+    }
+    
+    &--rightsucsess{
+      height: max-content;
+      width: 80vw;
+    }
+  }
+}
+
+@include viewport(sm){
+  .form{
+    height: auto;
+    padding: 1.5rem 0;
+  }
+  .form__content{
+    @include flex-position(
+      flex,
+      column,
+      auto,
+      center,
+      center,
+      center
+    );
+    width: 96vw;
+    height: auto;
+
+    &--left{
+      width: 96vw;
+      padding: .5rem 1rem;
+      height: max-content;
+
+      h1{
+        font-size: $tam-font-26;
+        font-weight: $font-regular;
+        padding: 3rem 0;
+      }
+    }
+
+    &--right{
+      width: 96vw;
+    }
+
+    &--leftsucsess{
+      width: 96vw;
+      height: max-content;
+      padding: 2rem;
+    }
+
+    &--rightsucsess{
+      width: 96vw;
+      height: max-content;
+      padding: 2rem;
+
+      h3{
+        font-size: $tam-font-22;
+        font-weight: $font-regular;
+      }
+
+      p{
+        font-size: $tam-font-16;
+        font-weight: $font-medium;
+      }
+    }
+  }
+}

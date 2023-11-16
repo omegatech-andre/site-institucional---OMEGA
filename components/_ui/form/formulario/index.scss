@@ -1,0 +1,208 @@
+@use '../../../../styles/mixins/mixins' as *;
+@use '../../../../styles/variables/variables' as *;
+
+
+.formulario {
+  @include flex-position(
+    flex,
+    column,
+    auto,
+    center,
+    center,
+    center
+  );
+  background-color: $cor-bg-branco;
+  width: 45vw;
+  padding: 1rem;
+
+  span{
+    font-size: 8px;
+    color: $cor-bg-vermelho;
+    text-align: justify;
+    padding-left: .7rem;
+  }
+
+  h2 {
+    font-size: $tam-font-20;
+    font-weight: $font-medium;
+    padding: .5rem 6rem;
+  }
+  
+  form {
+    display: grid;
+  }
+  
+  input {
+    @include input-model($borda-pequena);
+    background-color: $cor-bg-branco-super;
+    padding: .6rem;
+    margin: .3rem;
+  }
+
+  .input__unico {
+    display: grid;
+    grid-template-columns: 40vw;
+  }
+  
+  .input__duplo {
+    display: grid;
+    grid-template-columns: 20vw 20vw;
+  
+    div {
+      display: grid;
+      grid-template-columns: 20vw;
+    }
+  
+    &--mod{
+      grid-template-columns: 30vw 10vw;
+    }
+  }
+  
+  .input__triplo {
+    width: 40vw;
+    display: grid;
+    grid-template-columns: 12vw 8vw 20vw;
+  
+    div {
+      display: grid;
+    }
+  }
+  
+  .btnenviar{
+    @include button-model();
+    font-size: 16px;
+    padding: .5rem 6rem;
+    margin-top: 1rem;
+
+    &:hover{
+      @include button-modedl-hover();
+    }
+  }
+
+  .btnenviando{
+    @include button-model();
+    font-size: 16px;
+    padding: .5rem 6rem;
+    margin-top: 1rem;
+    background-color: $cor-bg-cinza-claro;
+    color: $cor-bg-cinza-medio;
+    cursor: not-allowed;
+
+  }
+}
+
+@include viewport(xl){
+  .formulario{
+    width: 50vw;
+
+    h2{
+      padding: .5rem 2rem;
+    }
+
+    .input__unico {
+      grid-template-columns: 46vw;
+    }
+
+    .input__duplo {
+      grid-template-columns: 23vw 23vw;
+    
+      div {
+        grid-template-columns: 23vw;
+      }
+    
+      &--mod{
+        grid-template-columns: 36vw 10vw;
+      }
+    }
+
+    .input__triplo {
+      width: 46vw;
+      grid-template-columns: 15vw 8vw 23vw;
+    }
+  }
+}
+
+@include viewport(lg){
+  .formulario{
+    width: 76vw;
+
+    h2{
+      padding: .5rem 1rem;
+    }
+
+    .input__unico {
+      grid-template-columns: 76vw;
+    }
+
+    .input__duplo {
+      grid-template-columns: 38vw 38vw;
+    
+      div {
+        grid-template-columns: 38vw;
+      }
+    
+      &--mod{
+        grid-template-columns: 60vw 16vw;
+      }
+    }
+
+    .input__triplo {
+      width: 76vw;
+      grid-template-columns: 24vw 14vw 38vw;
+    }
+  }
+}
+
+@include viewport(sm){
+  .formulario{
+    width: 96vw;
+    padding: 0.5rem;
+
+    h2{
+      font-size: $tam-font-14;
+      font-weight: $font-regular;
+      padding: .5rem 1rem;
+    }
+
+    .input__unico {
+      grid-template-columns: 95vw;
+    }
+
+    .input__duplo {
+      display: flex;
+      flex-direction: column;
+      width: 95vw;
+      
+      div {
+        grid-template-columns: 95vw;
+      }
+    }
+
+    .input__triplo {
+      display: flex;
+      flex-direction: column;
+      width: 95vw;
+    }
+
+    .btnenviar{
+      @include button-model();
+      font-size: 16px;
+      padding: .5rem 5rem;
+  
+      &:hover{
+        @include button-modedl-hover();
+      }
+    }
+  
+    .btnenviando{
+      @include button-model();
+      font-size: 16px;
+      padding: .5rem 4rem;
+      background-color: $cor-bg-cinza-claro;
+      color: $cor-bg-cinza-medio;
+      cursor: not-allowed;
+    }
+  }
+}
+
+

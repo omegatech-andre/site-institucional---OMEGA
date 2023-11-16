@@ -45,13 +45,26 @@
 
 
 
-// BOX-MODEL
+// BOX-MODEL-----------------------------------------
 
 @mixin box-model($borda-tam){
     border-radius: $borda-tam;
     border: $borda;
     box-shadow: $borda-shadow;
     overflow: hidden;
+}
+
+
+
+/// INPUT-MODEL--------------------------------------
+
+@mixin input-model($borda-tam){
+    border-radius: $borda-tam;
+    border: $borda;
+    box-shadow: $borda-shadow-inset;
+    padding: .6rem;
+    cursor: pointer;
+    outline: none;
 }
 
 
