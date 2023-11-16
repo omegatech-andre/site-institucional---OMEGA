@@ -1,0 +1,113 @@
+@use '../../../styles/mixins/mixins' as *;
+@use '../../../styles/variables/variables' as *;
+
+.youtube{
+  @include flex-position(
+    flex,
+    column,
+    auto,
+    center,
+    center,
+    center
+  );
+  width: 100vw;
+  height: 80vh;
+
+  video{
+    position: absolute;
+    width: 100vw;
+    height: 80vh;
+    object-fit: cover;
+  }
+  
+  &__content{
+    @include flex-position(
+      flex,
+      column,
+      auto,
+      center,
+      center,
+      center
+      );
+      width: 100vw;
+      height: max-content;
+      color: $cor-bg-branco;
+      background-color: $cor-bg-cinza-blur;
+      backdrop-filter: blur(10px);
+      z-index: 1;
+
+    h1{
+      width: 60vw;
+      font-size: $tam-font-42;
+      font-weight: $font-regular;
+      padding-top: 1.5rem;
+      padding-bottom: 1rem;
+    }
+    
+    p{
+      width: 60vw;
+      font-size: $tam-font-18;
+      font-weight: $font-medium;
+      padding: .5rem;
+    }
+
+    button{
+      margin: 1.5rem;
+    }
+  }
+}
+
+@include viewport(xl){
+  .youtube__content{
+    h1{
+      width: 80vw;
+    }
+    
+    p{
+      width: 80vw;
+    }  
+  }
+}
+
+@include viewport(md){
+  .youtube__content{
+    h1{
+      width: 90vw;
+      padding-top: 1rem;
+      font-size: $tam-font-36;
+      font-weight: $font-regular;
+    }
+    
+    p{
+      width: 90vw;
+      padding: .5rem;
+      font-size: $tam-font-16;
+      font-weight: $font-medium;
+    }
+
+    button{
+      margin-top: 1.5rem;
+    }
+  }
+}
+
+@include viewport(sm){
+  .youtube__content{
+    h1{
+      width: 95vw;
+      font-size: $tam-font-30;
+      font-weight: $font-regular;
+    }
+    
+    p{
+      width: 95vw;
+      font-size: $tam-font-14;
+      font-weight: $font-medium;
+    }
+
+    button{
+      font-size: $tam-font-14;
+      margin-top: 1.5rem;
+    }
+  }
+}
