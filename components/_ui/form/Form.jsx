@@ -2,6 +2,8 @@
 import { useState } from 'react'
 import './index.scss'
 import Formulario from './formulario/Formulario'
+import sucsess from '../../../public/assets/images/sucsess.png'
+import Image from 'next/image'
 
 export default function Form() {
   const [isSubmited, setIsSubmited] = useState(false)
@@ -22,7 +24,7 @@ export default function Form() {
           ) : (
             <div className="form__content">
               <div className="form__content--leftsucsess">
-                <img src="/assets/images/sucsess.png" alt="" />
+                <Image src={sucsess} width={300} height={300}/>
               </div>
               <div className="form__content--rightsucsess">
                 <h3>Seu cadastro foi enviado com sucesso!</h3>

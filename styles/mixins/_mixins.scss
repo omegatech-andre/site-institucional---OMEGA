@@ -41,6 +41,7 @@
 @mixin button-model-hover(){
     background-color: $cor-bg-vermelho-hover;
     transition-duration: .2s;
+    transform: translateY(-.1rem);
 }
 
 

@@ -7,7 +7,6 @@ export default function ButtonSection({ link, cor, src, alt, titulo }) {
         <>
             <Link href={`${link}`}>
                 <div className="buttonsection">
-                    <div className="buttonsection__cor" style={{ backgroundColor: cor }}></div>
                     <div className="buttonsection__content">
                         <Image
                             src={src}
@@ -18,6 +17,7 @@ export default function ButtonSection({ link, cor, src, alt, titulo }) {
                         </Image>
                         <h1>{titulo}</h1>
                     </div>
+                    <div className="buttonsection__cor" style={{ backgroundColor: cor }}></div>
                 </div>
             </Link>
         </>

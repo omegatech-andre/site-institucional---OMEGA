@@ -132,9 +132,6 @@
       height: max-content;
       width: 80vw;
       
-      img{
-        width: 14rem;
-      }
     }
     
     &--rightsucsess{
@@ -196,6 +193,26 @@
       p{
         font-size: $tam-font-16;
         font-weight: $font-medium;
+      }
+    }
+  }
+}
+
+@include viewport(sm){
+  .form{
+    height: auto;
+    padding: 1.5rem 0;
+  }
+  .form__content{
+
+    &--leftsucsess{
+      width: 96vw;
+      height: max-content;
+      padding: 2rem;
+
+      img{
+        width: 250px;
+        height: 250px;
       }
     }
   }

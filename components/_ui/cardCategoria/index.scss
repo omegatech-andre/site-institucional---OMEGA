@@ -13,6 +13,7 @@
     margin: .5rem;
     transition-duration: .3s;
     background-size: cover;
+    cursor: pointer;
     
     &__titulo{
         width: 75%;
@@ -24,6 +25,7 @@
         background-color: $cor-bg-branco;
         border-radius: 10px 0 0 0;
         border-bottom: 0;
+        cursor: pointer;
     }
 
     &:hover{

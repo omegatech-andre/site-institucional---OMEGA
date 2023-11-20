@@ -2,6 +2,8 @@
 @use '../../../styles/variables/variables' as *;
 
 .groupbtnsec{
+    position: relative;
+    top: 1rem;
     
     &__btns{
         @include flex-position(
@@ -12,6 +14,8 @@
             center,
             center
         );
-        padding-top: 2vh;
+        display: flex;
+        flex-wrap: wrap;
+        margin: .5rem;
     }
 }
