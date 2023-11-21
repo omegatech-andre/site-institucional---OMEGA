@@ -1,0 +1,70 @@
+@use '../../../styles/mixins/mixins' as *;
+@use '../../../styles/variables/variables' as *;
+
+.buttonsectionheader{
+    @include box-model($borda-pequena);
+    background-color: $cor-bg-branco;
+    width: 147px;
+    height: 117px;
+    margin: 6px 6px;
+    transition-duration: .3s;
+    cursor: pointer;
+    
+    &__cor{
+        width: 147px;
+        height: 8px;
+        cursor: pointer;
+    }
+    
+    &__content{
+        @include flex-position(
+            flex,
+            column,
+            auto,
+            space-around,
+            center,
+            center
+            );
+        height: 96px;
+        cursor: pointer;
+        
+        img{
+            margin-top: 13px;
+            width: 48px;
+            height: 48px;
+            cursor: pointer;
+        }
+        
+        h1{
+            font-size: $tam-font-16;
+            cursor: pointer;
+        }
+    }
+
+    &:hover{
+        transform: translateY(-5px);
+        transition-duration: .3s;
+    }
+}
+
+@include viewport(sm){
+    .buttonsectionheader{
+        width: 110px;
+        height: 105px;
+        margin: 4px;
+        
+        &__content{
+            height: 96px;
+    
+            img{
+                width: 38px;
+                height: 38px;
+            }
+                
+            h1{
+                font-size: $tam-font-12;
+                margin-bottom: 10px;
+            }
+        }
+    }
+}

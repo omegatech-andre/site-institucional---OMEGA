@@ -1,0 +1,25 @@
+@use '../../../styles/mixins/mixins' as *;
+@use '../../../styles/variables/variables' as *;
+
+.groupbtnsecheader{
+  position: relative;
+  top: 1rem;
+  
+  &__btns{
+    max-width: 94vw;
+    overflow-x: auto;
+    display: flex;
+    flex-wrap: nowrap;
+    margin: .5rem;
+  }
+}
+
+@include viewport(xl){
+  .groupbtnsec{
+    &__btns{
+      display: flex;
+      flex-wrap: nowrap;
+    }
+  }
+}
+

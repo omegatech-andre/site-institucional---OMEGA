@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@hookform/resolvers": "^3.3.2",
+    "@splidejs/react-splide": "^0.7.12",
     "axios": "^1.6.1",
     "next": "^14.0.3-canary.0",
     "react": "^18",

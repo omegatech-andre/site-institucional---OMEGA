@@ -1,6 +1,6 @@
 
+import Header from '@/components/header/Header'
 import '../styles/globals.scss'
-import Footer from '@/components/footer/Footer'
 
 export const metadata = {
   title: 'Ômega Screen | Tintas Serigráficas',

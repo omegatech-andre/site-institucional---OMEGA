@@ -10,7 +10,7 @@ export default function Footer() {
             <footer>
                 <div className="footercontent">
                     <div className="footercontent__footertop">
-                        <Image src="/assets/images/logo-principal.png" width={239} height={160}></Image>
+                        <Image src="/assets/images/logo-footer.png" width={239} height={183}></Image>
                         <h1>Sua vida com mais cor e intensidade</h1>
                     </div>
                     <div className="footercontent__footermain">

@@ -10,7 +10,7 @@ import { useEffect, useState } from "react";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false)
-  const [isLargeScreen, setIsLargeScreen] = useState(window.innerWidth > 1200)
+  const [isLargeScreen, setIsLargeScreen] = useState(typeof window !== 'undefined' ? window.innerWidth > 1200 : false)
 
   useEffect(() => {
     const handleRezise = () => {
@@ -35,7 +35,7 @@ export default function Navbar() {
         </div>
         <div className="navbar__logo">
           <Link href="/">
-            <Image src={logo} width={80} height={80} alt="teste" />
+            <Image src={logo} width={95} height={80} alt="teste" />
           </Link>
         </div>
         {(isOpen || isLargeScreen) && <>
@@ -45,7 +45,10 @@ export default function Navbar() {
         </>}
         <div className="navbar__icons btnmenu">
           <Link href="#">
-            <IoMenuSharp onClick={() => setIsOpen(!isOpen)} />
+            <IoMenuSharp onClick={(e) => {
+              e.preventDefault()
+              setIsOpen(!isOpen)
+              }} />
           </Link>
         </div>
       </div>

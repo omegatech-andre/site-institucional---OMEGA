@@ -26,6 +26,11 @@ footer{
             font-weight: $font-bold;
             color: $cor-font-branco;
         }
+
+        img{
+            width: 250px;
+            height: 160px;
+        }
     }
     
     &__footermain{
