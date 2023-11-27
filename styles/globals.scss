@@ -24,3 +24,15 @@ a{
 li{
   list-style: none;
 }
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.indicador{
+  width: 100vw;
+  height: .8vh;
+  background: $cor-sec-gradiente-rainbow;
+  background-size: 600% 100%;
+  animation: degradeanimado 8s infinite alternate ease-in-out;
+}

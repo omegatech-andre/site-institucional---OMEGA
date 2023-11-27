@@ -1,0 +1,67 @@
+@use '../../../styles/mixins/mixins' as *;
+@use '../../../styles/variables/variables' as *;
+
+@keyframes carrosselhomeDKT{
+  from{
+      transform: translateX(0);
+  }
+  to{
+
+      transform: translate(-2982px);
+  }
+}
+
+@keyframes carrosselhomeTBL{
+  from{
+      transform: translateX(0);
+  }
+  to{
+
+      transform: translate(-2342px);
+  }
+}
+
+.carrosselhome{
+  @include flex-position(
+    inline-block,
+    row,
+    auto,
+    center,
+    center,
+    center
+  );
+  position: relative;
+  left: -10px;
+  max-width: 40vw;
+  height: auto;
+  white-space: nowrap;
+  overflow: hidden;
+  
+  img{
+    animation: carrosselhomeDKT 60s infinite linear;
+    width: 180px;
+    height: 180px;
+    @include box-model($borda-pequena);
+    overflow: visible;
+    margin: .2rem;
+  }
+}
+
+@include viewport(xl){
+  .carrosselhome{
+    max-width: 55vw;
+  }
+}
+
+@include viewport(md){
+  .carrosselhome{
+    max-width: 96vw;
+    left: 0;
+    
+    img{
+      animation: carrosselhomeTBL 60s infinite linear;
+      width: 140px;
+      height: 140px;
+    }
+  }
+}

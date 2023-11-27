@@ -5,32 +5,16 @@ import '@splidejs/react-splide/css'
 import Image from 'next/image'
 import GroupBtnHeader from '../groupBtnHeader/GroupBtnHeader'
 import Link from 'next/link'
+import { data } from '../../mocks/carrosselHeader'
 
 
 export default function HeaderSec() {
-  const data = [
-    {
-      id: '1',
-      image: '/assets/images/carrossel-plastisol.png'
-    },
-    {
-      id: '2',
-      image: '/assets/images/carrossel-plastiflex.png'
-    },
-    {
-      id: '3',
-      image: '/assets/images/carrossel-linhafluor.png'
-    },
-    {
-      id: '4',
-      image: '/assets/images/carrossel-plastiflex.png'
-    },
-  ]
 
   return (
     <>
       <div className="headersec">
         <div className="headersec__top">
+          <Link href="/"><button>Home</button></Link>
           <Link href="#"><button>Boletim técnico</button></Link>
         </div>
         <div className="headersec__mid">
@@ -49,7 +33,7 @@ export default function HeaderSec() {
             >
               {data.map((item) => (
                 <SplideSlide key={item.id}>
-                  <img className='imageslide' src={item.image} alt="" />
+                  <img className='imageslide' src={item.image} alt="imagem" />
                 </SplideSlide>
               ))}
             </Splide>

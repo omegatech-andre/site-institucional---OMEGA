@@ -3,6 +3,7 @@
 
 .buscadireta{
     background-color: $cor-bg-cinza-claro;
+    width: 100vw;
 
     &__content{
         @include flex-position(

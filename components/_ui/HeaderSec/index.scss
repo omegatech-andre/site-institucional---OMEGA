@@ -2,9 +2,6 @@
 @use '../../../styles/variables/variables' as *;
 
 
-::-webkit-scrollbar {
-  display: none;
-}
 .headersec{
   @include flex-position(
     flex,
@@ -21,19 +18,18 @@
   &__top{
     display: flex;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: space-between;
     width: 90vw;
     height: 10vh;
 
     button{
-      background-color: transparent;
-      border: 2px solid $cor-bg-cinza-claro;
-      border-radius: $borda-grande;
-      color: $cor-bg-cinza-claro;
+      background-color: $cor-bg-vermelho-escuro;
+      border: $borda;
+      border-radius: $borda-pequena;
+      color: $cor-bg-branco;
       font-size: $tam-font-14;
       font-weight: $font-bold;
       padding: .5rem;
-      margin-right: 2rem;
       cursor: pointer;
       transition-duration: .2s;
 
@@ -66,7 +62,7 @@
     }
     
     &--text h2{
-      text-align: justify;
+      text-align: start;
       margin-left: 1rem;
       width: 25vw;
       font-size: $tam-font-18;

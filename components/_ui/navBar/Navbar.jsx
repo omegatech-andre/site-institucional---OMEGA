@@ -1,6 +1,5 @@
 'use client'
-import { GoArrowLeft } from "react-icons/go";
-import { IoMenuSharp } from "react-icons/io5";
+import { IoMenuSharp, IoHome } from "react-icons/io5";
 import GroupBtnSec from '../groupBtnSec/GroupBtnSec'
 import './index.scss'
 import Image from "next/image";
@@ -29,13 +28,13 @@ export default function Navbar() {
     <>
       <div className="navbar">
         <div className="navbar__icons">
-          <Link href="#">
-            <GoArrowLeft />
+          <Link href="/">
+            <IoHome />
           </Link>
         </div>
         <div className="navbar__logo">
           <Link href="/">
-            <Image src={logo} width={95} height={80} alt="teste" />
+            <Image src={logo} width={85} height={65} alt="teste" />
           </Link>
         </div>
         {(isOpen || isLargeScreen) && <>

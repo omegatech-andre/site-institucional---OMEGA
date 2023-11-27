@@ -47,6 +47,16 @@
     }
 }
 
+@include viewport(md){
+    .buttonsectionheader{
+        &__content{
+            h1{
+                font-size: $tam-font-14;
+            }
+        }
+    }
+}
+
 @include viewport(sm){
     .buttonsectionheader{
         width: 110px;

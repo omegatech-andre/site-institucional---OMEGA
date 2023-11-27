@@ -13,8 +13,8 @@
   position: fixed;
   z-index: 2;
   width: 100vw;
-  height: 11vh;
-  background-color: $cor-bg-cinza-medio;
+  height: 100px;
+  background-color: $cor-bg-cinza-escuro;
 
   &__icons{
     display: flex;
@@ -64,9 +64,7 @@
 
   &__btns{
     overflow: visible;
-    position: inherit;
   }
-
 }
 
 .btnmenu{
@@ -88,7 +86,7 @@
       width: 82%;
       padding-bottom: 1.5rem;
       height: max-content;
-      top: 12vh;
+      top: 110px;
       position: absolute;
       border-radius: $borda-grande;
     }

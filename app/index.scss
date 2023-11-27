@@ -3,27 +3,189 @@
 
 
 @keyframes degradeanimado{
-    0%{
-        background-position-x: 0%;
-    }
-    100%{
-        background-position-x: 100%;
-    }
+  0%{
+    background-position-x: 0%;
+  }
+  100%{
+    background-position-x: 100%;
+  }
 }
 
-
 .mainhome{
-    display: flex;
-    flex-direction: column;
-    width: 100vw;
-    height: auto;
-    
-    &__indicador{
-        width: 100vw;
-        height: .8vh;
-        background: $cor-sec-gradiente-rainbow;
-        background-size: 600% 100%;
-        animation: degradeanimado 8s infinite alternate ease-in-out;
-        
+  @include flex-position(
+    flex,
+    column,
+    auto,
+    center,
+    center,
+    center
+  );
+  width: 100vw;
+  height: auto;
+  
+  
+  &__content{
+    margin: 2.2rem 0;
+    width: 80vw;
+
+    h1{
+      font-size: $tam-font-42;
+      font-weight: $font-regular;
+      padding-bottom: 2.2rem;
     }
+  }
+  
+  &__content--imgs{
+    @include flex-position(
+      flex,
+      row,
+      auto,
+      center,
+      center,
+      center
+    );
+    gap: .8rem;
+    margin: 1rem 0;
+    
+    img{
+      @include box-model($borda-pequena);
+      border-radius: $borda-grande;
+    }
+  }
+  
+  &__content--carrossel{
+    @include flex-position(
+      flex,
+      column,
+      auto,
+      center,
+      center,
+      center
+    );
+    
+    h2{
+      font-size: $tam-font-18;
+      font-weight: $font-medium;
+      padding: 2rem 0;
+    }
+  }
+
+  .mainhomecarrossel{
+    @include flex-position(
+      flex,
+      row,
+      auto,
+      center,
+      center,
+      center
+    );
+
+    &__content{
+      @include flex-position(
+        flex,
+        row,
+        auto,
+        center,
+        center,
+        center
+      );
+      @include box-model($borda-pequena);
+      position: relative;
+      left: 10px;
+      width: 430px;
+      background-color: $cor-bg-cinza-claro;
+      border-radius: $borda-grande;
+      z-index: 1;
+
+      h3{
+        font-size: $tam-font-30;
+        font-weight: $font-regular;
+        padding: 1rem;
+      }
+    }
+
+  }
+}
+
+@include viewport(xl){
+  .mainhome__content{
+    width: 96vw;
+
+    h1{
+      font-size: $tam-font-30;
+      font-weight: $font-regular;
+    }
+
+    img{
+      width: 200px;
+      height: 250px;
+    }
+
+    .imgmaior{
+      width: 234px;
+      height: 293px;
+  
+    }
+  }
+
+  .mainhome .mainhomecarrossel__content{
+    width: 300px;
+
+    h3{
+      font-size: $tam-font-22;
+      font-weight: $font-regular;
+    }
+  }
+}
+
+@include viewport(md){
+  .mainhome__content{
+    h1{
+      font-size: $tam-font-26;
+      font-weight: $font-regular;
+      padding-bottom: 0;
+    }
+
+    .imgmenor{
+      display: none;
+    }
+
+    .imgmaior{
+      display: none;
+    }
+  }
+
+  .mainhome__content--carrossel h2{
+    font-size: $tam-font-14;
+    padding-top: 0;
+  }
+
+  .mainhome .mainhomecarrossel{
+    display: flex;
+    flex-direction: column-reverse;
+
+
+    &__content{
+      position: relative;
+      top: -40px;
+      left: 0;
+      width: 60vw;
+      height: auto;
+    }
+
+    h3{
+      font-size: $tam-font-18;
+      font-weight: $font-regular;
+      padding: 1rem;
+    }
+  }
+}
+
+@include viewport(md){
+  .mainhome .mainhomecarrossel{
+    &__content{
+      top: -20px;
+      width: 80vw;
+    }
+  }
 }

@@ -17,7 +17,8 @@ export default function Header() {
   }, [])
 
   const setFixed = useCallback(() => {
-    if (window.scrollY >= headerHeight) {
+    const bottomOfPage = window.innerHeight + window.scrollY >= document.body.offsetHeight - 50
+    if (window.scrollY >= headerHeight && !bottomOfPage) {
       setFixHeader(true)
     } else {
       setFixHeader(false)
@@ -36,7 +37,7 @@ export default function Header() {
     <>
       {
         fixHeader && (
-            <Navbar />
+            <Navbar/>
         )
       }
       <div className="header" ref={headerRef}>

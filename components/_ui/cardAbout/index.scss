@@ -1,0 +1,214 @@
+@use '../../../styles/mixins/mixins' as *;
+@use '../../../styles/variables/variables' as *;
+
+.cardabout{
+  @include box-model($borda-grande);
+  position: relative;
+  width: 287px;
+  height: 412px;
+  cursor: pointer;
+
+  &__title{
+    position: absolute;
+    width: 287px;
+    padding: .6rem 0;
+    bottom: 0;
+    background-color: $cor-bg-vermelho;
+    cursor: pointer;
+    z-index: 1;
+
+    h2{
+      font-size: $tam-font-20;
+      font-weight: $font-extrabold;
+      text-transform: uppercase;
+      color: $cor-bg-branco;
+      cursor: pointer;
+    }
+  }
+
+  &__img img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 287px;
+    height: 412px;
+    object-fit: cover;
+    cursor: pointer;
+  }
+  
+  &__info{
+    @include flex-position(
+      flex,
+      column,
+      auto,
+      center,
+      center,
+      center
+    );
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 287px;
+    height: 412px;
+    z-index: 1;
+    padding: 0 1.5rem 2.9rem;
+    opacity: 0;
+    transition-duration: .2s;
+    
+    p{
+      padding: 1rem 0;
+      font-size: $tam-font-18;
+      font-weight: $font-medium;
+      cursor: pointer;
+    }
+    
+  }
+
+  &:hover{
+    cursor: pointer;
+    
+    .cardabout__info{
+      cursor: pointer;
+      opacity: 1;
+      background-color: #d9d9d9ab;
+      backdrop-filter: blur(4px);
+      transition-duration: .2s;
+    }
+  }
+}
+
+@include viewport(xl){
+  .cardabout{
+    width: 220px;
+    height: 350px;
+  
+    &__title{
+      width: 220px;
+
+      h2{
+        font-size: $tam-font-18;
+      }
+    }
+  
+    &__img img{
+      width: 220px;
+      height: 350px;
+    }
+    
+    &__info{
+      width: 220px;
+      height: 350px;
+      padding: 0 1rem 2.9rem;
+      
+      p{
+        padding: 1rem 0;
+        font-size: $tam-font-16;
+        font-weight: $font-medium;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+@include viewport(md){
+  .cardabout{
+    min-width: 220px;
+
+    &__title{
+      width: 220px;
+
+      h2{
+        font-size: $tam-font-16;
+      }
+    }
+    
+    &__info p{
+      padding: 1rem 0;
+      font-size: $tam-font-14;
+      font-weight: $font-medium;
+      cursor: pointer;
+    }
+  }
+}
+
+@include viewport(smd){
+  .cardabout{
+    width: 70vw;
+    height: 350px;
+  
+    &__title{
+      width: 70vw;
+
+      h2{
+        font-size: $tam-font-18;
+      }
+    }
+  
+    &__img img{
+      width: 70vw;
+      height: 350px;
+    }
+    
+    &__info{
+      width: 70vw;
+      height: 350px;
+      padding: 0 1rem 2.9rem;
+      
+      p{
+        padding: 1rem 0;
+        font-size: $tam-font-16;
+        font-weight: $font-medium;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+@include viewport(sm){
+  .cardabout{
+    width: 90vw;
+    height: 300px;
+  
+    &__title{
+      width: 90vw;
+    }
+  
+    &__img img{
+      width: 90vw;
+      height: 300px;
+    }
+    
+    &__info{
+      width: 90vw;
+      height: 300px;
+      
+      p{
+        padding: 1rem 0;
+        font-size: $tam-font-14;
+        font-weight: $font-medium;
+      }
+    }
+  }
+}
+
+@include viewport(xs){
+  .cardabout{
+    width: 96vw;
+    height: 250px;
+  
+    &__title{
+      width: 96vw;
+    }
+  
+    &__img img{
+      width: 96vw;
+      height: 250px;
+    }
+    
+    &__info{
+      width: 96vw;
+      height: 250px;
+    }
+  }
+}

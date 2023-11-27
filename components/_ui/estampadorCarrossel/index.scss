@@ -59,7 +59,7 @@
             );   
         }
         img{
-            animation: carrosselDKT 40s infinite linear;
+            animation: carrosselDKT 40s reverse infinite linear;
             width: 25rem;
             height: 25rem;
             margin: 2rem .5rem;
@@ -74,7 +74,7 @@
         &__content--slide img{
             width: 20rem;
             height: 20rem;
-            animation: carrosselTBL 40s infinite linear;
+            animation: carrosselTBL 40s reverse infinite linear;
         }
     }
 }
@@ -84,7 +84,7 @@
         &__content--slide img{
             width: 15rem;
             height: 15rem;
-            animation: carrosselMBL 40s infinite linear;
+            animation: carrosselMBL 40s reverse infinite linear;
             margin: 1.5rem .5rem;
         }
     }

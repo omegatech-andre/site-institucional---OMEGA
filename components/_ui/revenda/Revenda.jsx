@@ -1,8 +1,11 @@
 import Image from "next/image";
-import ButtonAtv from "../buttonAtv/ButtonAtv";
 import './index.scss'
+import Form from "../form/Form";
+import { useState } from "react";
 
 export default function Revenda() {
+    const [open, setOpen] = useState(false)
+
     return (
         <>
             <section className="revenda">
@@ -19,14 +22,11 @@ export default function Revenda() {
                     <div className="revenda__content--text">
                         <h1>Quer revender o padrão mais intenso?</h1>
                         <p>Clique no botão abaixo</p>
-                        <ButtonAtv
-                            link=""
-                            largura=""
-                            nome="tenha mais cor e intensidade"
-                        />
+                        <button onClick={() => setOpen(!open)}>Tenha mais cor e intensidade</button>
                     </div>
                 </div>
             </section>
+            {open && <Form />}
         </>
     )
 }

@@ -7,6 +7,7 @@ import Link from "next/link";
 export default function Footer() {
     return (
         <>
+            <div className="indicador"></div>
             <footer>
                 <div className="footercontent">
                     <div className="footercontent__footertop">
