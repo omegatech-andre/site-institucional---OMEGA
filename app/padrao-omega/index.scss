@@ -1,0 +1,64 @@
+@use '../../styles/mixins/mixins' as *;
+@use '../../styles/variables/variables' as *;
+
+.pagepadraoomega{
+  @include flex-position(
+    flex,
+    column,
+    auto,
+    center,
+    center,
+    center
+  );
+  width: 100vw;
+  height: auto;
+
+  &__indicador{
+    width: 100vw;
+    height: .8vh;
+    background-color: $cor-sec-padraoomega;
+
+  }
+
+  &__content{
+    width: 80vw;
+    margin: 2.2rem 0;
+
+    h1{
+      font-size: $tam-font-42;
+      font-weight: $font-regular;
+      padding-bottom: 2.2rem;
+    }
+
+    h2{
+      font-size: $tam-font-18;
+      font-weight: $font-medium;
+      margin: 1rem auto;
+    }
+  }
+}
+
+@include viewport(xl){
+  .pagepadraoomega{
+    &__content{
+      width: 96vw;
+    }
+
+    &__content h1{
+      font-size: $tam-font-30;
+    }
+  }
+}
+
+@include viewport(md){
+  .pagepadraoomega{
+    &__content h1{
+      font-size: $tam-font-26;
+      padding-bottom: 1.5rem;
+    }
+
+    &__content h2{
+      font-size: $tam-font-14;
+    }
+  }
+}
