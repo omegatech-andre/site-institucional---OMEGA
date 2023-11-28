@@ -1,0 +1,189 @@
+@use '../../styles/mixins/mixins' as *;
+@use '../../styles/variables/variables' as *;
+
+.pageestampador {
+  width: 100vw;
+  height: auto;
+  @include flex-position(
+    flex,
+    column,
+    auto,
+    center,
+    center,
+    center
+  );
+
+  &__indicador {
+    width: 100vw;
+    height: .8vh;
+    background-color: $cor-sec-estampador;
+  }
+
+  &__content{
+    margin: 2.2rem 0;
+    width: 80%;
+
+    h1{
+      font-size: $tam-font-42;
+      font-weight: $font-regular;
+      padding-bottom: 2.2rem;
+    }
+
+    h2{
+      font-size: $tam-font-18;
+      font-weight: $font-medium;
+      margin: 1rem auto;
+    }
+
+    p{
+      font-size: $tam-font-26;
+      font-weight: $font-medium;
+      margin: 2.2rem 0;
+    }
+
+    video{
+      width: 60vw;
+    }
+  }
+
+  .estampador__cta{
+    @include flex-position(
+      flex,
+      column,
+      auto,
+      center,
+      center,
+      center
+    );
+    height: 430px;
+
+    img{
+      width: 322px;
+      height: 238px;
+      margin-top: 1rem;
+      margin-bottom: 0;
+    }
+  }
+  .description-hidden{
+    display: none;
+  }
+}
+
+@include viewport(xl){
+  .pageestampador{
+    &__content{
+      width: 96vw;
+      h1{
+        font-size: $tam-font-30;
+        font-weight: $font-regular;
+      }
+  
+      h2{
+        font-size: $tam-font-18;
+      }
+  
+      p{
+        font-size: $tam-font-22;
+      }
+    }
+  }
+}
+
+@include viewport(md){
+  .pageestampador{
+    h1{
+      font-size: $tam-font-26;
+    }
+
+    h2{
+      font-size: $tam-font-14;
+    }
+
+    p{
+      font-size: $tam-font-18;
+      margin-top: 0;
+    }
+
+    video{
+      width: 96vw;
+    }
+
+    .estampador__cta{
+      height: 350px;
+    }
+  }
+}
+
+@include viewport(smd){
+  .pageestampador{
+    &__content{
+      margin-bottom: 1rem;
+    }
+    h1{
+      padding-bottom: 1.5rem;
+    }
+
+    h2{
+      font-size: $tam-font-14;
+    }
+
+    p{
+      font-size: $tam-font-18;
+      margin-top: 0;
+    }
+
+    video{
+      width: 96vw;
+      margin: 0;
+    }
+
+    .estampador{
+      width: 100vw;
+    }
+
+    .estampador__cta{
+      margin: 0;
+      width: 350px;
+  
+      img{
+        width: 222px;
+        height: 158px;
+      }
+    }
+  }
+}
+
+@include viewport(sm){
+  .pageestampador{
+    &__content{
+      margin-bottom: 1rem;
+    }
+    h1{
+      padding-bottom: 1.5rem;
+    }
+
+    h2{
+      font-size: $tam-font-14;
+      margin-bottom: 0;
+    }
+
+    p{
+      font-size: $tam-font-18;
+      margin-top: 0;
+    }
+
+    video{
+      width: 96vw;
+      margin: 0;
+    }
+
+    .estampador__cta{
+      height: 30vh;
+  
+      img{
+        width: 222px;
+        height: 148px;
+      }
+    }
+  }
+}

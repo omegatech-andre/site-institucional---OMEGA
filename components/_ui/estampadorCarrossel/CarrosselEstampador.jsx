@@ -10,6 +10,7 @@ export default function CarrosselEstampador() {
                     <div className="carrosselestampador__content--slide">
                         {data.map((item) => (
                             <Image
+                                key={item.id}
                                 src={item.image}
                                 width={500}
                                 height={500}
@@ -20,6 +21,7 @@ export default function CarrosselEstampador() {
                     <div className="carrosselestampador__content--slide">
                         {data.map((item) => (
                             <Image
+                                key={item.id}
                                 src={item.image}
                                 width={500}
                                 height={500}

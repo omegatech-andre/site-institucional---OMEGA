@@ -16,9 +16,9 @@ export default function Page() {
         <div className="mainhome__content">
           <h1>Levar mais cor e intensidade  é a nossa missão</h1>
           <div className="mainhome__content--imgs">
-            <Image className='imgmenor' src='/assets/images/home-img3.jpg' width={260} height={330}></Image>
-            <Image className='imgmaior' src='/assets/images/home-img1.jpg' width={330} height={410}></Image>
-            <Image className='imgmenor' src='/assets/images/home-img2.jpg' width={260} height={330}></Image>
+            <Image className='imgmenor' src='/assets/images/home-img3.jpg' width={260} height={330} alt=''></Image>
+            <Image className='imgmaior' src='/assets/images/home-img1.jpg' width={330} height={410} alt=''></Image>
+            <Image className='imgmenor' src='/assets/images/home-img2.jpg' width={260} height={330} alt=''></Image>
           </div>
           <div className="mainhome__content--carrossel">
             <h2>Disponibilizamos de uma qualidade de alto padrão para as estampas dos nossos clientes e parceiros! Assim, mantendo o padrão Ômega com mais cor e intensidade.</h2>

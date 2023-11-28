@@ -23,9 +23,8 @@
     height: 10vh;
 
     button{
-      background-color: $cor-bg-vermelho-escuro;
-      border: $borda;
-      border-radius: $borda-pequena;
+      @include box-model($borda-pequena);
+      background-color: transparent;
       color: $cor-bg-branco;
       font-size: $tam-font-14;
       font-weight: $font-bold;

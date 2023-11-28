@@ -24,7 +24,7 @@ export default function Form() {
           ) : (
             <div className="form__content">
               <div className="form__content--leftsucsess">
-                <Image src={sucsess} width={300} height={300}/>
+                <Image src={sucsess} width={300} height={300} alt=''/>
               </div>
               <div className="form__content--rightsucsess">
                 <h3>Seu cadastro foi enviado com sucesso!</h3>

@@ -8,10 +8,10 @@ export default function CarrosselHome() {
     <>
       <div className="carrosselhome">
           {data.map((item) => (
-              <img className="carrosselslide" src={item.image} alt="imagem" />
+              <img key={item.id} className="carrosselslide" src={item.image} alt="imagem" />
           ))}
           {data.map((item) => (
-              <img className="carrosselslide" src={item.image} alt="imagem" />
+              <img key={item.id} className="carrosselslide" src={item.image} alt="imagem" />
           ))}
       </div>
     </>

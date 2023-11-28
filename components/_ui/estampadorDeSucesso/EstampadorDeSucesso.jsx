@@ -9,8 +9,8 @@ export default function EstampadorDeSucesso() {
             <section className="estampador">
                 <CarrosselEstampador />
                 <div className="estampador__cta">
-                    <Image src="/assets/images/logo-estampador-de-sucesso.png" width={200} height={130}></Image>
-                    <h1>A capacitação do estampador é um dos lados sociais da nossa indústria, formamos em nosso C.T (Centro de Treinamento) estampadores de Sucesso, contribuindo no desenvolvimento do mercado serigráfico!</h1>
+                    <Image src="/assets/images/logo-estampador-de-sucesso.png" width={200} height={130} alt=''></Image>
+                    <h1 className="description-hidden">A capacitação do estampador é um dos lados sociais da nossa indústria, formamos em nosso C.T (Centro de Treinamento) estampadores de Sucesso, contribuindo no desenvolvimento do mercado serigráfico!</h1>
                     <ButtonAtv link="" largura="" nome="quero participar" />
                 </div>
             </section>

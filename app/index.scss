@@ -167,9 +167,9 @@
 
     &__content{
       position: relative;
-      top: -40px;
+      top: -20px;
       left: 0;
-      width: 60vw;
+      width: 80vw;
       height: auto;
     }
 
@@ -177,15 +177,6 @@
       font-size: $tam-font-18;
       font-weight: $font-regular;
       padding: 1rem;
-    }
-  }
-}
-
-@include viewport(md){
-  .mainhome .mainhomecarrossel{
-    &__content{
-      top: -20px;
-      width: 80vw;
     }
   }
 }
