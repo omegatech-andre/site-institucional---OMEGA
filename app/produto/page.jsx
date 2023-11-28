@@ -1,5 +1,6 @@
 import BuscaCategoria from '@/components/_ui/buscaCategoria/BuscaCategoria'
 import './index.scss'
+import BuscaDireta from '@/components/_ui/buscaDireta/BuscaDireta'
 
 export default function PageProduto() {
   return (
@@ -12,6 +13,7 @@ export default function PageProduto() {
           <p>Navegue por categoria e encontre o produto ideal</p>
         </div>
         <BuscaCategoria/>
+        <BuscaDireta/>
       </div>
     </>
   )
