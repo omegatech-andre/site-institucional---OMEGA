@@ -42,7 +42,6 @@
     p{
       font-size: $tam-font-26;
       font-weight: $font-medium;
-      padding-bottom: 2.2rem 0;
     }
   }
 
@@ -129,8 +128,7 @@
     }
 
     &__content p{
-      font-size: $tam-font-22;
-      padding-bottom: 2.2rem 0;
+      font-size: $tam-font-18;
     }
 
     &__picture--box h3{
@@ -178,6 +176,7 @@
     }
 
     &__content h1{
+      font-size: $tam-font-26;
       padding-bottom: 1.5rem;
     }
 
@@ -241,4 +240,3 @@
     }
   }
 }
-

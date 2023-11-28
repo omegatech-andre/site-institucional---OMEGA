@@ -75,11 +75,6 @@
       width: 96vw;
       h1{
         font-size: $tam-font-30;
-        font-weight: $font-regular;
-      }
-  
-      h2{
-        font-size: $tam-font-18;
       }
   
       p{
@@ -106,6 +101,7 @@
 
     video{
       width: 96vw;
+      margin: 0;
     }
 
     .estampador__cta{
@@ -122,21 +118,6 @@
     h1{
       padding-bottom: 1.5rem;
     }
-
-    h2{
-      font-size: $tam-font-14;
-    }
-
-    p{
-      font-size: $tam-font-18;
-      margin-top: 0;
-    }
-
-    video{
-      width: 96vw;
-      margin: 0;
-    }
-
     .estampador{
       width: 100vw;
     }
@@ -155,13 +136,6 @@
 
 @include viewport(sm){
   .pageestampador{
-    &__content{
-      margin-bottom: 1rem;
-    }
-    h1{
-      padding-bottom: 1.5rem;
-    }
-
     h2{
       font-size: $tam-font-14;
       margin-bottom: 0;
@@ -182,7 +156,7 @@
   
       img{
         width: 222px;
-        height: 148px;
+        height: 158px;
       }
     }
   }
