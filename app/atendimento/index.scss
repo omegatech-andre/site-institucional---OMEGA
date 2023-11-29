@@ -1,0 +1,187 @@
+@use '../../styles/mixins/mixins' as *;
+@use '../../styles/variables/variables' as *;
+
+.pageatendimento{
+  @include flex-position(
+    flex,
+    column,
+    auto,
+    center,
+    center,
+    center
+  );
+  width: 100vw;
+  height: auto;
+
+  &__indicador{
+    width: 100vw;
+    height: .8vh;
+    background-color: $cor-sec-atendimento;
+  }
+
+  &__content{
+    width: 80vw;
+    margin: 2.2rem 0;
+
+    h1{
+      font-size: $tam-font-42;
+      font-weight: $font-regular;
+      padding-bottom: 2.2rem;
+    }
+
+    h2{
+      font-size: $tam-font-18;
+      font-weight: $font-medium;
+      margin: 1rem auto;
+    }
+  }
+
+  &__box{
+    position: relative;
+    width: 100vw;
+    height: 55vh;
+    overflow: hidden;
+    margin-bottom: 4.2rem;
+    background-color: aqua;
+  }
+
+  &__boxbackground{
+    background-image: url(/assets/images/bg-atendimento.png);
+    position: absolute;
+    width: 50vw;
+    height: 55vh;
+    left: 0;
+    background-size: cover;
+  }
+
+  &__boxcontent{
+    @include flex-position(
+      flex,
+      column,
+      auto,
+      center,
+      center,
+      center
+    );
+    position: absolute;
+    right: -50px;
+    width: 65vw;
+    height: 55vh;
+    background-color: $cor-bg-cinza-escuro;
+    transform: skewX(-7deg);
+    z-index: 1;
+  }
+
+  .boxcontent__content{
+    transform: skewX(7deg);
+    width: 30vw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    h3{
+      font-size: $tam-font-30;
+      font-weight: $font-regular;
+      margin: 1rem 0;
+      color: $cor-font-branco;
+    }
+
+    p{
+      color: $cor-font-branco;
+    }
+  }
+}
+
+@include viewport(xl){
+  .pageatendimento{
+    &__content{
+      width: 96vw;
+
+      h1{
+        font-size: $tam-font-30;
+      }
+    }
+
+    .boxcontent__content{
+      width: 40vw;
+
+      h3{
+        font-size: $tam-font-24;
+      }
+    }
+  }
+}
+
+@include viewport(md){
+  .pageatendimento{
+    &__content{
+      h1{
+        font-size: $tam-font-26;
+        padding-bottom: 1.5rem;
+      }
+
+      h2{
+        font-size: $tam-font-14;
+      }
+    }
+
+    .boxcontent__content{
+      width: 50vw;
+      margin-right: 30px;
+
+      h3{
+        font-size: $tam-font-18;
+      }
+    }
+
+    &__boxbackground{
+      width: 70vw;
+    }
+  }
+}
+
+@include viewport(smd){
+  .pageatendimento{
+    .boxcontent__content{
+      width: 90vw;
+      margin-right: 0;
+      transform: skewX(0deg);
+      padding: 1rem;
+
+      img{
+        width: 30px;
+      }
+
+      h3{
+        color: $cor-font-branco;
+        text-shadow: 1px 1px $cor-font-preta;
+        margin-top: 0.5rem;
+        margin-bottom: 1rem;
+        font-size: $tam-font-16;
+      }
+
+      p{
+        font-size: $tam-font-12;
+      }
+    }
+
+    &__boxcontent{
+      width: max-content;
+      height: max-content;
+      transform: skewX(0deg);
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      background-color: $cor-bg-cinza-escuro-blur;
+      backdrop-filter: blur(5px);
+      border-radius: $borda-grande;
+    }
+
+    &__boxbackground{
+      width: 100vw;
+    }
+  }
+}

@@ -74,7 +74,7 @@
     h3{
       font-size: $tam-font-36;
       font-weight: $font-regular;
-      margin: 1rem;
+      margin: 1rem 0;
       color: $cor-font-branco;
     }
   }
@@ -147,6 +147,7 @@
       width: 70vw;
       margin-left: 0;
       transform: skewX(0deg);
+      padding: 1rem;
 
       h3{
         color: $cor-font-branco;
@@ -156,14 +157,14 @@
     }
     
     &__boxcontent{
-      width: 80vw;
-      height: 35vh;
+      width: max-content;
+      height: max-content;
       transform: skewX(0deg);
       left: 0;
       right: 0;
       top: 0;
       bottom: 0;
-      background-color: #4040405b;
+      background-color: $cor-bg-cinza-escuro-blur;
       backdrop-filter: blur(5px);
       border-radius: $borda-grande;
     }
