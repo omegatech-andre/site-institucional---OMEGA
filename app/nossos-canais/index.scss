@@ -1,0 +1,72 @@
+@use '../../styles/mixins/mixins' as *;
+@use '../../styles/variables/variables' as *;
+
+.pagenossoscanais{
+  @include flex-position(
+    flex,
+    column,
+    auto,
+    center,
+    center,
+    center
+  );
+  width: 100vw;
+  height: auto;
+
+  &__indicador{
+    width: 100vw;
+    height: .8vh;
+    background-color: $cor-sec-nossoscanais;
+  }
+
+  &__content{
+    width: 80vw;
+    margin: 2.2rem 0;
+
+    h1{
+      font-size: $tam-font-42;
+      font-weight: $font-regular;
+    }
+  }
+
+  &__box{
+    @include flex-position(
+      flex,
+      row,
+      auto,
+      center,
+      center,
+      center
+    );
+    flex-wrap: wrap;
+    width: 80vw;
+    height: auto;
+    gap: 1.5rem;
+    margin: 2.2rem 0;
+  }
+}
+
+@include viewport(xl){
+  .pagenossoscanais{
+    &__content{
+      width: 96vw;
+      margin-bottom: 1.5rem;
+    }
+
+    &__content h1{
+      font-size: $tam-font-30;
+    }
+
+    &__box{
+      width: 96vw;
+    }
+  }
+}
+
+@include viewport(md){
+  .pagenossoscanais{
+    &__content h1{
+      font-size: $tam-font-26;
+    }
+  }
+}

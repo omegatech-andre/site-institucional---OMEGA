@@ -113,8 +113,6 @@
 @include viewport(md){
   .pagerevenda{
     &__content{
-      width: 96vw;
-  
       h1{
         font-size: $tam-font-26;
         padding-bottom: 1.5rem;
