@@ -11,6 +11,7 @@ export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false)
   const [isLargeScreen, setIsLargeScreen] = useState(typeof window !== 'undefined' ? window.innerWidth > 1200 : false)
 
+
   useEffect(() => {
     const handleRezise = () => {
       setIsLargeScreen(window.innerWidth > 1200)
@@ -39,7 +40,7 @@ export default function Navbar() {
         </div>
         {(isOpen || isLargeScreen) && <>
           <div className="navbar__btns">
-            <GroupBtnSec />
+            <GroupBtnSec setIsOpen={setIsOpen}/>
           </div>
         </>}
         <div className="navbar__icons btnmenu">

@@ -1,0 +1,108 @@
+@use '../../../styles/mixins/mixins' as *;
+@use '../../../styles/variables/variables' as *;
+
+.faqarea{
+  width: 60vw;
+  margin-bottom: 2.2rem;
+  
+  p{
+    font-size: $tam-font-42;
+    font-weight: $font-regular;
+    margin-bottom: 2.2rem;
+  }
+
+  &__content{
+    width: 60vw;
+  }
+
+  &__contenttitle{
+    @include flex-position(
+      flex,
+      row,
+      auto,
+      space-between,
+      start,
+      center
+    );
+    background-color: $cor-bg-cinza-claro;
+    border-bottom: $borda;
+    cursor: pointer;
+
+    h1{
+      font-size: $tam-font-20;
+      font-weight: $font-bold;
+      padding: .5rem 1rem;
+      color: $cor-font-preta;
+      cursor: pointer;
+    }
+    
+    span{
+      font-size: $tam-font-20;
+      font-weight: $font-extrabold;
+      padding: .5rem 1rem;
+      cursor: pointer;
+    }
+  }
+
+  &__contentcontent{
+    display: flex;
+    text-align: start;
+    background-color: $cor-bg-branco-super;
+
+    h2{
+      font-size: $tam-font-16;
+      font-weight: $font-regular;
+      padding: 1rem 2rem;
+    }
+  }
+}
+
+@include viewport (xl){
+  .faqarea{
+    @include flex-position(
+      flex,
+      column,
+      auto,
+      center,
+      center,
+      center
+    );
+    width: 100vw;
+    margin-bottom: 2.2rem;
+
+    p{
+      font-size: $tam-font-30;
+    }
+    
+    &__content{
+      width: 96vw;
+    }
+
+  }
+}
+
+@include viewport(md){
+  .faqarea{
+    &__contenttitle h1{
+      font-size: $tam-font-18;
+    }
+
+    &__contentcontent h2{
+      font-size: $tam-font-14;
+      padding: .5rem 1rem;
+    }
+  }
+}
+
+@include viewport(smd){
+  .faqarea{
+    &__contenttitle h1{
+      font-size: $tam-font-16;
+    }
+
+    &__contentcontent h2{
+      font-size: $tam-font-14;
+      padding: .5rem 1rem;
+    }
+  }
+}

@@ -2,11 +2,11 @@ import Image from "next/image";
 import Link from "next/link";
 import './index.scss'
 
-export default function ButtonSection({ link, cor, src, alt, titulo }) {
+export default function ButtonSection({ link, cor, src, alt, titulo, onClick }) {
     return (
         <>
-            <Link href={`${link}`}>
-                <div className="buttonsection">
+            <Link href={`${link}`} scroll={false}>
+                <div className="buttonsection" onClick={onClick}>
                     <div className="buttonsection__content">
                         <Image
                             src={src}

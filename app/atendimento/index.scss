@@ -42,7 +42,7 @@
     height: 55vh;
     overflow: hidden;
     margin-bottom: 4.2rem;
-    background-color: aqua;
+    background-color: $cor-bg-cinza-escuro;
   }
 
   &__boxbackground{
@@ -91,6 +91,19 @@
     p{
       color: $cor-font-branco;
     }
+  }
+
+  &__faqarea{
+    @include flex-position(
+      flex,
+      column,
+      auto,
+      center,
+      center,
+      center
+    );
+    width: 100vw;
+    height: auto;
   }
 }
 

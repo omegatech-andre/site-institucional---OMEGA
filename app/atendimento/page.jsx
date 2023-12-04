@@ -1,5 +1,6 @@
 import ButtonAtv from '@/components/_ui/buttonAtv/ButtonAtv'
 import './index.scss'
+import FaqArea from '@/components/_ui/faqArea/FaqArea'
 
 export default function PageAtendimento() {
   return (
@@ -20,6 +21,9 @@ export default function PageAtendimento() {
               <p>Ou ligue para o número de telefone do comercial (81) 98281-0058</p>
             </div>
           </div>
+        </div>
+        <div className="pageatendimento__faqarea">
+          <FaqArea/>
         </div>
       </div>
     </>
