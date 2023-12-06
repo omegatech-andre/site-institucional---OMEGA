@@ -1,0 +1,170 @@
+@use '../../../styles/mixins/mixins' as *;
+@use '../../../styles/variables/variables' as *;
+
+.pagerevendedores{
+  @include flex-position(
+    flex,
+    column,
+    auto,
+    center,
+    center,
+    center
+  );
+  width: 100vw;
+  height: auto;
+
+  &__bg{
+    margin-top: 6.25rem;
+    height: 60vh;
+    overflow: hidden;
+
+    img{
+      width: 100vw;
+      height: 60vh;
+      object-fit: cover;
+    }
+  }
+
+  &__content{
+    width: 80vw;
+    margin: 2.2rem 0;
+
+    h1{
+      font-size: $tam-font-42;
+      font-weight: $font-regular;
+      padding-bottom: 2.2rem;
+    }
+
+    select{
+      @include box-model($borda-pequena);
+      color: $cor-font-marcadagua;
+      width: 25rem;
+      padding: .5rem .5rem;
+      margin-right: 1rem;
+      cursor: pointer;
+      outline: none;
+      font-size: $tam-font-16;
+    }
+
+    button{
+      @include button-model();
+      font-size: $tam-font-16;
+
+      &:hover{
+        @include button-model-hover();
+      }
+    }
+  }
+
+  &__aguardando{
+    @include flex-position(
+      flex,
+      column,
+      auto,
+      center,
+      center,
+      center
+    );
+    width: 80vw;
+    height: auto;
+    margin-bottom: 2.2rem;
+    
+    h1{
+      font-size: $tam-font-16;
+      font-weight: $font-regular;
+      padding: 2rem;
+    }
+  }
+
+  &__resposta{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 80vw;
+    height: auto;
+    margin-bottom: 2.2rem;
+  }
+}
+
+@include viewport(xl){
+  .pagerevendedores__bg{
+    width: 100vw;
+    height: 35vh;
+    
+    img{
+      width: 100vw;
+      height: 35vh;
+      object-fit: cover;
+    }
+  }
+
+  .pagerevendedores__content{
+    width: 96vw;
+    margin-bottom: 1.5rem;
+
+    h1{
+      font-size: $tam-font-30;
+    }
+
+    select{
+      width: 40vw;
+    }
+  }
+
+  .pagerevendedores__aguardando{
+    width: 96vw;
+    margin-bottom: 1.5rem;
+  }
+  
+  .pagerevendedores__resposta{
+    width: 96vw;
+    margin-bottom: 1.5rem;
+  }
+}
+
+@include viewport(md){
+  .pagerevendedores__bg{
+    height: 35vh;
+
+    img{
+      height: 35vh;
+    }
+  }
+
+  .pagerevendedores__content{
+    h1{
+      font-size: $tam-font-26;
+    }
+
+    select{
+      width: 60vw;
+    }
+  }
+}
+
+@include viewport(sm){
+  .pagerevendedores__bg{
+    height: 20vh;
+
+    img{
+      height: 20vh;
+    }
+  }
+
+  .pagerevendedores__content{
+    select{
+      width: 90vw;
+      margin: 0 0 1rem;
+    }
+  }
+}
+
+@include viewport(xs){
+  .pagerevendedores__bg{
+    height: 20vh;
+
+    img{
+      height: 20vh;
+    }
+  }
+}

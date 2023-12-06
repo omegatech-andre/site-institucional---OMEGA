@@ -1,6 +1,6 @@
 'use client'
 import './index.scss'
-import '../styles/variables/_variables.scss'
+import '../../styles/variables/_variables.scss'
 import Image from 'next/image'
 import CarrosselHome from '@/components/_ui/carrosselHome/CarrosselHome'
 import BuscaDireta from '@/components/_ui/buscaDireta/BuscaDireta'

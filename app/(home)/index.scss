@@ -1,5 +1,5 @@
-@use '../styles/mixins/mixins' as *;
-@use '../styles/variables/variables' as *;
+@use '../../styles/mixins/mixins' as *;
+@use '../../styles/variables/variables' as *;
 
 
 @keyframes degradeanimado{
@@ -113,7 +113,6 @@
 
     h1{
       font-size: $tam-font-30;
-      font-weight: $font-regular;
     }
 
     img{

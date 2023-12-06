@@ -1,5 +1,5 @@
-@use '../../styles/mixins/mixins' as *;
-@use '../../styles/variables/variables' as *;
+@use '../../../styles/mixins/mixins' as *;
+@use '../../../styles/variables/variables' as *;
 
 .pagepadraoomega{
   @include flex-position(

@@ -1,5 +1,5 @@
-@use '../../styles/mixins/mixins' as *;
-@use '../../styles/variables/variables' as *;
+@use '../../../styles/mixins/mixins' as *;
+@use '../../../styles/variables/variables' as *;
 
 .pageatendimento{
   @include flex-position(
@@ -46,7 +46,7 @@
   }
 
   &__boxbackground{
-    background-image: url(/assets/images/bg-atendimento.png);
+    background-image: url(/assets/images/bg-atendimento.jpg);
     position: absolute;
     width: 50vw;
     height: 55vh;

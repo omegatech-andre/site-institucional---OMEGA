@@ -1,5 +1,5 @@
 import './index.scss'
-import { data } from '../../components/mocks/nossosCanais'
+import { data } from '../../../components/mocks/nossosCanais'
 import CardCanais from '@/components/_ui/cardCanais/CardCanais'
 
 export default function PageNossosCanais() {

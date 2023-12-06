@@ -9,10 +9,11 @@ export default function GroupBtnSec({ setIsOpen }) {
 
     return (
         <>
-            <section className="groupbtnsec">
+            <div className="groupbtnsec">
                 <div className="groupbtnsec__btns">
                     {data.map((item) =>(
                         <ButtonSection
+                            key={item.id}
                             onClick={handleClick}
                             link={item.link}
                             cor={item.cor}
@@ -22,7 +23,7 @@ export default function GroupBtnSec({ setIsOpen }) {
                         />
                     ))}
                 </div>
-            </section>
+            </div>
         </>
     )
 }

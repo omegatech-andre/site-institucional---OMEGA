@@ -14,7 +14,7 @@ export default function PageRevenda() {
           <div className="pagerevenda__boxcontent">
             <div className="boxcontent__content">
               <h3>Clique no botão abaixo e encontre o REVENDEDOR mais próximo de você!</h3>
-              <ButtonAtv link="" largura=""  nome="ver revendedores"/>
+              <ButtonAtv link="/revendedores" largura=""  nome="ver revendedores"/>
             </div>
           </div>
           <div className="pagerevenda__boxbackground">
