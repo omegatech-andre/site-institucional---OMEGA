@@ -1,3 +1,4 @@
+'use client'
 import { SiInstagram, SiLinkedin, SiYoutube, SiTiktok, SiWhatsapp, SiFacebook } from "react-icons/si";
 import { SlArrowUpCircle } from "react-icons/sl";
 import Image from "next/image";
@@ -84,7 +85,10 @@ export default function Footer() {
                     <div className="footercontent__footerbottom">
                         <div className="footerbottom">
                             <div className="footerbottom__btnvoltar">
-                                <Link href="#">voltar ao início<SlArrowUpCircle size={24} /></Link>
+                                <div onClick={(e) => {
+                                    e.preventDefault()
+                                    window.scrollTo({top: 0, behavior: 'smooth'})
+                                }}>voltar ao início<SlArrowUpCircle size={24} /></div>
                             </div>
                             <div className="footerbottom__termos">
                                 <Link className="footerbottom__termos--link" href="#">Termos</Link> | <Link className="footerbottom__termos--link" href="#">Privacidade</Link>

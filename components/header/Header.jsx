@@ -1,7 +1,6 @@
 'use client'
 import { useCallback, useEffect, useLayoutEffect, useRef, useState } from 'react'
 import HeaderSec from '../_ui/HeaderSec/HeaderSec'
-import './index.scss'
 import Navbar from '../_ui/navBar/Navbar'
 
 

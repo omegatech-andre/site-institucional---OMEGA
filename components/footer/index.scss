@@ -108,6 +108,11 @@ footer{
         
         svg{
             margin-right: .5rem;
+            cursor: pointer;
+        }
+
+        path{
+            cursor: pointer;
         }
     }
 
@@ -139,22 +144,33 @@ footer{
         display: flex;
         justify-content: flex-end;
         
-        a{
+        div{
             width: max-content;
             display: flex;
             align-items: center;
             margin-right: 1rem;
             transition-duration: .3s;
-
+            cursor: pointer;
+            
             &:hover{
                 color: $cor-font-vermelha;
                 transition-duration: .3s;
             }
         }
 
+        path{
+            cursor: pointer;
+        }
+        
         svg{
             margin-left: .5rem;
+            cursor: pointer;
         }
+
+    }
+    
+    a{
+        cursor: pointer;
     }
     
     &__termos{
@@ -167,7 +183,6 @@ footer{
         font-size: $tam-font-14;
         font-weight: $font-medium;
         padding: .5rem;
-
     }
 }
 
