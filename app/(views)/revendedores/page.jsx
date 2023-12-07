@@ -7,6 +7,8 @@ import CardRevendedores from '@/components/_ui/cardRevendedores/CardRevendedores
 export default function PageRevendedores() {
   const [estadoSelecionado, setEstadoSelecionado] = useState(null)
   const [estadoParaBuscar, setEstadoParaBuscar] = useState(null)
+  
+  const estadoObj = revendedores.estados.find(estado => estado.nome === estadoParaBuscar)
 
   return (
     <>
@@ -20,8 +22,8 @@ export default function PageRevendedores() {
             <select onChange={(e) => setEstadoSelecionado(e.target.value)}>
               <option value=''>Selecione um estado</option>
               {
-                Object.keys(revendedores.estados).map((estado) => (
-                  <option key={estado} value={estado}>{estado}</option>
+                revendedores.estados.map((estado) => (
+                  <option key={estado.nome} value={estado.nome}>{estado.nome}</option>
                 ))
               }
             </select>
@@ -35,16 +37,18 @@ export default function PageRevendedores() {
             </div>
           ) : (
             <div className="pagerevendedores__resposta">
-              {revendedores.estados[estadoParaBuscar].map((item) => (
-                <CardRevendedores
-                  key={item.id}
-                  src={item.imagem}
-                  nome={item.nome}
-                  rua={item.endereco}
-                  cidade={item.cidade}
-                  tel={item.tel}
-                />
-              ))}
+              {
+                estadoObj.revendedor.map((item) => (
+                  <CardRevendedores
+                    key={item.id}
+                    src={item.imagem}
+                    nome={item.nome}
+                    rua={item.endereco}
+                    cidade={item.cidade}
+                    tel={item.tel}
+                  />
+                ))
+              }
             </div>
           )
         }
