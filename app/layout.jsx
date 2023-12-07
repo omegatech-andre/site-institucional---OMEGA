@@ -5,7 +5,7 @@ export const metadata = {
   description: 'Indústria especializada em tintas serigráficas, produzindo um padrão de qualidade desde 2021 é referência em Pernambuco.'
 }
 
-export default function ViewsLayout({ children }) {
+export default function RootLayout({ children }) {
 
   return (
     <html lang="pt-BR">
