@@ -42,8 +42,11 @@ export default function Navbar() {
           </div>
         </>}
         <div className="navbar__icons btnmenu">
-          <Link href='#'>
-            <IoMenuSharp onClick={() => setIsOpen(!isOpen)} />
+          <Link href=''>
+            <IoMenuSharp onClick={(e) => { 
+              e.preventDefault()
+              setIsOpen(!isOpen)
+            }}/>
           </Link>
         </div>
       </div>

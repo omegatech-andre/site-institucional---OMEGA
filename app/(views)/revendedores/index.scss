@@ -40,7 +40,7 @@
       color: $cor-font-marcadagua;
       width: 25rem;
       padding: .5rem .5rem;
-      margin-right: 1rem;
+      margin: 0 .5rem;
       cursor: pointer;
       outline: none;
       font-size: $tam-font-16;
@@ -123,14 +123,6 @@
 }
 
 @include viewport(md){
-  .pagerevendedores__bg{
-    height: 35vh;
-
-    img{
-      height: 35vh;
-    }
-  }
-
   .pagerevendedores__content{
     h1{
       font-size: $tam-font-26;
@@ -155,16 +147,6 @@
     select{
       width: 90vw;
       margin: 0 0 1rem;
-    }
-  }
-}
-
-@include viewport(xs){
-  .pagerevendedores__bg{
-    height: 20vh;
-
-    img{
-      height: 20vh;
     }
   }
 }

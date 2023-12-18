@@ -1,0 +1,221 @@
+@use '../../../styles/mixins/mixins' as *;
+@use '../../../styles/variables/variables' as *;
+
+.cardproduto{
+  @include flex-position(
+    flex,
+    row,
+    auto,
+    center,
+    center,
+    center
+  );
+  width: 90vw;
+  height: auto;
+  padding: 3rem 0;
+  gap: 2rem;
+
+  .hide{
+    display: none;
+  }
+
+  
+  &__img{
+    img{
+      border-radius: $borda-grande;
+      width: 25rem;
+      height: 25rem;
+      object-fit: cover;
+    }
+    
+
+    .setas{
+      width: 25rem;
+      height: 4rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: absolute;
+      border: none;
+
+      svg, path{
+        cursor: pointer;
+      }
+    }
+
+    .imagescarrossel{
+      position: relative;
+      width: 4rem;
+      height: 4rem;
+      margin: .2rem;
+      border-radius: $borda-pequena;
+      cursor: pointer;
+    }
+  }
+  
+  &__img--mini{
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__detalhes{
+    text-align: start;
+    min-width: 35rem;
+    width: max-content;
+
+    h1{
+      margin-bottom: .5rem;
+      font-size: $tam-font-24;
+      font-weight: $font-bold;
+    }
+
+    p{
+      font-size: $tam-font-14;
+      font-weight: $font-regular;
+      margin-bottom: .3rem;
+    }
+    
+    
+  }
+  
+  &__detalhes--description{
+    height: 4.5rem;
+    max-width: 40rem;
+
+    h2{
+      font-size: $tam-font-14;
+      font-weight: $font-regular;
+    }
+  }
+
+  &__detalhes--cores{
+    width: 10rem;
+    height: max-content;
+    max-height: 15rem;
+    min-height: 5rem;
+    column-count: 1;
+
+    div{
+      display: flex;
+      align-items: center;
+      width: 10rem;
+      margin: .15rem;
+      break-inside: avoid;
+
+      span{
+        font-size: $tam-font-12;
+        text-align: start;
+        padding-left: .3rem;
+      }
+    }
+
+    .coresbox{
+      width: 20px;
+      height: 20px;
+    }
+  }
+
+  &__detalhes--pesos{
+    display: flex;
+
+    span{
+      font-size: $tam-font-12;
+      width: 5rem;
+    }
+  }
+
+  &__detalhes--boletins{
+    margin: 1.5rem 0 1rem;
+  }
+}
+
+@include viewport(xl){
+  .cardproduto{
+    width: 96vw;
+    padding: 1rem 0;
+    gap: 1.5rem;
+
+    &__detalhes{
+      min-width: 30rem;
+    }
+    
+    &__detalhes--cores{
+      width: 10rem;
+      height: auto;
+      max-height: 30vh;
+
+      div{
+        width: 10rem;
+      }
+    }
+  }
+}
+
+@include viewport(lg){
+  .cardproduto{
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@include viewport(lg){
+  .cardproduto__detalhes{
+    width: 96vw;
+  }
+}
+
+@include viewport(smd){
+  .cardproduto__detalhes{
+    width: 96vw;
+    min-width: 90vw;
+    padding: 0 .5rem;
+
+    p{
+      margin: 1rem 0 .5rem;
+    }
+
+    &--description{
+      height: auto;
+    }
+
+    &--cores{
+      height: auto;
+      max-height: 50vh;
+    }
+
+    &--pesos{
+      span{
+        padding-left: .5rem;
+        width: 3rem;
+      }
+    }
+  }
+}
+
+@include viewport(sm){
+  .cardproduto__img{
+    img{
+      width: 96vw;
+      height: auto;
+    }
+
+    .setas{
+      width: 90vw;
+    }
+
+    .imagescarrossel{
+      position: relative;
+      width: 3rem;
+      height: 3rem;
+      margin: .2rem;
+      border-radius: $borda-pequena;
+      cursor: pointer;
+    }
+  }
+
+  .cardproduto__detalhes--cores{
+    max-height: none;
+  }
+}

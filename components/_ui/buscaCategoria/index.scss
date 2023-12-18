@@ -1,6 +1,20 @@
 @use '../../../styles/mixins/mixins' as *;
 @use '../../../styles/variables/variables' as *;
 
+.buscacategoria__carregando{
+    @include flex-position(
+            flex,
+            column,
+            auto,
+            center,
+            center,
+            center
+        );
+    width: 100vw;
+    height: 20vh;
+    color: $cor-font-marcadagua;
+}
+
 .buscacategoria{
     background-color: $cor-bg-cinza-claro;
     

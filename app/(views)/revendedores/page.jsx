@@ -5,7 +5,7 @@ import { useState } from 'react'
 import CardRevendedores from '@/components/_ui/cardRevendedores/CardRevendedores'
 
 export default function PageRevendedores() {
-  const [estadoSelecionado, setEstadoSelecionado] = useState(null)
+  const [estadoSelecionado, setEstadoSelecionado] = useState('')
   const [estadoParaBuscar, setEstadoParaBuscar] = useState(null)
   
   const estadoObj = revendedores.estados.find(estado => estado.nome === estadoParaBuscar)
@@ -19,8 +19,8 @@ export default function PageRevendedores() {
         <div className="pagerevendedores__content">
           <h1>Selecione o estado que deseja </h1>
           <div>
-            <select onChange={(e) => setEstadoSelecionado(e.target.value)}>
-              <option value=''>Selecione um estado</option>
+            <select value={estadoSelecionado} onChange={(e) => setEstadoSelecionado(e.target.value)}>
+              <option disabled value=''>Selecione um estado</option>
               {
                 revendedores.estados.map((estado) => (
                   <option key={estado.nome} value={estado.nome}>{estado.nome}</option>

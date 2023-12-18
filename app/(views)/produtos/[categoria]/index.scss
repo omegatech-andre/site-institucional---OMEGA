@@ -1,0 +1,269 @@
+@use '../../../../styles/mixins/mixins' as *;
+@use '../../../../styles/variables/variables' as *;
+
+.pageprodutos__carregando{
+  @include flex-position(
+    flex,
+    column,
+    auto,
+    center,
+    center,
+    center
+  );
+  width: 100vw;
+  height: 80vh;
+  margin-top: 6.25rem;
+
+}
+.pageprodutos{
+  @include flex-position(
+    flex,
+    column,
+    auto,
+    center,
+    center,
+    center
+  );
+  width: 100vw;
+  height: auto;
+
+  &__bg{
+    position: relative;
+    margin-top: 6.25rem;
+    height: 60vh;
+    overflow: hidden;
+
+    &--titulo{
+      position: absolute;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: max-content;
+      padding: 1.5rem 2rem;
+      background-color: #d9d9d9a2;
+      color: $cor-font-preta;
+      bottom: 50px;
+      left: 50px;
+      @include box-model($borda-grande);
+    }
+    
+    &--titulo h1{
+      font-size: $tam-font-30;
+    }
+
+    img{
+      width: 100vw;
+      height: 60vh;
+      object-fit: cover;
+    }
+  }
+
+  &__content{
+    width: 80vw;
+    margin: 2.2rem 0;
+
+    h1{
+      font-size: $tam-font-42;
+      font-weight: $font-regular;
+      padding-bottom: 2.2rem;
+    }
+
+    select{
+      @include box-model($borda-pequena);
+      color: $cor-font-marcadagua;
+      width: 25rem;
+      padding: .5rem .5rem;
+      margin: 0 .5rem;
+      cursor: pointer;
+      outline: none;
+      font-size: $tam-font-16;
+    }
+
+    button{
+      @include button-model();
+      font-size: $tam-font-16;
+      margin: 1rem .5rem;
+
+      &:hover{
+        @include button-model-hover();
+      }
+    }
+  }
+
+  &__aguardando{
+    @include flex-position(
+      flex,
+      column,
+      auto,
+      center,
+      center,
+      center
+    );
+    width: 80vw;
+    height: auto;
+    margin-bottom: 2.2rem;
+
+    h1{
+      font-size: $tam-font-16;
+      font-weight: $font-regular;
+      padding: 2rem;
+    }
+  }
+
+  .navegacaolinhas{
+    @include flex-position(
+      flex,
+      column,
+      auto,
+      center,
+      center,
+      center
+    );
+    width: 100vw;
+    height: auto;
+    background-color: $cor-bg-cinza-claro;
+
+    h2{
+      font-size: $tam-font-42;
+      font-weight: $font-regular;
+      margin: 1.5rem;
+    }
+    
+    &__content{
+      width: 80vw;
+      display: flex;
+      justify-content: center;
+      margin-bottom: 2.2rem;
+    }
+  }
+}
+
+@include viewport(xl){
+  .pageprodutos__bg{
+    width: 100vw;
+    height: 35vh;
+
+    img{
+      width: 100vw;
+      height: 35vh;
+      object-fit: cover;
+    }
+
+  }
+
+  .pageprodutos__content{
+    width: 96vw;
+    margin-bottom: 1.5rem;
+
+    h1{
+      font-size: $tam-font-30;
+    }
+
+    select{
+      width: 40vw;
+    }
+  }
+
+  .pageprodutos__aguardando{
+    width: 96vw;
+    margin-bottom: 1.5rem;
+
+    h1{
+      padding: 1.5rem;
+    }
+  }
+  
+  .pageprodutos__resposta{
+    width: 96vw;
+    margin-bottom: 1.5rem;  
+  }
+
+  .pageprodutos .navegacaolinhas{
+    h2{
+      font-size: $tam-font-30;
+      margin-bottom: 1rem;
+    }
+    
+    &__content{
+      width: 96vw;
+      display: flex;
+      justify-content: center;
+      margin-bottom: 1.5rem;
+    }
+  }
+}
+
+@include viewport(md){
+  .pageprodutos{
+    &__bg--titulo h1{
+      font-size: $tam-font-26;
+    }
+
+    .navegacaolinhas__content{
+      @include flex-position(
+        flex,
+        column,
+        auto,
+        center,
+        center,
+        center
+      );
+      margin-bottom: 1.5rem;
+    }
+  }
+
+  .pageprodutos__content{
+    h1{
+      font-size: $tam-font-26;
+    }
+
+    div{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    select{
+      width: 60vw;
+      margin-bottom: .5rem;
+    }
+  }
+}
+
+@include viewport(sm){
+  .pageprodutos__bg{
+    height: 20vh;
+
+    img{
+      height: 20vh;
+    }
+
+    &--titulo{
+      padding: 1rem 1.5rem;
+      bottom: 30px;
+      left: 30px;
+
+      h1{
+        font-size: $tam-font-18;
+      }
+    }
+  }
+
+  .pageprodutos__content{
+    select{
+      width: 90vw;
+    }
+  }
+}
+
+@include viewport(xs){
+  .pageprodutos__bg--titulo{
+    bottom: 20px;
+    left: 20px;
+
+    h1{
+      font-size: $tam-font-16;
+    }
+  }
+}

@@ -4,10 +4,14 @@ import Navbar from '@/components/_ui/navBar/Navbar'
 import '../../styles/globals.scss'
 import Footer from '@/components/footer/Footer'
 
+const BOTTOM_OFFSET = 50;
+
 export default function ViewsLayout({ children }) {
   const [fixHeader, setFixHeader] = useState(true)
   const headerRef = useRef(null)
   const [headerHeight, setHeaderHeight] = useState(0)
+
+  console.log(fixHeader)
 
   useLayoutEffect(() => {
     if (headerRef.current) {
@@ -15,22 +19,24 @@ export default function ViewsLayout({ children }) {
     }
   }, [])
 
+  
   useEffect(() => {
-    const setFixed = () => {
-      const bottomOfPage = window.innerHeight + window.scrollY >= document.body.offsetHeight - 50
-      if (window.scrollY >= headerHeight && !bottomOfPage) {
+    setFixHeader(true)
+    const handleScroll = () => {
+      const isBottomOfPage = window.innerHeight + window.scrollY >= document.body.offsetHeight - BOTTOM_OFFSET
+      if (window.scrollY >= headerHeight && !isBottomOfPage) {
         setFixHeader(true)
       } else {
         setFixHeader(false)
       }
     }
 
-    window.addEventListener("scroll", setFixed)
+    window.addEventListener("scroll", handleScroll)
 
     return () => {
-      window.removeEventListener("scroll", setFixed)
+      window.removeEventListener("scroll", handleScroll)
     }
-  }, [headerHeight])
+  }, [])
 
   return (
     <>
