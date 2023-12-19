@@ -11,8 +11,28 @@
             center
         );
     width: 100vw;
-    height: 20vh;
+    height: auto;
     color: $cor-font-marcadagua;
+    margin: 2.2rem;
+
+    div{
+        margin-top: 3rem;
+    }
+
+    svg, path{
+        cursor: pointer;
+    }
+
+    svg{
+        transition-duration: .5s;
+        color: $cor-bg-vermelho;
+
+        &:hover{
+            transform: rotate(360deg);
+            transition-duration: .5s;
+        }
+
+    }
 }
 
 .buscacategoria{
@@ -52,6 +72,16 @@
 
         p{
             font-size: $tam-font-30;
+        }
+    }
+
+    .buscacategoria__carregando{
+        p{
+            font-size: $tam-font-12;
+        }
+    
+        div{
+            margin-top: 1.5rem;
         }
     }
 }

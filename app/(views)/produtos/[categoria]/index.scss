@@ -13,8 +13,26 @@
   width: 100vw;
   height: 80vh;
   margin-top: 6.25rem;
+  color: $cor-font-marcadagua;
+  div{
+    margin-top: 3rem;  
+  }
 
+  svg, path{
+    cursor: pointer;
+  }
+
+  svg{
+    transition-duration: .5s;
+    color: $cor-bg-vermelho;
+
+    &:hover{
+      transform: rotate(360deg);
+      transition-duration: .5s;
+    }
+  }
 }
+
 .pageprodutos{
   @include flex-position(
     flex,
@@ -253,6 +271,16 @@
   .pageprodutos__content{
     select{
       width: 90vw;
+    }
+  }
+
+  //TODO
+  .pageprodutos__carregando{
+    p{
+      font-size: $tam-font-12;
+    }
+    div{
+      margin-top: 1.5rem;  
     }
   }
 }

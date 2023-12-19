@@ -4,6 +4,7 @@ import { useEffect, useState } from 'react'
 import CardProduto from '@/components/_ui/cardProduto/CardProduto'
 import CardCategoria from '@/components/_ui/cardCategoria/CardCategoria'
 import useFetch from '@/components/hooks/useFetch'
+import { IoMdRefresh } from "react-icons/io";
 
 const FIRST_ELEMENT = 0;
 
@@ -13,17 +14,32 @@ export default function PageProdutos({ params }) {
   const [produtoSelecionado, setProdutoSelecionado] = useState('')
   const [produtoParaBuscar, setProdutoParaBuscar] = useState(null)
 
-  const { data, isFetching} = useFetch("http://localhost:8080/dataProducts")
+  const { data, isFetching, error } = useFetch("https://site-institucional-omega-data.vercel.app/dataProducts")
 
   useEffect(() => {
     setProdutoSelecionado('')
   }, [categoriaSelecionada])
-  
 
-  if(isFetching || !data){
-    return <div className='pageprodutos__carregando'>aguardando...</div>
+
+  if (error) {
+    return (
+      <>
+        <div className="pageprodutos__carregando">
+          <p>Não foi passível encontrar os dados</p>
+          <div>
+            <a href={`/produtos/${linhaEscolhida}`}><IoMdRefresh size={30} /></a>
+            <p>tentar novamente</p>
+          </div>
+        </div>
+      </>
+    )
   }
-  
+
+  if (isFetching || !data) {
+    return <div className="pageprodutos__carregando"><p>Carregando...</p></div>
+  }
+
+
   const linhaAtual = findLine(data.catalog[FIRST_ELEMENT].line, linhaEscolhida)
   const categoriaAtual = findCategory(linhaAtual?.category, categoriaSelecionada)
   const produtoAtual = findProduct(categoriaAtual?.product, produtoParaBuscar)
