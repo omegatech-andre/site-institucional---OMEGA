@@ -13,7 +13,7 @@ export const data = [
     cor: '#4ee98c',
     src: '/assets/icons/estampador-de-sucesso.png',
     alt: 'estampador',
-    titulo: 'Estampador de sucesso'
+    titulo: 'Estampador de Sucesso'
   },
   {
     id: '3',
@@ -29,7 +29,7 @@ export const data = [
     cor: '#4e8ce9',
     src: '/assets/icons/padrao-omega.png',
     alt: 'padrão ômega',
-    titulo: 'Padrão ômega'
+    titulo: 'Padrão Ômega'
   },
   {
     id: '5',

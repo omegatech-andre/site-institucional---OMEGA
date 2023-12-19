@@ -18,7 +18,7 @@ export default function GroupBtnHeader() {
                         cor="#4ee98c"
                         src="/assets/icons/estampador-de-sucesso.png"
                         alt="estampador"
-                        titulo="Estampador de sucesso"
+                        titulo="Estampador de Sucesso"
                     />
                     <ButtonSectionHeader
                         link="/produto"

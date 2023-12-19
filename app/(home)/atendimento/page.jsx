@@ -17,7 +17,7 @@ export default function PageAtendimento() {
             <div className="boxcontent__content">
               <img src="/assets/icons/wpp-icon.png" alt="" />
               <h3>Fale agora com nosso time comercial, nosso atendimento está pronto para tirar todas as suas dúvidas</h3>
-              <ButtonAtv link="" largura="" nome="fale conosco"/>
+              <ButtonAtv link="https://wa.me/5581982810058" target="_blank" largura="" nome="fale conosco" disabled=""/>
               <p>Ou ligue para o número de telefone do comercial (81) 98281-0058</p>
             </div>
           </div>

@@ -1,11 +1,11 @@
 import Link from 'next/link'
 import './index.scss'
 
-export default function ButtonAtv({ link, target, largura, nome }) {
+export default function ButtonAtv({ link, target, largura, nome, disabled }) {
     return (
         <>
             <Link href={`${link}`} target={target}>
-                <button style={{width: largura}} className='buttonatv' type='button'>{nome}</button>
+                <button style={{width: largura}} className={disabled ? 'buttonatv__disabled' : 'buttonatv'} type='button' disabled={disabled}>{nome}</button>
             </Link>
         </>
     )
@@ -15,4 +15,6 @@ export default function ButtonAtv({ link, target, largura, nome }) {
 
 //  componente de ser chamado da forma abaixo
 //
-//  <ButtonAtv link="" target="" largura="" nome=""/>
+//  <ButtonAtv link="" target="" largura="" nome="" disabled=""/>
+
+// é preciso passar o disabled vazio e nao como false

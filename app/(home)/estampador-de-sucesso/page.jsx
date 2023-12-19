@@ -8,7 +8,7 @@ export default function PageEstampador() {
       <div className="pageestampador">
         <div className="pageestampador__indicador"></div>
         <div className="pageestampador__content">
-          <h1>Capacitar estampadores é um dos lados sociais da nossa indústria</h1>
+          <h1>Capacitar estampadores é um dos lados sociais da nossa Indústria</h1>
           <h2>Desenvolvemos em nosso centro de treinamento verdadeiros Estampadores de Sucesso, contribuindo no crescimento do mercado serigráfico!</h2>
         </div>
         <EstampadorDeSucesso/>

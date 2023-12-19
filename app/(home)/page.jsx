@@ -24,13 +24,12 @@ export default function Page() {
             <h2>Disponibilizamos de uma qualidade de alto padrão para as estampas dos nossos clientes e parceiros! Assim, mantendo o padrão Ômega com mais cor e intensidade.</h2>
             <div className='mainhomecarrossel'>
               <div className="mainhomecarrossel__content">
-                <h3>Descubra o produto ideal para cada estampa que deseja desenvolver</h3>
+                <h3>Descubra a tinta ideal para cada estampa que deseja desenvolver</h3>
               </div>
               <CarrosselHome />
             </div>
           </div>
         </div>
-        <BuscaDireta/>
         <YouTube/>
         <EstampadorDeSucesso/>
         <Revenda/>

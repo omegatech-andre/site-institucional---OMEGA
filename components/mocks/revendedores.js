@@ -91,9 +91,9 @@ export const revendedores = {
           id: '3',
           imagem: '/assets/images/revendedores/wserigrafiasilk.png',
           nome: 'Wserigrafia',
-          endereco: 'Rua Osmar de Aquino, 154',
-          cidade: 'Guarabira - PB',
-          tel: '(83) 98852-8125'
+          endereco: 'Rua Maria do Socorro Pegado de Sousa, 188',
+          cidade: 'João Pessoa - PB',
+          tel: '(83) 98650-4783'
         }
       ]
     },
@@ -134,6 +134,14 @@ export const revendedores = {
         },
         {
           id: '5',
+          imagem: '/assets/images/revendedores/fortcollor.png',
+          nome: 'FortCollor',
+          endereco: 'Rua 24 de Maio, 192',
+          cidade: 'Recife - PE',
+          tel: '(81) 98849-5451'
+        },
+        {
+          id: '6',
           imagem: '/assets/images/revendedores/megasilksign.png',
           nome: 'Mega Silk Sign',
           endereco: 'Rua Tobias Barreto, 218',
@@ -141,7 +149,7 @@ export const revendedores = {
           tel: '(81) 3019-6771'
         },
         {
-          id: '6',
+          id: '7',
           imagem: '/assets/images/revendedores/torrefort.png',
           nome: 'Torre Forte',
           endereco: 'Rua Barão do Rio Branco, 797',

@@ -170,10 +170,12 @@ footer{
     }
     
     a{
-        cursor: pointer;
+        cursor: default;
+        pointer-events: none;
     }
     
     &__termos{
+        color: $cor-font-marcadagua;
         margin-top: 1rem;
         font-size: $tam-font-12;
         font-weight: $font-semibold;

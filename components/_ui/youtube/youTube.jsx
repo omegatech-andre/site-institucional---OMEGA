@@ -11,7 +11,7 @@ export default function YouTube() {
           <p>Em nosso canal temos conteúdos sobre serigrafia, esclarecendo as principais dúvidas do mundo silk, como transmitimos a capacitação: Estampador de Sucesso!</p>
           <p>Se você deseja tirar dúvidas sobre serigrafia, clique aqui e conheça o canal mais intenso.</p>
           <ButtonAtv
-          link=""
+          link="https://www.youtube.com/channel/UCwd1QoM-ApQ0c1cBZXpJMKQ"
           largura=""
           nome="inscreva-se no nosso canal"
           />

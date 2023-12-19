@@ -21,18 +21,18 @@ export const data = [
   },
   {
     id: '5',
-    pergunta: 'Terão mais lançamentos de produtos novos para serigrafia?',
-    resposta: 'Terá novos lançamentos do padrão Ômega em breve!'
+    pergunta: 'Terão mais lançamentos de novos produtos para serigrafia?',
+    resposta: 'Sim! Iremos desenvolver novos lançamentos do Padrão Ômega em breve!'
   },
   {
     id: '6',
     pergunta: 'Como faço para ser cliente Ômega?',
-    resposta: 'Você pode ir ao campo de atendimento e conversar com nosso time comercial.'
+    resposta: ' Você pode ir no campo de atendimento e conversar com o Time Comercial'
   },
   {
     id: '7',
     pergunta: 'Qual horário de funcionamento da Indústria Ômega?',
-    resposta: 'O horário de funcionamento da nossa Indústria é das 07 horas às 17h30 de segunda-feira a quinta-feira. Na sexta 07 horas às 16h30.'
+    resposta: 'O horário de funcionamento da Indústria é das 07 horas às 17h30. Na sexta, das 07 horas às 16h30.'
   },
   {
     id: '8',

@@ -45,6 +45,22 @@
 }
 
 
+// BUTTON-DISABLED-MODEL--------------------------------------
+
+@mixin button-disabled-model(){
+    padding: .5rem 1rem;
+    background-color: $cor-bg-cinza-claro;
+    border-radius: $borda-pequena;
+    border: $borda;
+    box-shadow: $borda-shadow;
+    color: $cor-font-marcadagua;
+    font-size: $tam-font-20;
+    font-weight: 800;
+    text-transform: uppercase;
+    cursor: not-allowed;
+}
+
+
 
 // BOX-MODEL-----------------------------------------
 

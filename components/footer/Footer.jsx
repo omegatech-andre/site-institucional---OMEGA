@@ -20,20 +20,20 @@ export default function Footer() {
                             <div className="footermain__ajuste">
                                 <div className="footermain__content">
                                     <div className="footermain__content--box">
-                                        <p>ISTITUCIONAL</p>
+                                        <p>INSTITUCIONAL</p>
                                         <ul className="listalinks">
-                                            <li><Link href="#">Sobre nós</Link></li>
-                                            <li><Link href="#">Revenda autorizada</Link></li>
-                                            <li><Link href="#"><span>Trabalhe conosco</span></Link></li>
+                                            <li><Link href="/institucional">Sobre nós</Link></li>
+                                            <li><Link href="/revendedores">Revenda autorizada</Link></li>
+                                            <li><Link href="/"><span>Trabalhe conosco</span></Link></li>
                                         </ul>
                                     </div>
                                     <div className="footermain__content--box">
                                         <p>PRODUTOS</p>
                                         <ul className="listalinks">
-                                            <li><Link href="#">Linha Base Agua</Link></li>
-                                            <li><Link href="#">Linha Plastisol</Link></li>
-                                            <li><Link href="#">Linha Auxilixar</Link></li>
-                                            <li><Link href="#"><span>Exclusividade Silk</span></Link></li>
+                                            <li><Link href="/produtos/Linha%20Base%20Água">Linha Base Agua</Link></li>
+                                            <li><Link href="/produtos/Linha%20Plastisol">Linha Plastisol</Link></li>
+                                            <li><Link href="/produtos/Linha%20Auxiliar">Linha Auxilixar</Link></li>
+                                            <li><Link href="/"><span>Exclusividade Silk</span></Link></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -41,15 +41,15 @@ export default function Footer() {
                                     <div className="footermain__content--box">
                                         <p>SERVIÇOS</p>
                                         <ul className="listalinks">
-                                            <li><Link href="#">Atendimento</Link></li>
-                                            <li><Link href="#">Revenda</Link></li>
+                                            <li><Link href="/atendimento">Atendimento</Link></li>
+                                            <li><Link href="/revenda">Revenda</Link></li>
                                         </ul>
                                     </div>
                                     <div className="footermain__content--box">
                                         <p>APRENDIZAGEM</p>
                                         <ul className="listalinks">
-                                            <li><Link href="#">Padrão ÔMEGA</Link></li>
-                                            <li><Link href="#">Estampador de sucesso</Link></li>
+                                            <li><Link href="/padrao-omega">Padrão ÔMEGA</Link></li>
+                                            <li><Link href="/estampador-de-sucesso">Estampador de sucesso</Link></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -57,12 +57,12 @@ export default function Footer() {
                                     <div className="footermain__content--box">
                                         <p>NOSSOS CANAIS</p>
                                         <ul className="listalinks">
-                                            <li><Link href="#"><SiInstagram size={20} />Instagram</Link></li>
-                                            <li><Link href="#"><SiLinkedin size={20} />Linkedin</Link></li>
-                                            <li><Link href="#"><SiYoutube size={20} />Youtube</Link></li>
-                                            <li><Link href="#"><SiTiktok size={20} />Tiktok</Link></li>
-                                            <li><Link href="#"><SiWhatsapp size={20} />Whatsapp</Link></li>
-                                            <li><Link href="#"><SiFacebook size={20} />Facebook</Link></li>
+                                            <li><Link href="https://www.instagram.com/omegascreen.ind/" target="_blank"><SiInstagram size={20} />Instagram</Link></li>
+                                            <li><Link href="https://www.linkedin.com/company/%C3%B4mega-ind%C3%BAstria-e-com%C3%A9rcio-de-tintas-ltda/" target="_blank"><SiLinkedin size={20} />Linkedin</Link></li>
+                                            <li><Link href="https://www.youtube.com/channel/UCwd1QoM-ApQ0c1cBZXpJMKQ" target="_blank"><SiYoutube size={20} />Youtube</Link></li>
+                                            <li><Link href="https://www.tiktok.com/@omegascreen.ind?is_from_webapp=1&sender_device=pc" target="_blank"><SiTiktok size={20} />Tiktok</Link></li>
+                                            <li><Link href="https://wa.me/5581982810058" target="_blank"><SiWhatsapp size={20} />Whatsapp</Link></li>
+                                            <li><Link href="https://www.facebook.com/profile.php?id=100086183216972" target="_blank"><SiFacebook size={20} />Facebook</Link></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -91,7 +91,7 @@ export default function Footer() {
                                 }}>voltar ao início<SlArrowUpCircle size={24} /></div>
                             </div>
                             <div className="footerbottom__termos">
-                                <Link className="footerbottom__termos--link" href="#">Termos</Link> | <Link className="footerbottom__termos--link" href="#">Privacidade</Link>
+                                <Link className="footerbottom__termos--link" href="/">Termos</Link> | <Link className="footerbottom__termos--link" href="/">Privacidade</Link>
                             </div>
                             <p className="footerbottom__direitos">© 2021 - 2023 ÔmegaScreen. Todos os direitos reservados</p>
                         </div>
