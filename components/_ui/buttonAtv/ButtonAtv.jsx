@@ -1,16 +1,19 @@
 import Link from 'next/link'
 import './index.scss'
 
-export default function ButtonAtv({ link, target, largura, nome, disabled }) {
+export default function ButtonAtv({ link, target, largura, nome }) {
     return (
         <>
-            <Link href={`${link}`} target={target}>
-                <button style={{width: largura}} className={disabled ? 'buttonatv__disabled' : 'buttonatv'} type='button' disabled={disabled}>{nome}</button>
-            </Link>
+            {link ? (
+                <Link href={`${link}`} target={target}>
+                    <button style={{width: largura}} className='buttonatv' type='button'>{nome}</button>
+                </Link>
+            ) : (
+                <button style={{width: largura}} className='buttonatv__disabled' type='button' disabled>{nome}</button>
+            )}
         </>
     )
 }
-
 
 
 //  componente de ser chamado da forma abaixo

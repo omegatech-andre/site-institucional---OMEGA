@@ -2,11 +2,15 @@ import Image from 'next/image'
 import './index.scss'
 
 export default function CardAbout({ description, src, alt, title }) {
+const paragrafo = description.split('<br>').map((paragrafo, index) => (
+  <p className='paragrafovalores' key={index}>{paragrafo}</p>
+))
+
   return (
     <>
       <div className="cardabout">
         <div className="cardabout__info">
-          <p>{description}</p>
+          <p>{paragrafo}</p>
         </div>
         <div className="cardabout__img">
           <Image

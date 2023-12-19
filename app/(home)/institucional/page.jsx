@@ -35,7 +35,7 @@ export default function PageInstitucional() {
               title="visão"
             />
             <CardAbout
-              description="Temor a DEUS, Ética, Honestidade, Respeito, Trabalho em equipe,"
+              description="Temor a DEUS<br> Ética<br> Honestidade<br> Respeito<br> Trabalho em equipe"
               src="/assets/images/about-valores.png"
               alt="sobre valores"
               title="valores"

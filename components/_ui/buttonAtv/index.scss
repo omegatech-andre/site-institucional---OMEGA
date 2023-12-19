@@ -6,13 +6,14 @@
     @include button-model;
     min-width: 8rem;
     margin: .3rem;
-
+    
     &:hover{
         @include button-model-hover;
     }
-
+    
     &__disabled{
         @include button-disabled-model;
+        margin: .3rem;
     }
 }
 
