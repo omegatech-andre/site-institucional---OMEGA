@@ -1,3 +1,4 @@
+import InBoundMkt from '@/components/_ui/inBoundMkt/InBoundMkt'
 import '../styles/globals.scss'
 
 export const metadata = {
@@ -11,6 +12,7 @@ export default function RootLayout({ children }) {
     <html lang="pt-BR">
       <body className='raiz'>
         {children}
+        <InBoundMkt/>
       </body>
     </html>
   )

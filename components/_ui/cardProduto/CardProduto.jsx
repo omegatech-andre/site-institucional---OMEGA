@@ -34,8 +34,6 @@ export default function CardProduto({ nome, description, cores, pesos, images, f
 
   const imagensVisiveis = images.slice(inicio, inicio + numImagens)
 
-  console.log(cores)
-
   return (
     <>
       <div className="cardproduto">

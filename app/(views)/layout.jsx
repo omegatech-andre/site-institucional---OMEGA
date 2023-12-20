@@ -11,8 +11,6 @@ export default function ViewsLayout({ children }) {
   const headerRef = useRef(null)
   const [headerHeight, setHeaderHeight] = useState(0)
 
-  console.log(fixHeader)
-
   useLayoutEffect(() => {
     if (headerRef.current) {
       setHeaderHeight(headerRef.current.offsetHeight)

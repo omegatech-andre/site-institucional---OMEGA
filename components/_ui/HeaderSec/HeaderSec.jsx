@@ -15,7 +15,7 @@ export default function HeaderSec() {
       <div className="headersec">
         <div className="headersec__top">
           <Link href="/"><button>Home</button></Link>
-          <Link href="#"><button>Boletim Técnico</button></Link>
+          <Link href="/boletim-tecnico"><button>Boletim Técnico</button></Link>
         </div>
         <div className="headersec__mid">
           <div className="headersec__mid--images">

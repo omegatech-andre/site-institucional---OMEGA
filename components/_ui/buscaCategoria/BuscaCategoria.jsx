@@ -6,7 +6,7 @@ import { IoMdRefresh } from "react-icons/io";
 
 export default function BuscaCategoria() {
     const { data, isFetching, error } = useFetch("https://site-institucional-omega-data.vercel.app/dataProducts")
-
+    
     if (error) {
         return (
             <>
@@ -25,10 +25,6 @@ export default function BuscaCategoria() {
         return <div className="buscacategoria__carregando"><p>Carregando...</p></div>
     }
 
-    const line = data.catalog[0].line;
-
-    console.log('data', data)
-
     return (
         <>
             <div className="buscacategoria">
@@ -36,14 +32,16 @@ export default function BuscaCategoria() {
                     <p className="buscacategoria__content--paragrafo">Confira as nossas linhas de produto</p>
                     <div className="buscacategoria__content--secbtn">
                         {
-                            line.map((line, index) => (
-                                <CardCategoria
-                                    key={index}
-                                    link={`/produtos/${encodeURIComponent(line.name)}`}
-                                    image={line.image}
-                                    titulo={line.name}
-                                />
-                            ))
+                            data.catalog.map((catalogItem) => {
+                                return catalogItem.line.map((lineItem, index) => (
+                                    <CardCategoria
+                                        key={index}
+                                        link={`/produtos/${encodeURIComponent(lineItem.name)}`}
+                                        image={lineItem.image}
+                                        titulo={lineItem.name}
+                                    />
+                                ))
+                            })
                         }
                     </div>
                 </div>

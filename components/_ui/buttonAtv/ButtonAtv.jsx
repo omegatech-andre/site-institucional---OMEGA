@@ -18,6 +18,6 @@ export default function ButtonAtv({ link, target, largura, nome }) {
 
 //  componente de ser chamado da forma abaixo
 //
-//  <ButtonAtv link="" target="" largura="" nome="" disabled=""/>
+//  <ButtonAtv link="" target="" largura="" nome=""/>
 
 // é preciso passar o disabled vazio e nao como false

@@ -13,6 +13,7 @@
     
     &__disabled{
         @include button-disabled-model;
+        min-width: 8rem;
         margin: .3rem;
     }
 }
@@ -21,11 +22,19 @@
     .buttonatv{
         font-size: $tam-font-18;
         min-width: 7rem;
+
+        &__disabled{
+            font-size: $tam-font-18;
+            min-width: 7rem;
+        }
     }
 }
 
 @include viewport(sm){
     .buttonatv{
         font-size: $tam-font-16;
+        &__disabled{
+            font-size: $tam-font-16;
+        }
     }
 }

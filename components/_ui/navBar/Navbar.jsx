@@ -33,7 +33,7 @@ export default function Navbar() {
         </div>
         <div className="navbar__logo">
           <Link href="/">
-            <Image src={logo} width={85} height={65} alt="teste" />
+            <Image src={logo} width={85} height={63} alt="teste" />
           </Link>
         </div>
         {(isOpen || isLargeScreen) && <>

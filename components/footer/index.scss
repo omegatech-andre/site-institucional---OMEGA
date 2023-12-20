@@ -29,7 +29,7 @@ footer{
 
         img{
             width: 250px;
-            height: 160px;
+            height: 175px;
         }
     }
     
@@ -142,7 +142,7 @@ footer{
 .footerbottom{
     &__btnvoltar{
         display: flex;
-        justify-content: flex-end;
+        justify-content: flex-start;
         
         div{
             width: max-content;

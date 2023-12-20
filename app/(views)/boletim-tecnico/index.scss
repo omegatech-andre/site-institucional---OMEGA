@@ -1,0 +1,206 @@
+@use '../../../styles/mixins/mixins' as *;
+@use '../../../styles/variables/variables' as *;
+
+.pageboletimtecnico__carregando{
+  @include flex-position(
+    flex,
+    column,
+    auto,
+    center,
+    center,
+    center
+  );
+  width: 100vw;
+  height: 20vh;
+  margin-bottom: 2.2rem;
+  color: $cor-font-marcadagua;
+  div{
+    margin-top: 3rem;  
+  }
+
+  svg, path{
+    cursor: pointer;
+  }
+
+  svg{
+    transition-duration: .5s;
+    color: $cor-bg-vermelho;
+
+    &:hover{
+      transform: rotate(360deg);
+      transition-duration: .5s;
+    }
+  }
+}
+
+.tablerowlight{
+  background-color: $cor-bg-cinza-claro;
+}
+
+.tablerowdark{
+  background-color: $cor-bg-branco;
+}
+
+.pageboletimtecnico__aguardando{
+  @include flex-position(
+    flex,
+    column,
+    auto,
+    center,
+    center,
+    center
+  );
+  width: 80vw;
+  height: auto;
+  margin-bottom: 2.2rem;
+
+  h1{
+    font-size: $tam-font-16;
+    font-weight: $font-regular;
+    padding: 2rem;
+  }
+}
+
+.pageboletimtecnico{
+  @include flex-position(
+    flex,
+    column,
+    auto,
+    center,
+    center,
+    center
+  );
+  width: 100vw;
+  height: auto;
+
+  &__header{
+    @include flex-position(
+      flex,
+      column,
+      auto,
+      center,
+      center,
+      center
+    );
+    width: 80vw;
+    height: 25vh;
+    margin-top: 6.25rem;
+
+    h1{
+      margin: 2.2rem 0;
+      font-size: $tam-font-42;
+      font-weight: $font-regular;
+    }
+  }
+
+  &__content{
+    @include flex-position(
+      flex,
+      column,
+      auto,
+      center,
+      center,
+      center
+    );
+    width: 100vw;
+    height: auto;
+    padding: 2.2rem 0;
+    background-color: $cor-bg-cinza-claro;
+    gap: 2rem;
+
+    table{
+      @include flex-position(
+        flex,
+        column,
+        auto,
+        center,
+        center,
+        center
+      );
+      @include box-model($borda-pequena);
+      width: 70vw;
+
+      th{
+        font-size: $tam-font-20;
+        font-weight: $font-extrabold;
+        padding: .8rem;
+        text-transform: uppercase;
+      }
+    }
+  }
+
+  &__tabletop{
+    width: 70vw;
+    display: flex;
+    justify-content: center;
+    background-color: $cor-bg-cinza-escuro;
+    color: $cor-font-branco;
+  }
+
+  &__tablecontent{
+    width: 70vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &--name{
+      font-size: $tam-font-18;
+      font-weight: $font-regular;
+      color: $cor-font-preta;
+      padding-left: 1rem;
+    }
+  }
+}
+
+@include viewport(xl){
+  .pageboletimtecnico{
+    &__header{
+      width: 96vw;
+      height: auto;
+
+      h1{
+        font-size: $tam-font-30;
+      }
+    }
+  
+    &__content{
+      table{
+        width: 96vw;
+      }
+    }
+  
+    &__tabletop{
+      width: 96vw;
+    }
+  
+    &__tablecontent{
+      width: 96vw;
+    }
+  }
+}
+
+@include viewport(md){
+  .pageboletimtecnico{
+
+    &__header h1{
+      font-size: $tam-font-26;
+    }
+    
+    &__tablecontent{
+      flex-direction: column;
+      padding: .4rem;
+
+    }
+
+    &__tablecontent table{
+      th{
+        font-size: $tam-font-18;
+      }
+    }
+
+    &__tablecontent--name{
+      padding: .5rem 0 1rem;
+      padding: .4rem;
+    }
+  }
+}
