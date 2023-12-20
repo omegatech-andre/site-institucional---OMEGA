@@ -9,15 +9,15 @@ export default function InBoundMkt() {
   useEffect(() => {
     const show = () => {
       setIsVisible(true);
-      setTimeout(hide, 3000);
+      setTimeout(hide, 4000);
     }
 
     const hide = () => {
       setIsVisible(false);
-      setTimeout(show, 8000);
+      setTimeout(show, 22000);
     }
 
-    show();
+    setTimeout(show, 22000);
   }, []);
 
   return (

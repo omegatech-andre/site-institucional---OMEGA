@@ -22,11 +22,11 @@
   bottom: 2rem;
   right: 2rem;
   z-index: 3;
+  animation: jump 2s ease-out infinite;
 
   img{
     width: 4rem;
     cursor: pointer;
-    animation: jump 2s ease-out infinite;
   }
 
   &__modal{
