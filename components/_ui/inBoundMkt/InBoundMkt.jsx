@@ -4,21 +4,21 @@ import Link from 'next/link'
 import './index.scss'
 
 export default function InBoundMkt() {
-  const [isVisible, setIsVisible] = useState(true)
+  const [isVisible, setIsVisible] = useState(false)
 
-  // useEffect(() => {
-  //   const show = () => {
-  //     setIsVisible(true)
-  //     setTimeout(hide, 4000)
-  //   }
+  useEffect(() => {
+    const show = () => {
+      setIsVisible(true)
+      setTimeout(hide, 4000)
+    }
 
-  //   const hide = () => {
-  //     setIsVisible(false)
-  //     setTimeout(show, 22000)
-  //   }
+    const hide = () => {
+      setIsVisible(false)
+      setTimeout(show, 22000)
+    }
 
-  //   setTimeout(show, 22000)
-  // }, [])
+    setTimeout(show, 22000)
+  }, [])
 
   return (
     <>

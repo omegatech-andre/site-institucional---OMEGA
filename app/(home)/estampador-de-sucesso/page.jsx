@@ -14,7 +14,6 @@ export default function PageEstampador() {
         <EstampadorDeSucesso/>
         <div className="pageestampador__content">
           <p>CONHEÇA NOSSO CENTRO DE TREINAMENTO (C.T.):</p>
-          {/* <video src="centro-de-treinamento-omega.mp4" typeof='video/mp4' autoPlay loop muted></video> */}
           <img className='video' src="centro-de-treinamento-omega.gif" alt="" />
         </div>
       </div>

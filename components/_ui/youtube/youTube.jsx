@@ -5,8 +5,7 @@ export default function YouTube() {
   return(
     <>
       <div className="youtube">
-        <video autoPlay loop muted src="bgMovieYoutube.mp4" typeof='video/mp4'></video>
-        {/* <img className='video' src="bgMovieYoutube.gif" alt="" /> */}
+        <img className='video' src="bgMovieYoutube.gif" alt="" />
         <div className="youtube__content">
           <h1>Conheça nosso canal do Youtube</h1>
           <p>Em nosso canal temos conteúdos sobre serigrafia, esclarecendo as principais dúvidas do mundo silk, como transmitimos a capacitação: Estampador de Sucesso!</p>
