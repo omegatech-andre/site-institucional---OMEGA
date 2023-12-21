@@ -13,7 +13,6 @@ export default function RootLayout({ children }) {
       <body className='raiz'>
         {children}
         <InBoundMkt />
-        {'<!--Esse projeto está na v.1.0 e foi desenvolvido por André Campos (https://github.com/DDR23)-->'}
       </body>
     </html>
   )
