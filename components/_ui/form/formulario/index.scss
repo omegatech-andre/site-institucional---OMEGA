@@ -186,13 +186,13 @@
 
     .btnenviar{
       @include button-model();
-      font-size: 16px;
+      font-size: 12px;
       padding: .5rem 5rem;
     }
   
     .btnenviando{
       @include button-model();
-      font-size: 16px;
+      font-size: 12px;
       padding: .5rem 4rem;
       background-color: $cor-bg-cinza-claro;
       color: $cor-bg-cinza-medio;

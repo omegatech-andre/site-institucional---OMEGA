@@ -27,7 +27,7 @@ export default function HeaderSec() {
             <Splide
               options={{
                 type: 'loop',
-                autoplay: true,
+                autoplay: false,
                 pauseOnHover: false,
               }}
             >

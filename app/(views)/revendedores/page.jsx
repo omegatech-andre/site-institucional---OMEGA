@@ -3,6 +3,7 @@ import './index.scss'
 import { revendedores } from '../../../components/mocks/revendedores'
 import { useState } from 'react'
 import CardRevendedores from '@/components/_ui/cardRevendedores/CardRevendedores'
+import Revenda from '@/components/_ui/revenda/Revenda'
 
 export default function PageRevendedores() {
   const [estadoSelecionado, setEstadoSelecionado] = useState('')
@@ -52,6 +53,7 @@ export default function PageRevendedores() {
             </div>
           )
         }
+        <Revenda/>
       </div>
     </>
   )

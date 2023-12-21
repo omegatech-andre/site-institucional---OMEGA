@@ -1,3 +1,4 @@
+import Revenda from '@/components/_ui/revenda/Revenda'
 import './index.scss'
 import ButtonAtv from '@/components/_ui/buttonAtv/ButtonAtv'
 
@@ -20,6 +21,7 @@ export default function PageRevenda() {
           <div className="pagerevenda__boxbackground">
           </div>
         </div>
+        <Revenda/>
       </div>
     </>
   )

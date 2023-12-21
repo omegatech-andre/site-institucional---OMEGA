@@ -84,7 +84,7 @@
 @include viewport(md){
   .faqarea{
     &__contenttitle h1{
-      font-size: $tam-font-18;
+      font-size: $tam-font-14;
     }
 
     &__contentcontent h2{
@@ -97,11 +97,11 @@
 @include viewport(smd){
   .faqarea{
     &__contenttitle h1{
-      font-size: $tam-font-16;
+      font-size: $tam-font-12;
     }
 
     &__contentcontent h2{
-      font-size: $tam-font-14;
+      font-size: $tam-font-12;
       padding: .5rem 1rem;
     }
   }

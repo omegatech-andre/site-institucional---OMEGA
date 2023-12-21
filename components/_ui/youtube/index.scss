@@ -31,8 +31,8 @@
       );
       width: 100vw;
       height: max-content;
-      color: $cor-bg-branco;
-      background-color: $cor-bg-cinza-blur;
+      color: $cor-bg-cinza-escuro;
+      background-color: #ffffff8c;
       backdrop-filter: blur(10px);
       z-index: 1;
 
@@ -106,7 +106,7 @@
     }
 
     button{
-      font-size: $tam-font-14;
+      font-size: $tam-font-12;
       margin-top: 1.5rem;
     }
   }

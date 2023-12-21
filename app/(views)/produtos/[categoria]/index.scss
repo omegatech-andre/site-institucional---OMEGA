@@ -125,6 +125,7 @@
       font-size: $tam-font-16;
       font-weight: $font-regular;
       padding: 2rem;
+      color: $cor-font-marcadagua
     }
   }
 
@@ -271,6 +272,10 @@
   .pageprodutos__content{
     select{
       width: 90vw;
+    }
+
+    button{
+      font-size: $tam-font-12;
     }
   }
 

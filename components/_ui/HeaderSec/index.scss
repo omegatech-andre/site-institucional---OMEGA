@@ -86,6 +86,7 @@
     height: 540px;
     max-width: 96vw;
     object-fit: cover;
+    object-position: right;
   }
 
   &__bot{
@@ -119,19 +120,20 @@
         font-size: $tam-font-14;
       }
     }
-  }
-
-  .imagelogo{
-    width: 280px;
-    height: 280px;
-  }
-
-  .imageslide{
-    opacity: .7;
-    width: 1000px;
-    object-fit: cover;
     
+    .imagelogo{
+      width: 210px;
+      height: 210px;
+    }
+  
+    .imageslide{
+      opacity: .7;
+      width: 96vw;
+      object-fit: cover;
+      height: 400px;
+    }
   }
+
 }
 
 @include viewport(md){
@@ -146,34 +148,51 @@
         font-size: $tam-font-14;
       }
     }
+
+    .imageslide{
+      opacity: .5;
+    }
   }
 
-  .imageslide{
-    opacity: .5;
-  }
 }
 
 @include viewport(sm){
   .headersec{
+    
+    &__top{
+      button{
+        font-size: $tam-font-12;
+      }
+    }
     &__mid{
       &--text h1{
-        font-size: $tam-font-24;
+        font-size: $tam-font-22;
       }
       
       &--text h2{
         width: 80vw;
-        font-size: $tam-font-14;
+        font-size: $tam-font-12;
       }
     }
     
     .imagelogo{
-      width: 200px;
-      height: 200px;
+      width: 140px;
+      height: 140px;
+      margin-left: 10px;
     }
     
     .imageslide{
-      opacity: .5;
-      height: 400px;
+      opacity: .4;
+      height: 300px;
+      object-position: -300px;
+    }
+  }
+}
+
+@include viewport(xs){
+  .headersec{
+    .imageslide{
+      object-position: -370px;
     }
   }
 }

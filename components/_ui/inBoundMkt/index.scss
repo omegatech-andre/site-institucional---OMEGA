@@ -21,7 +21,7 @@
   height: 7rem;
   bottom: 2rem;
   right: 2rem;
-  z-index: 3;
+  z-index: 1;
   animation: jump 2s ease-out infinite;
 
   img{
@@ -31,8 +31,8 @@
 
   &__modal{
     position: absolute;
-    bottom: 6.5rem;
-    right: 6.5rem;
+    bottom: 6rem;
+    right: 6rem;
     background-color: $cor-bg-branco-super;
     padding: .7rem;
     border-radius: 10px;
@@ -47,11 +47,56 @@
       position: absolute;
       width: .6rem;
       height: .6rem;
-      bottom: -.7rem;
-      right: -.7rem;
+      bottom: -.5rem;
+      right: -.5rem;
       border-radius: 50px;
       background-color: $cor-bg-branco-super;
       color: transparent;
+    }
+  }
+}
+
+@include viewport(xl){
+  .inboundmkt{
+    bottom: 1.5rem;
+    right: 1.5rem;
+  }
+}
+
+@include viewport(smd){
+  .inboundmkt{
+    bottom: .5rem;
+    right: .5rem;
+  }
+}
+
+@include viewport(sm){
+  .inboundmkt{
+    width: 4rem;
+    height: 4rem;
+    bottom: 1rem;
+    right: 1rem;
+
+    img{
+      width: 3.5rem;
+    }
+
+    &__modal{
+      bottom: 4.3rem;
+      right: 4rem;
+      padding: .5rem;
+      border-radius: 10px;
+  
+      span{
+        font-size: $tam-font-12;
+      }
+  
+      div{
+        width: .5rem;
+        height: .5rem;
+        bottom: -.4rem;
+        right: -.4rem;
+      }
     }
   }
 }

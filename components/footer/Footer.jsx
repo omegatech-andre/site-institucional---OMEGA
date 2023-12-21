@@ -71,7 +71,7 @@ export default function Footer() {
                                 <div className="footermain__content--map">
                                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d586.912542208539!2d-35.9917155675996!3d-8.276778967093847!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7a98b23871ee9f7%3A0x665fdd55ce80590f!2s%C3%94mega%20Ind%C3%BAstria%20e%20Com%C3%A9rcio%20de%20Tinta!5e0!3m2!1spt-BR!2sbr!4v1698845339408!5m2!1spt-BR!2sbr" width="400" height="250" loading="lazy"></iframe>
                                     <div className="ajuste__map">
-                                        <h1>ÔMEGA SCREEN INDUSTRIA</h1>
+                                        <h1>ÔMEGA SCREEN INDÚSTRIA</h1>
                                         <div className="ajuste__map--text"></div>
                                         <p>Rua Ayrton Senna 65 - Boa Vista - Caruaru - PE</p>
                                         <p>CEP 55038-730</p>
