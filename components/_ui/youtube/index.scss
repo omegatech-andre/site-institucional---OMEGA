@@ -13,7 +13,7 @@
   width: 100vw;
   height: 80vh;
 
-  .video{
+  video{
     position: absolute;
     width: 100vw;
     height: 80vh;
@@ -28,13 +28,13 @@
       center,
       center,
       center
-      );
-      width: 100vw;
-      height: max-content;
-      color: $cor-bg-cinza-escuro;
-      background-color: #ffffff8c;
-      backdrop-filter: blur(10px);
-      z-index: 1;
+    );
+    width: 100vw;
+    height: max-content;
+    color: $cor-bg-cinza-escuro;
+    background-color: #ffffff8c;
+    backdrop-filter: blur(10px);
+    z-index: 1;
 
     h1{
       width: 60vw;

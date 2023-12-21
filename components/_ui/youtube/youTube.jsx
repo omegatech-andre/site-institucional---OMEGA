@@ -5,6 +5,7 @@ export default function YouTube() {
   return(
     <>
       <div className="youtube">
+        <video src="bgMovieYoutube.mp4" muted loop autoPlay></video>
         <img className='video' src="bgMovieYoutube.gif" alt="" />
         <div className="youtube__content">
           <h1>Conheça nosso canal do Youtube</h1>
