@@ -1,10 +1,10 @@
-import { IoMenuSharp, IoHome } from "react-icons/io5";
+import { IoMenuSharp, IoHome } from "react-icons/io5"
 import GroupBtnSec from '../groupBtnSec/GroupBtnSec'
 import './index.scss'
-import Image from "next/image";
+import Image from "next/image"
 import logo from "../../../public/assets/images/logo-principal.png"
-import Link from "next/link";
-import { useCallback, useEffect, useState } from "react";
+import Link from "next/link"
+import { useCallback, useEffect, useState } from "react"
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false)

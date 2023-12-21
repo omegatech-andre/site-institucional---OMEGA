@@ -1,24 +1,24 @@
 'use client'
-import React, { useEffect, useState } from 'react';
-import Link from 'next/link';
-import './index.scss';
+import React, { useEffect, useState } from 'react'
+import Link from 'next/link'
+import './index.scss'
 
 export default function InBoundMkt() {
-  const [isVisible, setIsVisible] = useState(false);
+  const [isVisible, setIsVisible] = useState(false)
 
   useEffect(() => {
     const show = () => {
-      setIsVisible(true);
-      setTimeout(hide, 4000);
+      setIsVisible(true)
+      setTimeout(hide, 4000)
     }
 
     const hide = () => {
-      setIsVisible(false);
-      setTimeout(show, 22000);
+      setIsVisible(false)
+      setTimeout(show, 22000)
     }
 
-    setTimeout(show, 22000);
-  }, []);
+    setTimeout(show, 22000)
+  }, [])
 
   return (
     <>

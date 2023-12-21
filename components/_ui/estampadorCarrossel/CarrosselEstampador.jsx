@@ -1,5 +1,5 @@
 import './index.scss'
-import Image from "next/image";
+import Image from "next/image"
 import { data } from '../../mocks/carrosselEstampador'
 
 export default function CarrosselEstampador() {

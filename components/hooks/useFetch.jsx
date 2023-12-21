@@ -22,3 +22,8 @@ export default function useFetch(url) {
   
   return { data, error, isFetching }
 }
+
+
+//  componente de ser chamado da forma abaixo
+//
+//  const { data, isFetching, error } = useFetch("url")

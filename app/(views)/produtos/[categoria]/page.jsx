@@ -4,9 +4,9 @@ import { useEffect, useState } from 'react'
 import CardProduto from '@/components/_ui/cardProduto/CardProduto'
 import CardCategoria from '@/components/_ui/cardCategoria/CardCategoria'
 import useFetch from '@/components/hooks/useFetch'
-import { IoMdRefresh } from "react-icons/io";
+import { IoMdRefresh } from "react-icons/io"
 
-const FIRST_ELEMENT = 0;
+const FIRST_ELEMENT = 0
 
 export default function PageProdutos({ params }) {
   const [linhaEscolhida, setLinhaEscolhida] = useState(decodeURIComponent(params.categoria))

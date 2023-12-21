@@ -1,5 +1,5 @@
-import Image from "next/image";
-import Link from "next/link";
+import Image from "next/image"
+import Link from "next/link"
 import './index.scss'
 
 export default function ButtonSectionHeader({ link, cor, src, alt, titulo }) {

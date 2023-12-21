@@ -48,7 +48,7 @@
 
     button{
       @include button-model();
-      font-size: $tam-font-16;
+      font-size: $tam-font-18;
 
       &:hover{
         @include button-model-hover();
@@ -148,6 +148,10 @@
     select{
       width: 90vw;
       margin: 0 0 1rem;
+    }
+
+    button{
+      font-size: $tam-font-14;
     }
   }
 }

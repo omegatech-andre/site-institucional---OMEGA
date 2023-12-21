@@ -1,7 +1,7 @@
-import Image from "next/image";
+import Image from "next/image"
 import './index.scss'
-import ButtonAtv from "../buttonAtv/ButtonAtv";
-import CarrosselEstampador from "../estampadorCarrossel/CarrosselEstampador";
+import ButtonAtv from "../buttonAtv/ButtonAtv"
+import CarrosselEstampador from "../estampadorCarrossel/CarrosselEstampador"
 
 export default function EstampadorDeSucesso() {
     return (

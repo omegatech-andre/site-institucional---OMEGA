@@ -1,10 +1,10 @@
 'use client'
 import './index.scss'
 import { useForm } from 'react-hook-form'
-import { useEffect, useState } from 'react';
-import axios from 'axios';
-import { schema } from '@/components/schema/schema';
-import { yupResolver } from '@hookform/resolvers/yup';
+import { useEffect, useState } from 'react'
+import axios from 'axios'
+import { schema } from '@/components/schema/schema'
+import { yupResolver } from '@hookform/resolvers/yup'
 
 
 export default function Formulario({ isSubmiting }) {

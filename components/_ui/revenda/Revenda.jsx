@@ -1,8 +1,8 @@
 'use client'
-import Image from "next/image";
+import Image from "next/image"
 import './index.scss'
-import Form from "../form/Form";
-import { useState } from "react";
+import Form from "../form/Form"
+import { useState } from "react"
 
 export default function Revenda() {
     const [open, setOpen] = useState(false)

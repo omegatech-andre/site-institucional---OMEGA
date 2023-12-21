@@ -82,7 +82,8 @@
         center,
         center
       );
-      background-color: $cor-bg-cinza-medio;
+      background-color: $cor-bg-cinza-escuro-blur;
+      backdrop-filter: blur(10px);
       width: 82%;
       padding-bottom: 1.5rem;
       height: max-content;

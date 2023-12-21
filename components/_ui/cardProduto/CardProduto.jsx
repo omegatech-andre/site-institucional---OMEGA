@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 import ButtonAtv from '../buttonAtv/ButtonAtv'
-import { RiArrowLeftSLine, RiArrowRightSLine } from "react-icons/ri";
+import { RiArrowLeftSLine, RiArrowRightSLine } from "react-icons/ri"
 import './index.scss'
 
 export default function CardProduto({ nome, description, cores, pesos, images, fispq, boletim }) {
@@ -9,17 +9,16 @@ export default function CardProduto({ nome, description, cores, pesos, images, f
   const [numImagens, setNumImagens] = useState(5)
 
   useEffect(() => {
-    // Atualiza a imagem principal quando as imagens do produto mudam
-    setImagemPrincipal(images[0]);
-  }, [images]);
+    setImagemPrincipal(images[0])
+  }, [images])
 
   useEffect(() => {
     const atualizarNumImagens = () => {
-      setNumImagens(window.innerWidth <= 320 ? 3 : 5);
+      setNumImagens(window.innerWidth <= 320 ? 3 : 5)
     }
 
     window.addEventListener('resize', atualizarNumImagens)
-    atualizarNumImagens();
+    atualizarNumImagens()
 
     return () => window.removeEventListener('resize', atualizarNumImagens)
   }, [])
@@ -102,4 +101,4 @@ export default function CardProduto({ nome, description, cores, pesos, images, f
 
 //  componente de ser chamado da forma abaixo
 //
-//  <CardProduto nome={} description={} cores={} pesos={} images={} fispq={} boletim={}/>
+//  <CardProduto nome="" description="" cores="" pesos="" images="" fispq="" boletim=""/>

@@ -2,7 +2,7 @@
 import ButtonAtv from '@/components/_ui/buttonAtv/ButtonAtv'
 import './index.scss'
 import useFetch from '@/components/hooks/useFetch'
-import { IoMdRefresh } from "react-icons/io";
+import { IoMdRefresh } from "react-icons/io"
 
 export default function pageBoletimTecnico() {
 
@@ -39,8 +39,8 @@ export default function pageBoletimTecnico() {
                     <tbody>
                       {lineItem.category.flatMap((categoryItem) =>
                         categoryItem.product.map((product) => {
-                          const rowClass = productIndex % 2 === 0 ? 'tablerowlight' : 'tablerowdark';
-                          productIndex++;
+                          const rowClass = productIndex % 2 === 0 ? 'tablerowlight' : 'tablerowdark'
+                          productIndex++
                           return (
                             <tr className={`pageboletimtecnico__tablecontent ${rowClass}`} key={product._id.$oid}>
                               <td className='pageboletimtecnico__tablecontent--name'>{product.name}</td>
@@ -49,12 +49,12 @@ export default function pageBoletimTecnico() {
                                 <ButtonAtv link={product.boletim} target="_blank" largura="" nome="boletim tecnico" />
                               </td>
                             </tr>
-                          );
+                          )
                         })
                       )}
                     </tbody>
                   </table>
-                ));
+                ))
               })}
             </div>
           )

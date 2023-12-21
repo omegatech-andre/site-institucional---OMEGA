@@ -1,9 +1,9 @@
 'use client'
-import { SiInstagram, SiLinkedin, SiYoutube, SiTiktok, SiWhatsapp, SiFacebook } from "react-icons/si";
-import { SlArrowUpCircle } from "react-icons/sl";
-import Image from "next/image";
+import { SiInstagram, SiLinkedin, SiYoutube, SiTiktok, SiWhatsapp, SiFacebook } from "react-icons/si"
+import { SlArrowUpCircle } from "react-icons/sl"
+import Image from "next/image"
 import './index.scss'
-import Link from "next/link";
+import Link from "next/link"
 
 export default function Footer() {
     return (

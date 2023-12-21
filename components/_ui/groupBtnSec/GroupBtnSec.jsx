@@ -1,4 +1,4 @@
-import ButtonSection from "../buttonSection/ButtonSection";
+import ButtonSection from "../buttonSection/ButtonSection"
 import './index.scss'
 import { data } from '../../mocks/GroupBtnSec'
 

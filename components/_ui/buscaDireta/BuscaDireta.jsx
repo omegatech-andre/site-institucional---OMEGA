@@ -1,4 +1,4 @@
-import ButtonAtv from "../buttonAtv/ButtonAtv";
+import ButtonAtv from "../buttonAtv/ButtonAtv"
 import './index.scss'
 
 export default function BuscaDireta() {

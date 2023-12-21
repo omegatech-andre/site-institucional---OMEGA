@@ -9,7 +9,6 @@ import { data } from '../../mocks/carrosselHeader'
 
 
 export default function HeaderSec() {
-
   return (
     <>
       <div className="headersec">
@@ -27,7 +26,7 @@ export default function HeaderSec() {
             <Splide
               options={{
                 type: 'loop',
-                autoplay: false,
+                autoplay: true,
                 pauseOnHover: false,
               }}
             >

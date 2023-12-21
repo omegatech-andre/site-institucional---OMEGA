@@ -12,3 +12,8 @@ export default function CardCategoria({ link, image, titulo }) {
         </>
     )
 }
+
+
+//  componente de ser chamado da forma abaixo
+//
+//  <CardCategoria link="" image="" titulo=""/>

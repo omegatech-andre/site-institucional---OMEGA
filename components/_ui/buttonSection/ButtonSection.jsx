@@ -1,5 +1,5 @@
-import Image from "next/image";
-import Link from "next/link";
+import Image from "next/image"
+import Link from "next/link"
 import './index.scss'
 
 export default function ButtonSection({ link, cor, src, alt, titulo, onClick }) {
@@ -28,4 +28,4 @@ export default function ButtonSection({ link, cor, src, alt, titulo, onClick }) 
 
 //  componente de ser chamado da forma abaixo
 //
-//  <ButtonSection link="" cor="" src="" alt="" titulo=""/>
+//  <ButtonSection link="" cor="" src="" alt="" titulo="" onClick=""/>

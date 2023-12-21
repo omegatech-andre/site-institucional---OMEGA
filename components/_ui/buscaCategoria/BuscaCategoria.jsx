@@ -1,8 +1,8 @@
 'use client'
-import useFetch from "@/components/hooks/useFetch";
-import CardCategoria from "../cardCategoria/CardCategoria";
+import useFetch from "@/components/hooks/useFetch"
+import CardCategoria from "../cardCategoria/CardCategoria"
 import './index.scss'
-import { IoMdRefresh } from "react-icons/io";
+import { IoMdRefresh } from "react-icons/io"
 
 export default function BuscaCategoria() {
     const { data, isFetching, error } = useFetch("https://site-institucional-omega-data.vercel.app/dataProducts")
@@ -49,5 +49,3 @@ export default function BuscaCategoria() {
         </>
     )
 }
-
-// {`/produtos/${encodeURIComponent(linha.name)}`}
