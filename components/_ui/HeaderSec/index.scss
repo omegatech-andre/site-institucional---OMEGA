@@ -26,7 +26,7 @@
       @include box-model($borda-pequena);
       background-color: transparent;
       color: $cor-bg-branco;
-      font-size: $tam-font-14;
+      font-size: $tam-font-18;
       font-weight: $font-bold;
       padding: .5rem;
       cursor: pointer;
@@ -161,7 +161,7 @@
     
     &__top{
       button{
-        font-size: $tam-font-12;
+        font-size: $tam-font-16;
       }
     }
     &__mid{

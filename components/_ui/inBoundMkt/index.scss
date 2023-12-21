@@ -63,19 +63,10 @@
   }
 }
 
-@include viewport(smd){
-  .inboundmkt{
-    bottom: .5rem;
-    right: .5rem;
-  }
-}
-
 @include viewport(sm){
   .inboundmkt{
     width: 4rem;
     height: 4rem;
-    bottom: 1rem;
-    right: 1rem;
 
     img{
       width: 3.5rem;

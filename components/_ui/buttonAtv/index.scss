@@ -32,9 +32,9 @@
 
 @include viewport(sm){
     .buttonatv{
-        font-size: $tam-font-14;
+        font-size: $tam-font-16;
         &__disabled{
-            font-size: $tam-font-14;
+            font-size: $tam-font-16;
         }
     }
 }
