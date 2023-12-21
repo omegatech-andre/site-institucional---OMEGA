@@ -32,7 +32,7 @@ export default function Footer() {
                                         <ul className="listalinks">
                                             <li><Link href="/produtos/Linha%20Base%20Água">Linha Base Agua</Link></li>
                                             <li><Link href="/produtos/Linha%20Plastisol">Linha Plastisol</Link></li>
-                                            <li><Link href="/produtos/Linha%20Auxiliar">Linha Auxilixar</Link></li>
+                                            <li><Link href="/produtos/Linha%20Auxiliar">Linha Auxiliar</Link></li>
                                             <li><Link href="/"><span>Exclusividade Silk</span></Link></li>
                                         </ul>
                                     </div>
@@ -49,7 +49,7 @@ export default function Footer() {
                                         <p>APRENDIZAGEM</p>
                                         <ul className="listalinks">
                                             <li><Link href="/padrao-omega">Padrão ÔMEGA</Link></li>
-                                            <li><Link href="/estampador-de-sucesso">Estampador de sucesso</Link></li>
+                                            <li><Link href="/estampador-de-sucesso">Estampador de Sucesso</Link></li>
                                         </ul>
                                     </div>
                                 </div>

@@ -52,7 +52,7 @@ export default function PageProdutos({ params }) {
           <div className="pageprodutos__bg--titulo">
             <h1>{linhaAtual.name}</h1>
           </div>
-          <img src={linhaAtual.image} alt="" />
+          <img src={linhaAtual.wallpaper} alt="" />
         </div>
         <div className="pageprodutos__content">
           <h1>Selecione o produto que deseja</h1>

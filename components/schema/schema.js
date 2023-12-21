@@ -1,12 +1,12 @@
 import * as yup from 'yup'
 
 export const schema = yup.object().shape({
-  razaoSocial: yup.string().lowercase().required('Campo obrigatóio'),
-  cnpj: yup.string().min(14, 'CNPJ deve contar 14 numeros, sem caracteres especiais').required('Campo obrigatóio'),
-  telFixo: yup.string().min(10, 'Telefone deve conter 10 numeros, sem caracteres espaciais').required('Campo obrigatóio'),
-  email: yup.string().lowercase(),
+  razaoSocial: yup.string().lowercase().required('Campo obrigatório'),
+  cnpj: yup.string().min(11, 'Deve conter pelo menos 11 digitos, sem caracteres especiais').required('Campo obrigatório'),
+  telFixo: yup.string(),
+  email: yup.string().lowercase().required('Campo obrigatório'),
   nome: yup.string().lowercase(),
-  whatsapp: yup.string(),
+  whatsapp: yup.string().min(11, 'Insira um número válido com DDD, sem caracteres especiais').required('Campo obrigatório'),
   telSecundario: yup.string(),
   cep: yup.string(),
   uf: yup.string(),

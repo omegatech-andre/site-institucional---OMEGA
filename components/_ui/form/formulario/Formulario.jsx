@@ -40,12 +40,8 @@ export default function Formulario({ isSubmiting }) {
       .then(
         setIsFetching(!isFetching)
 
-    )
+      )
       .finally(() => {
-        setCep('')
-        setUf('')
-        setCidade('')
-        setEndereco('')
         isSubmiting(true)
         reset()
       })
@@ -61,7 +57,7 @@ export default function Formulario({ isSubmiting }) {
             <input
               {...register('razaoSocial')}
               type="text"
-              placeholder='Razão Social'
+              placeholder='Razão Social / Nome'
             />
             {errors.razaoSocial && (<span>{errors.razaoSocial.message}</span>)}
           </div>
@@ -70,7 +66,7 @@ export default function Formulario({ isSubmiting }) {
               <input
                 {...register('cnpj')}
                 type="text"
-                placeholder='CNPJ'
+                placeholder='CNPJ / CPF'
                 maxLength={14}
               />
               {errors.cnpj && (<span>{errors.cnpj.message}</span>)}
@@ -82,7 +78,6 @@ export default function Formulario({ isSubmiting }) {
                 placeholder='Telefone Fixo'
                 maxLength={10}
               />
-              {errors.telFixo && (<span>{errors.telFixo.message}</span>)}
             </div>
           </div>
           <div className='input__unico'>
@@ -91,6 +86,7 @@ export default function Formulario({ isSubmiting }) {
               type="email"
               placeholder='E-mail'
             />
+            {errors.email && (<span>{errors.email.message}</span>)}
           </div>
           <div className='input__unico'>
             <input
@@ -100,18 +96,23 @@ export default function Formulario({ isSubmiting }) {
             />
           </div>
           <div className='input__duplo'>
-            <input
-              {...register('whatsapp')}
-              type="tel"
-              placeholder='Telefone Whatsapp'
-              maxLength={11}
-            />
-            <input
-              {...register('telSecundario')}
-              type="tel"
-              placeholder='Telefone Secundario'
-              maxLength={10}
-            />
+            <div>
+              <input
+                {...register('whatsapp')}
+                type="tel"
+                placeholder='Telefone Whatsapp'
+                maxLength={11}
+              />
+              {errors.whatsapp && (<span>{errors.whatsapp.message}</span>)}
+            </div>
+            <div>
+              <input
+                {...register('telSecundario')}
+                type="tel"
+                placeholder='Telefone Secundario'
+                maxLength={10}
+              />
+            </div>
           </div>
           <div className='input__triplo'>
             <input

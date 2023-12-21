@@ -27,7 +27,7 @@
     @include box-model($borda-grande);
     width: 80vw;
     height: max-content;
-    background-color: $cor-bg-branco;
+    background-color: $cor-bg-vermelho;
 
     h1{
       color: $cor-bg-branco;
@@ -43,7 +43,7 @@
         center
       );
       width: 30vw;
-      height: 80vh;
+      height: auto;
       padding: 2rem;
       background-color: $cor-bg-vermelho;
 
