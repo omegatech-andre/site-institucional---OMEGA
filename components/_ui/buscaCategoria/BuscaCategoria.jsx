@@ -5,7 +5,7 @@ import './index.scss'
 import { IoMdRefresh } from "react-icons/io"
 
 export default function BuscaCategoria() {
-    const { data, isFetching, error } = useFetch("https://site-institucional-omega-data.vercel.app/dataProducts")
+    const { data, isFetching, error } = useFetch("https://api.omegascreen.com.br/dataProducts")
     
     if (error) {
         return (

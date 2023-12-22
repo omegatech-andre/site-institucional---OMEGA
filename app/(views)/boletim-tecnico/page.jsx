@@ -6,7 +6,7 @@ import { IoMdRefresh } from "react-icons/io"
 
 export default function pageBoletimTecnico() {
 
-  const { data, isFetching, error } = useFetch("https://site-institucional-omega-data.vercel.app/dataProducts")
+  const { data, isFetching, error } = useFetch("https://api.omegascreen.com.br/dataProducts")
 
   return (
     <>
