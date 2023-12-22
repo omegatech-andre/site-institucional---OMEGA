@@ -14,7 +14,7 @@ export default function PageProdutos({ params }) {
   const [produtoSelecionado, setProdutoSelecionado] = useState('')
   const [produtoParaBuscar, setProdutoParaBuscar] = useState(null)
 
-  const { data, isFetching, error } = useFetch("https://site-institucional-omega-data.vercel.app/dataProducts")
+  const { data, isFetching, error } = useFetch("https://api.omegascreen.com.br/dataProducts")
 
   useEffect(() => {
     setProdutoSelecionado('')
