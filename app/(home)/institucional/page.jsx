@@ -15,10 +15,8 @@ export default function PageInstitucional() {
           <p>Eu sou o Alfa e o Ômega, o Principio e o Fim , diz o Senhor, que é, que era e que há de vir, O Todo Poderoso. <br></br> Apocalipse 1:8</p>
         </div>
         <div className="pageinstitucional__picture">
-          <Image src='/assets/images/equipe-omega-setembro.png' width={1440} height={762} alt=''/>
-          <div className="pageinstitucional__picture--box">
-            <h3>Comemoração de aniversário de 2 anos da Ômega Screen Indústria</h3>
-          </div>
+          <Image className='pageinstitucional__picture--img' src='/assets/images/equipe-omega.png' width={1900} height={762} alt=''/>
+          <Image className='pageinstitucional__picture--logo' src='/assets/images/logo-header.png' width={200} height={200} alt=''/>
         </div>
         <div className="pageinstitucional__about">
           <div className="pageabout">
