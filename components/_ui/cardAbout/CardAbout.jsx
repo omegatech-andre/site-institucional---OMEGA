@@ -3,14 +3,14 @@ import './index.scss'
 
 export default function CardAbout({ description, src, alt, title }) {
 const paragrafo = description.split('<br>').map((paragrafo, index) => (
-  <p className='paragrafovalores' key={index}>{paragrafo}</p>
+  <div className='paragrafovalores' key={index}>{paragrafo}</div>
 ))
 
   return (
     <>
       <div className="cardabout">
         <div className="cardabout__info">
-          <p>{paragrafo}</p>
+          <span>{paragrafo}</span>
         </div>
         <div className="cardabout__img">
           <Image

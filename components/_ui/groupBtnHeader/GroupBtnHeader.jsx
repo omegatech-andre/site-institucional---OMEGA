@@ -32,7 +32,7 @@ export default function GroupBtnHeader() {
                         cor="#4e8ce9"
                         src="/assets/icons/padrao-omega.png"
                         alt="padrão ômega"
-                        titulo="Padrão ômega"
+                        titulo="Padrão Ômega"
                     />
                     <ButtonSectionHeader
                         link="/revenda"
