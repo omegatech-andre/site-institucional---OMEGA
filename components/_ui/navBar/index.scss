@@ -15,12 +15,26 @@
   width: 100vw;
   height: 6.25rem;
   background-color: $cor-bg-cinza-escuro;
+  
+  &__content{
+    @include flex-position(
+      flex,
+      row,
+      auto,
+      space-around,
+      center,
+      center
+    );
+    width: 100vw;
+    height: 6.25rem;
+    max-width: 1920px;
+  }
 
   &__icons{
     display: flex;
     align-items: center;
     justify-content: space-around;
-    width: 8vw;
+    width: 2rem;
     height: 10vh;
     color: $cor-bg-cinza-medio;
 
@@ -54,7 +68,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 10vw;
+    width: 3rem;
     height: 11vh;
 
     img{

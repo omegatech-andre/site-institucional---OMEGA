@@ -12,16 +12,18 @@
     center,
     center
   );
+  background-color: $cor-bg-branco;
 
   &__indicador{
     width: 100vw;
-    height: .8vh;
+    height: .4rem;
     background-color:$cor-sec-institucional;
   }
 
   &__content{
     margin: 2.2rem 0;
     width: 80vw;
+    max-width: 1630px;
 
     h1{
       font-size: $tam-font-42;
@@ -48,9 +50,9 @@
   &__picture{
     position: relative;
     display: flex;
-    width: 85vw;
+    width: 95vw;
     margin: 2.2rem;
-    max-width: 2080px;
+    max-width: 1630px;
     
     &--img{
       width: 100%;

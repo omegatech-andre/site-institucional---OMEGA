@@ -32,7 +32,8 @@
   );
   position: relative;
   left: -10px;
-  max-width: 40vw;
+  width: 50vw;
+  max-width: 1200px;
   height: auto;
   white-space: nowrap;
   overflow: hidden;
@@ -49,7 +50,8 @@
 
 @include viewport(xl){
   .carrosselhome{
-    max-width: 55vw;
+    width: 96vw;
+    margin: 0;
   }
 }
 

@@ -20,7 +20,8 @@
     align-items: center;
     justify-content: space-between;
     width: 90vw;
-    height: 10vh;
+    max-width: 1630px;
+    height: 5rem;
 
     button{
       @include box-model($borda-pequena);
@@ -64,6 +65,7 @@
       text-align: start;
       margin-left: 1rem;
       width: 25vw;
+      max-width: 40rem;
       font-size: $tam-font-18;
       font-weight: $font-semibold;
       margin-bottom: 2.5rem
@@ -98,7 +100,6 @@
 @include viewport(xl){
   .headersec{
     &__top{
-      height: 9vh;
 
       button{
         margin-right: 0;

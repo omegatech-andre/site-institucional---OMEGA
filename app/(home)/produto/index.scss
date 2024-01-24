@@ -12,10 +12,11 @@
   );
   width: 100vw;
   height: auto;
+  background-color: $cor-bg-branco;
 
   &__indicador{
     width: 100vw;
-    height: .8vh;
+    height: .4rem;
     background-color: $cor-sec-produto;
   }
 

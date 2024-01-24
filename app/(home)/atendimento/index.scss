@@ -12,15 +12,17 @@
   );
   width: 100vw;
   height: auto;
+  background-color: $cor-bg-branco;
 
   &__indicador{
     width: 100vw;
-    height: .8vh;
+    height: .4rem;
     background-color: $cor-sec-atendimento;
   }
 
   &__content{
     width: 80vw;
+    max-width: 1630px;
     margin: 2.2rem 0;
 
     h1{
@@ -39,18 +41,19 @@
   &__box{
     position: relative;
     width: 100vw;
-    height: 55vh;
+    max-width: 1630px;
+    height: 25rem;
     overflow: hidden;
     margin-bottom: 4.2rem;
-    background-color: $cor-bg-cinza-escuro;
+    // background-color: $cor-bg-cinza-escuro;
   }
 
   &__boxbackground{
     background-image: url(/assets/images/bg-atendimento.jpg);
     position: absolute;
-    width: 50vw;
-    height: 55vh;
-    left: 0;
+    width: 70rem;
+    height: 25rem;
+    left: -120px;
     background-size: cover;
   }
 
@@ -66,7 +69,8 @@
     position: absolute;
     right: -50px;
     width: 65vw;
-    height: 55vh;
+    max-width: 65rem;
+    height: 25rem;
     background-color: $cor-bg-cinza-escuro;
     transform: skewX(-7deg);
     z-index: 1;
@@ -75,6 +79,7 @@
   .boxcontent__content{
     transform: skewX(7deg);
     width: 30vw;
+    max-width: 30rem;
     height: auto;
     display: flex;
     flex-direction: column;
@@ -163,6 +168,7 @@
       margin-right: 0;
       transform: skewX(0deg);
       padding: 1rem;
+      height: 25rem;
 
       img{
         width: 30px;
@@ -189,6 +195,7 @@
       right: 0;
       top: 0;
       bottom: 0;
+      height: 17rem;
       background-color: $cor-bg-cinza-escuro-blur;
       backdrop-filter: blur(5px);
       border-radius: $borda-grande;
@@ -196,6 +203,8 @@
 
     &__boxbackground{
       width: 100vw;
+      left: 0;
+      height: 25rem;
     }
   }
 }

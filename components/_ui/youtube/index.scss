@@ -11,12 +11,15 @@
     center
   );
   width: 100vw;
+  max-height: 800px;
   height: 80vh;
-
+  
   video{
     position: absolute;
     width: 100vw;
+    max-width: 1920px;
     height: 80vh;
+    max-height: 800px;
     object-fit: cover;
   }
   
@@ -30,6 +33,7 @@
       center
     );
     width: 100vw;
+    max-width: 1920px;
     height: max-content;
     color: $cor-bg-cinza-escuro;
     background-color: #ffffff8c;
