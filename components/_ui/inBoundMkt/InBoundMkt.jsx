@@ -16,9 +16,6 @@ export default function InBoundMkt() {
   const [posted, setPosted] = useState(false)
   const [data, setData] = useState('')
 
-  console.log('visivel?', isVisible)
-  console.log('posted', posted)
-
   const { isPosted, isPosting, error } = usePost('https://sheetdb.io/api/v1/tfzirgx9wvfk1', data, posted)
   
   const submitForm = (data) => {
@@ -27,7 +24,7 @@ export default function InBoundMkt() {
   }
 
   const resetPage = () => {
-    window.location.reload()
+    setTimeout(() => window.location.reload(), 1000)
   }
 
   useEffect(() => {

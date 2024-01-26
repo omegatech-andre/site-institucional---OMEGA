@@ -20,7 +20,7 @@ export default function usePost(url, data, posted) {
         setIsPosting(false)
       })
     }
-  }, [posted])
+  }, [data])
   
   return { isPosted, isPosting, error }
 }
