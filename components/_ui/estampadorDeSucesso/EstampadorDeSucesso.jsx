@@ -12,7 +12,7 @@ export default function EstampadorDeSucesso() {
                     <div className="estampador__cta">
                         <Image src="/assets/images/logo-estampador-de-sucesso.png" width={200} height={130} alt=''></Image>
                         <h1 className="description-hidden">A capacitação do estampador é um dos lados sociais da nossa indústria, formamos em nosso C.T (Centro de Treinamento) Estampadores de Sucesso, contribuindo no desenvolvimento do mercado serigráfico!</h1>
-                        <ButtonAtv link="" largura="" nome="quero participar" />
+                        <ButtonAtv link={process.env.NEXT_PUBLIC_URL_ESTAMPADOR_DE_SUCESSO} largura="" nome="quero participar" />
                     </div>
                 </section>
             </div>
