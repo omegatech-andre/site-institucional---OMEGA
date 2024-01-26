@@ -26,9 +26,13 @@ export default function InBoundMkt() {
     setData(data)
   }
 
+  const resetPage = () => {
+    window.location.reload()
+  }
+
   useEffect(() => {
     if(isPosted || error){
-      // setPosted(false)
+      setPosted(false)
     }
   }, [isPosted, error])
   
@@ -42,7 +46,9 @@ export default function InBoundMkt() {
             <div className='inboundmktmodal'>
               <div className="inboundmktmodal__content">
                 <p>Não foi possível completar o download</p>
-                <input className="btnenviar" type='button' value="tentar novamente" onClick={submitForm} />
+                <input className="btnenviar" type='button' value="tentar novamente" onClick={() => {
+                  resetPage()
+                }} />
               </div>
             </div>
           )}
@@ -77,8 +83,10 @@ export default function InBoundMkt() {
             <div className='inboundmktmodal'>
               <div className="inboundmktmodal__content">
                 <p>Receba o Manual clicando no botão abaixo</p>
-                <Link href='https://raw.githubusercontent.com/omegatech-andre/site-institucional---OMEGA-data/main/public/dataProducts/line-baseagua/clear/clear-soft-ar/fispq---clear-soft-ar.pdf' target='_blank'>
-                  <input className="btnenviar" type="submit" value="baixar manual" onClick={() => setIsVisible(!isVisible)} />
+                <Link href='https://raw.githubusercontent.com/omegatech-andre/site-institucional---OMEGA-data/835f62b7491c85d98066589a306427bff1ed45d0/public/dataProducts/manual-das-tintas---OMEGA.pdf' target='_blank'>
+                  <input className="btnenviar" type="submit" value="baixar manual" onClick={() => {
+                    resetPage()
+                  }} />
                 </Link>
               </div>
             </div>
