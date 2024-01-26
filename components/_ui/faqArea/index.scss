@@ -2,7 +2,8 @@
 @use '../../../styles/variables/variables' as *;
 
 .faqarea{
-  width: 60vw;
+  width: 70vw;
+  max-width: 1630px;
   margin-bottom: 2.2rem;
   
   p{
@@ -10,9 +11,10 @@
     font-weight: $font-regular;
     margin-bottom: 2.2rem;
   }
-
+  
   &__content{
-    width: 60vw;
+    width: 70vw;
+    max-width: 1630px;
   }
 
   &__contenttitle{

@@ -1,19 +1,25 @@
 @use '../../../styles/mixins/mixins' as *;
 @use '../../../styles/variables/variables' as *;
 
+
+.carroestamp{
+    max-width: 1920px;
+    overflow: hidden;
+}
 .estampador{
     @include flex-position(
         flex,
-        column,
-        auto,
+        row,
+        0,
         center,
         center,
         center
     );
+    position: relative;
 
     &__cta{
         position: absolute;
-        left: 10%;
+        right: 150px;
         width: 31.375rem;
         height: auto;
         white-space: wrap;
@@ -38,9 +44,13 @@
 
 @include viewport(md){
     .estampador{
+        display: flex;
+        flex-direction: column;
         &__cta{
+            top: -50px;
+            left: 0;
+            position: relative;
             width: 26.125rem;
-            left: 5%;
             img{
                 width: 155px;
                 height: 110px;
@@ -62,12 +72,11 @@
     .estampador{
         &__cta{
             width: 95%;
-            position: static;
 
             img{
                 width: 100px;
                 height: 70px;
-                margin-top: 0;
+                margin-top: 1rem;
             }
 
             h1{

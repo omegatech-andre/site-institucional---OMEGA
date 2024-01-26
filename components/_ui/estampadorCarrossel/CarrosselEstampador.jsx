@@ -29,6 +29,17 @@ export default function CarrosselEstampador() {
                             />
                         ))}
                     </div>
+                    <div className="carrosselestampador__content--slide">
+                        {data.map((item) => (
+                            <Image
+                                key={item.id}
+                                src={item.image}
+                                width={500}
+                                height={500}
+                                alt="turma estampador de sucesso"
+                            />
+                        ))}
+                    </div>
                 </div>
             </section>
         </>

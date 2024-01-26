@@ -26,28 +26,30 @@ export default function Navbar() {
   return (
     <>
       <div className="navbar">
-        <div className="navbar__icons">
-          <Link href="/">
-            <IoHome />
-          </Link>
-        </div>
-        <div className="navbar__logo">
-          <Link href="/">
-            <Image src={logo} width={85} height={63} alt="teste" />
-          </Link>
-        </div>
-        {(isOpen || isLargeScreen) && <>
-          <div className="navbar__btns">
-            <GroupBtnSec setIsOpen={setIsOpen} />
+        <div className="navbar__content">
+          <div className="navbar__icons">
+            <Link href="/">
+              <IoHome />
+            </Link>
           </div>
-        </>}
-        <div className="navbar__icons btnmenu">
-          <Link href=''>
-            <IoMenuSharp onClick={(e) => { 
-              e.preventDefault()
-              setIsOpen(!isOpen)
-            }}/>
-          </Link>
+          <div className="navbar__logo">
+            <Link href="/">
+              <Image src={logo} width={85} height={63} alt="teste" />
+            </Link>
+          </div>
+          {(isOpen || isLargeScreen) && <>
+            <div className="navbar__btns">
+              <GroupBtnSec setIsOpen={setIsOpen} />
+            </div>
+          </>}
+          <div className="navbar__icons btnmenu">
+            <Link href=''>
+              <IoMenuSharp onClick={(e) => {
+                e.preventDefault()
+                setIsOpen(!isOpen)
+              }} />
+            </Link>
+          </div>
         </div>
       </div>
     </>

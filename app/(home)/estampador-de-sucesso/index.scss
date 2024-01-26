@@ -12,16 +12,16 @@
     center,
     center
   );
+  background-color: $cor-bg-branco;
 
   &__indicador {
     width: 100vw;
-    height: .8vh;
+    height: .4rem;
     background-color: $cor-sec-estampador;
   }
 
   &__content{
     margin: 2.2rem 0;
-    width: 80%;
 
     h1{
       font-size: $tam-font-42;
@@ -42,7 +42,8 @@
     }
 
     video{
-      width: 60vw;
+      width: 95vw;
+      max-width: 1630px
     }
   }
 
@@ -150,8 +151,6 @@
     }
 
     .estampador__cta{
-      height: 30vh;
-  
       img{
         width: 222px;
         height: 158px;

@@ -12,7 +12,7 @@ html, body{
   max-width: 100vw;
   overflow-x: hidden;
   font-family: 'Montserrat', sans-serif;
-  background-color: $cor-bg-branco;
+  background-color: $cor-bg-cinza-escuro;
   color: $cor-font-preta;
 }
 
@@ -31,7 +31,7 @@ li{
 
 .indicador{
   width: 100vw;
-  height: .8vh;
+  height: .4rem;
   background: $cor-sec-gradiente-rainbow;
   background-size: 600% 100%;
   animation: degradeanimado 8s infinite alternate ease-in-out;

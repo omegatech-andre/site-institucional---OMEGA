@@ -12,10 +12,11 @@
   );
   width: 100vw;
   height: auto;
+  background-color: $cor-bg-branco;
 
   &__indicador{
     width: 100vw;
-    height: .8vh;
+    height: .4rem;
     background-color: $cor-sec-nossoscanais;
   }
 
@@ -40,6 +41,7 @@
     );
     flex-wrap: wrap;
     width: 80vw;
+    max-width: 1630px;
     height: auto;
     gap: 1.5rem;
     margin: 2.2rem 0;

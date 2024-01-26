@@ -7,6 +7,7 @@
     
     &__content{
         width: 80vw;
+        max-width: 1630px;
         @include flex-position(
             flex,
             row,
@@ -20,7 +21,7 @@
     img{
         width: 200px;
         height: 200px;
-        margin: 1.5rem 5rem;
+        margin: 1.5rem 3rem ;
     }
 
     h1{

@@ -11,13 +11,14 @@ footer{
         center
     );
     width: 100vw;
-    min-height: 99.3vh;
+    min-height: 920px;
     background-color: $cor-bg-cinza-escuro;
     color: $cor-font-branco;
 }
 
 .footercontent{
     width: 90vw;
+    max-width: 1630px;
     
     &__footertop{
         padding-bottom: 1rem;
