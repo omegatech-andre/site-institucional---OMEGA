@@ -44,6 +44,7 @@
     select{
       @include box-model($borda-pequena);
       color: $cor-font-marcadagua;
+      background-color: $cor-bg-branco-super;
       width: 25rem;
       padding: .5rem .5rem;
       margin: 0 .5rem;

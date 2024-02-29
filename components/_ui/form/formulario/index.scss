@@ -36,6 +36,7 @@
   input {
     @include input-model($borda-pequena);
     background-color: $cor-bg-branco-super;
+    color: $cor-font-preta;
     padding: .6rem;
     margin: .3rem;
   }

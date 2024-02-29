@@ -36,3 +36,9 @@ li{
   background-size: 600% 100%;
   animation: degradeanimado 8s infinite alternate ease-in-out;
 }
+
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+}
