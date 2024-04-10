@@ -52,6 +52,14 @@ export const revendedores = {
           endereco: 'Rua Florianopolis, 1112',
           cidade: 'Fortaleza - CE',
           tel: '(85) 99650-5225'
+        },
+        {
+          id: '2',
+          imagem: '/assets/images/revendedores/armazemcomunicacaovisual.png',
+          nome: 'Armazém Comunicação Visual',
+          endereco: 'Rua São Pedro, 1913',
+          cidade: 'Juazeiro do Norte - CE',
+          tel: '(85) 99714-0087'
         }
       ]
     },
@@ -168,6 +176,14 @@ export const revendedores = {
           endereco: 'Rua José Primo, 31',
           cidade: 'Itabaianinha - SE',
           tel: '(79) 3544-2424'
+        },
+        {
+          id: '2',
+          imagem: '/assets/images/revendedores/wsilk.png',
+          nome: 'WSilk',
+          endereco: 'Rua 103, 33',
+          cidade: 'Nossa Senhora do Socorro - SE',
+          tel: '(79) 98818-3224'
         }
       ]
     }
