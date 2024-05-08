@@ -47,35 +47,35 @@ export const revendedores = {
       revendedor: [
         {
           id: '1',
-          imagem: '/assets/images/revendedores/default.png',
-          nome: 'WS Tintas Serigráficas',
-          endereco: 'Rua Florianopolis, 1112',
-          cidade: 'Fortaleza - CE',
-          tel: '(85) 99650-5225'
-        },
-        {
-          id: '2',
           imagem: '/assets/images/revendedores/armazemcomunicacaovisual.png',
           nome: 'Armazém Comunicação Visual',
           endereco: 'Rua São Pedro, 1913',
           cidade: 'Juazeiro do Norte - CE',
           tel: '(85) 99714-0087'
-        }
+        },
+        // {
+        //   id: '2',
+        //   imagem: '/assets/images/revendedores/default.png',
+        //   nome: 'WS Tintas Serigráficas',
+        //   endereco: 'Rua Florianopolis, 1112',
+        //   cidade: 'Fortaleza - CE',
+        //   tel: '(85) 99650-5225'
+        // },
       ]
     },
-    {
-      nome: 'Pará',
-      revendedor: [
-        {
-          id: '1',
-          imagem: '/assets/images/revendedores/default.png',
-          nome: 'Malharia Fênix',
-          endereco: 'Av. Getúlio Vargas, 313',
-          cidade: 'Parauapebas - PA',
-          tel: '(94) 98805-2426'
-        }
-      ]
-    },
+    // {
+    //   nome: 'Pará',
+    //   revendedor: [
+    //     {
+    //       id: '1',
+    //       imagem: '/assets/images/revendedores/default.png',
+    //       nome: 'Malharia Fênix',
+    //       endereco: 'Av. Getúlio Vargas, 313',
+    //       cidade: 'Parauapebas - PA',
+    //       tel: '(94) 98805-2426'
+    //     }
+    //   ]
+    // },
     {
       nome: 'Paraiba',
       revendedor: [
