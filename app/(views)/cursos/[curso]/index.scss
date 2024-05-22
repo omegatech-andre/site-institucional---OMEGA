@@ -1,0 +1,65 @@
+@use '../../../../styles/mixins/mixins' as *;
+@use '../../../../styles/variables/variables' as *;
+
+.pagecursos{
+  @include flex-position(
+    flex,
+    column,
+    auto,
+    center,
+    center,
+    center
+  );
+  width: 100vw;
+  height: auto;
+  background-color: $cor-bg-branco;
+
+  &__main{
+    width: 80rem;
+    max-width: 98vw;
+    margin-top: 9rem;
+    display: flex;
+    flex-direction: row;
+  }
+  
+  &__main--img{
+    @include flex-position(
+      flex,
+      column,
+      auto,
+      center,
+      center,
+      center
+    );
+
+    img{
+      width: 35rem;
+      height: 45rem;
+      object-fit: cover;
+    }
+  }
+}
+
+@include viewport(xl){
+  .pagecursos{
+    &__main{
+      display: flex;
+      flex-direction: column;
+      gap: 3.5rem;
+    }
+  }
+}
+
+@include viewport(md){
+  .pagecursos{
+    &__main{
+      gap: 2.5rem;
+    }
+    
+    &__main--img img{
+      max-width: 90vw;
+      object-fit: contain;
+      height: max-content;
+    }
+  }
+}
