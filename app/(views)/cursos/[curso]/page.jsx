@@ -1,11 +1,13 @@
-import Image from "next/image"
 import "./index.scss"
+import Image from "next/image"
 import MainEstampador from "@/components/_ui/estampadorDeSucesso/mainEstampador/MainEstampador"
+import CardEstampador from "@/components/_ui/estampadorDeSucesso/cardEstampador/cardEstampador"
 
 export default function PageCursos() {
   return (
     <>
       <div className="pagecursos">
+
         <div className="pagecursos__main">
           <MainEstampador />
           <div className="pagecursos__main--img">
@@ -17,6 +19,11 @@ export default function PageCursos() {
             />
           </div>
         </div>
+
+        <div className="pagecursos__card">
+          <CardEstampador />
+        </div>
+        
       </div>
     </>
   )

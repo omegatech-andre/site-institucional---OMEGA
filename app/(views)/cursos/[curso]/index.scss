@@ -38,6 +38,13 @@
       object-fit: cover;
     }
   }
+
+  &__card{
+    margin-top: 5rem;
+    width: 100vw;
+    padding: 2rem;
+    background-color: $cor-bg-vermelho;
+  }
 }
 
 @include viewport(xl){
