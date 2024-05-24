@@ -2,6 +2,7 @@ import "./index.scss"
 import Image from "next/image"
 import MainEstampador from "@/components/_ui/estampadorDeSucesso/mainEstampador/MainEstampador"
 import CardEstampador from "@/components/_ui/estampadorDeSucesso/cardEstampador/cardEstampador"
+import Palestrante from "@/components/_ui/estampadorDeSucesso/palestrante/Palestrante"
 
 export default function PageCursos() {
   return (
@@ -22,6 +23,10 @@ export default function PageCursos() {
 
         <div className="pagecursos__card">
           <CardEstampador />
+        </div>
+
+        <div className="pagecursos__palestrante">
+          <Palestrante />
         </div>
         
       </div>
