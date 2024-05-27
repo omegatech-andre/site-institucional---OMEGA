@@ -1,0 +1,169 @@
+@use '../../../../styles/mixins/mixins' as *;
+@use '../../../../styles/variables/variables' as *;
+
+.modulo{
+  @include flex-position(
+    flex,
+    column,
+    auto,
+    center,
+    center,
+    center
+  );
+  width: 80rem;
+  max-width: 90vw;
+
+  h1{
+    font-size: $tam-font-42;
+  }
+
+  span{
+    color: $cor-bg-vermelho;
+  }
+}
+
+.modulo__content{
+  @include flex-position(
+    flex,
+    row,
+    auto,
+    center,
+    center,
+    center
+  );
+  gap: 4rem;
+  margin-top: 3rem;
+  max-width: 90vw;
+
+  .modulo__contentright{
+    object-fit: cover;
+    width: 35rem;
+    max-width: 90vw;
+  }
+
+  .p_bottom{
+    font-size: $tam-font-18; 
+  }
+  
+  .modulo__contentleft{
+    @include flex-position(
+      flex,
+      column,
+      auto,
+      center,
+      center,
+      flex-start
+    );
+    width: 35rem;
+    max-width: 90vw;
+    height: auto;
+    gap: 1rem;
+
+    p{
+      font-size: $tam-font-18;
+      text-align: start;
+    }
+
+    .p_top{
+      margin-bottom: 1.5rem;
+    }
+
+    svg{
+      color: $cor-bg-vermelho;
+    }
+
+    &--topics{
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 1rem;
+      margin-left: 2rem
+    }
+  }
+
+  .modulo__contentright{
+    @include flex-position(
+      flex,
+      row,
+      auto,
+      center,
+      center,
+      center
+    );
+
+    width: 27.8rem;
+    overflow: hidden;
+  }
+}
+
+@include viewport(xl){
+  .modulo__content{
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@include viewport(md){
+  .modulo__content{
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+    gap: 2rem;
+
+    .p_bottom{
+      font-size: $tam-font-16; 
+    }
+
+    .modulo__contentleft{
+      gap: .5rem;
+    }
+
+    .modulo__contentleft .p_top{
+      margin-bottom: 1rem;
+    }
+
+    .modulo__contentleft p{
+      font-size: $tam-font-16;
+    }
+
+    .modulo__contentleft svg{
+      width: 30px;
+    }
+
+    .modulo__contentright{
+      max-width: 90vw;
+    }
+  }
+
+  .modulo h1{
+    font-size: $tam-font-36;
+  }
+}
+
+@include viewport(sm){
+  .modulo__content{
+    .p_bottom{
+    font-size: $tam-font-14; 
+    }
+
+    .modulo__contentleft p{
+      font-size: $tam-font-14;
+    }
+
+    .modulo__contentleft--topics{
+      margin-left: 1rem;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 0;
+
+      p{
+        font-size: 12px;
+      }
+    }
+  }
+
+  .modulo h1{
+    font-size: $tam-font-30;
+  }
+}

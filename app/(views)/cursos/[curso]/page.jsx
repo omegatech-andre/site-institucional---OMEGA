@@ -3,6 +3,7 @@ import Image from "next/image"
 import MainEstampador from "@/components/_ui/estampadorDeSucesso/mainEstampador/MainEstampador"
 import CardEstampador from "@/components/_ui/estampadorDeSucesso/cardEstampador/cardEstampador"
 import Palestrante from "@/components/_ui/estampadorDeSucesso/palestrante/Palestrante"
+import Modulo from "@/components/_ui/estampadorDeSucesso/modulo/Modulo"
 
 export default function PageCursos() {
   return (
@@ -27,6 +28,10 @@ export default function PageCursos() {
 
         <div className="pagecursos__palestrante">
           <Palestrante />
+        </div>
+
+        <div className="pagecursos__modulo">
+          <Modulo />
         </div>
         
       </div>
