@@ -35,6 +35,15 @@ export default function Modulo() {
     },
     {
       image: '/assets/images/carrossel-estampador-modulos/picture_2.png'
+    },
+    {
+      image: '/assets/images/carrossel-estampador-modulos/picture_3.png'
+    },
+    {
+      image: '/assets/images/carrossel-estampador-modulos/picture_4.png'
+    },
+    {
+      image: '/assets/images/carrossel-estampador-modulos/picture_5.png'
     }
   ]
 
