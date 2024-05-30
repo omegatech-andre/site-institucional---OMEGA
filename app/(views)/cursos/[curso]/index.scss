@@ -55,6 +55,22 @@
     margin-top: 5rem;
     width: 100vw;
   }
+
+  &__carrossel{
+    margin-top: 5rem;
+    width: 100vw;
+
+    h1{
+      margin: auto;
+      max-width: 90vw;
+      font-size: $tam-font-42;
+      margin-bottom: 1rem;
+    }
+  
+    span{
+      color: $cor-bg-vermelho;
+    }
+  }
 }
 
 @include viewport(xl){
@@ -77,6 +93,18 @@
       max-width: 90vw;
       object-fit: contain;
       height: max-content;
+    }
+
+    &__carrossel h1{
+      font-size: $tam-font-36;
+    }
+  }
+}
+
+@include viewport(sm){
+  .pagecursos__carrossel{
+    h1{
+      font-size: $tam-font-30;
     }
   }
 }

@@ -4,6 +4,7 @@ import MainEstampador from "@/components/_ui/estampadorDeSucesso/mainEstampador/
 import CardEstampador from "@/components/_ui/estampadorDeSucesso/cardEstampador/cardEstampador"
 import Palestrante from "@/components/_ui/estampadorDeSucesso/palestrante/Palestrante"
 import Modulo from "@/components/_ui/estampadorDeSucesso/modulo/Modulo"
+import CarrosselEstampador from "@/components/_ui/estampadorCarrossel/CarrosselEstampador"
 
 export default function PageCursos() {
   return (
@@ -32,6 +33,11 @@ export default function PageCursos() {
 
         <div className="pagecursos__modulo">
           <Modulo />
+        </div>
+
+        <div className="pagecursos__carrossel">
+          <h1>Confira as <span>turmas</span> do Estampador de Sucesso</h1>
+          <CarrosselEstampador />
         </div>
         
       </div>
