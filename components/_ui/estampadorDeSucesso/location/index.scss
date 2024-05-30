@@ -1,7 +1,7 @@
 @use '../../../../styles/mixins/mixins' as *;
 @use '../../../../styles/variables/variables' as *;
 
-.palestrante{
+.location{
   @include flex-position(
     flex,
     column,
@@ -13,16 +13,12 @@
   width: 80rem;
   max-width: 98vw;
 
-  h1{
-    font-size: $tam-font-42;
-  }
-
   span{
     color: $cor-bg-vermelho;
   }
 }
 
-.palestrante__content {
+.location__content {
   @include flex-position(
     flex,
     row,
@@ -39,23 +35,26 @@
     object-fit: cover;
     width: 35rem;
     height: auto;
-    max-height: 25rem;
     max-width: 90vw
   }
   
-  .palestrante__info{
+  .location__info{
     @include flex-position(
       flex,
       column,
       auto,
       center,
       center,
-      center
+      flex-start
     );
     width: 35rem;
     max-width: 90vw;
     height: auto;
     gap: 1rem;
+
+    h1{
+      font-size: $tam-font-42;
+    }
 
     p{
       font-size: $tam-font-18;
@@ -73,12 +72,12 @@
 }
 
 @include viewport(xl){
-  .palestrante__content{
+  .location__content{
     display: flex;
     flex-direction: column;
     gap: 3rem;
 
-    .palestrante__info .info__btn{
+    .location__info .info__btn{
       margin-top: 1.5rem;
     }
     
@@ -86,33 +85,33 @@
 }
 
 @include viewport(md){
-  .palestrante__content{
+  .location__content{
     margin-top: 2rem;
     gap: 2rem;
 
-    .palestrante__info .info__btn{
+    .location__info .info__btn{
       margin-top: .5rem;
     }
     
-  }
+    .location__info h1{
+      font-size: $tam-font-36;
+    }
 
-  .palestrante h1{
-    font-size: $tam-font-36;
-  }
-
-  .palestrante__content .palestrante__info{
-    p{
+    .location__info p{
       font-size: $tam-font-16;
     }
   }
+
+
+  
 }
 
 @include viewport(sm){
-  .palestrante h1{
-    font-size: $tam-font-30;
-  }
+  .location__content .location__info{
+    h1{
+      font-size: $tam-font-30;
+    }
 
-  .palestrante__content .palestrante__info{
     p{
       font-size: $tam-font-14;
     }
