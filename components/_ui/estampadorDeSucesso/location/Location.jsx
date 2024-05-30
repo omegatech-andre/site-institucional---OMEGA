@@ -18,7 +18,7 @@ export default function Location() {
             <p>O curso <strong><span>Estampador de Sucesso</span></strong> acontece na Indústria Ômega, onde temos um espaço exclusivo para realizar treinamentos para clientes e alunos, em nosso C.T.</p>
             <p><strong><span>Rua Ayrton Senna, 65 - Maria Auxiliadora - Caruaru PE</span></strong></p>
             <div className="info__btn">
-              <ButtonAtv link="#" target="" largura="35rem" nome="Localize o time ÔMEGA" />
+              <ButtonAtv link="https://maps.app.goo.gl/TA7Kv7GLcRcYRo8w9" target="_blank" largura="35rem" nome="Localize o time ÔMEGA" />
             </div>
           </div>
         </div>

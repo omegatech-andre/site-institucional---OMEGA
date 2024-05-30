@@ -17,7 +17,7 @@ export default function MainEstampador() {
           <p><strong>Uma capacitação presencial e gratuita</strong> que além da prática leva <strong>conhecimento técnico e prática</strong> diretamente para sua estamparia!</p>
         </div>
         <div className='mainestampador__btn'>
-          <ButtonAtv link="#" target="" largura="35rem" nome="Quero me tornar um Estampador de Sucesso" />
+          <ButtonAtv link={process.env.NEXT_PUBLIC_URL_ESTAMPADOR_DE_SUCESSO} target="_blank" largura="35rem" nome="Quero me tornar um Estampador de Sucesso" />
         </div>
       </div>
     </>

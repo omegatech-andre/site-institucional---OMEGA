@@ -7,7 +7,7 @@ export default function Cta() {
       <div className="cta">
         <h1>Quer ter uma vida com mais cor e intensidade?</h1>
         <h2>Inscreva-se já no curso Estampador de Sucesso</h2>
-        <ButtonAtv link="#" target="" largura='65rem' nome="Quero me tornar um Estampador de Sucesso" />
+        <ButtonAtv link={process.env.NEXT_PUBLIC_URL_ESTAMPADOR_DE_SUCESSO} target="_blank" largura='65rem' nome="Quero me tornar um Estampador de Sucesso" />
       </div>
     </>
   )
