@@ -71,6 +71,11 @@
       color: $cor-bg-vermelho;
     }
   }
+
+  &__faq{
+    margin-top: 5rem;
+    width: 100vw;
+  }
 }
 
 @include viewport(xl){

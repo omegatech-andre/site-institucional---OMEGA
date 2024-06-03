@@ -7,6 +7,7 @@ import Modulo from "@/components/_ui/estampadorDeSucesso/modulo/Modulo"
 import CarrosselEstampador from "@/components/_ui/estampadorCarrossel/CarrosselEstampador"
 import Location from "@/components/_ui/estampadorDeSucesso/location/Location"
 import Cta from "@/components/_ui/estampadorDeSucesso/cta/Cta"
+import Faq from "@/components/_ui/estampadorDeSucesso/faq/Faq"
 
 export default function PageCursos() {
   return (
@@ -48,8 +49,10 @@ export default function PageCursos() {
           <Location />
         </div>
 
-        {/* TODO FAQ SECTION */}
-        
+        <div className="pagecursos__faq">
+          <Faq />
+        </div>
+
         <div className="pagecursos__cta">
           <Cta />
         </div>
