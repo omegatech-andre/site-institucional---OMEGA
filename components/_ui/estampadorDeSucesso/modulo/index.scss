@@ -36,8 +36,8 @@
   max-width: 90vw;
 
   .modulo__contentright{
-    object-fit: cover;
-    width: 35rem;
+    width: 27.8rem;
+    overflow: hidden;
     max-width: 90vw;
   }
 
@@ -79,20 +79,6 @@
       gap: 1rem;
       margin-left: 2rem
     }
-  }
-
-  .modulo__contentright{
-    @include flex-position(
-      flex,
-      row,
-      auto,
-      center,
-      center,
-      center
-    );
-
-    width: 27.8rem;
-    overflow: hidden;
   }
 }
 

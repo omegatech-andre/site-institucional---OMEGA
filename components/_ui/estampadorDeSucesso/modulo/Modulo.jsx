@@ -66,8 +66,8 @@ export default function Modulo() {
               options={{
                 autoplay: true,
                 type: 'loop',
-                pauseOnHover: true,
-                pagination: false
+                pagination: false,
+                arrows: false
               }}
             >
               {pictures.map((picture, index) => (
