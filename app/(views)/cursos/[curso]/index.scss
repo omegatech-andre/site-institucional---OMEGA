@@ -110,8 +110,36 @@
       height: max-content;
     }
 
+    &__card{
+      margin-top: 3rem;
+    }
+
+    &__palestrante{
+      margin-top: 3rem;
+    }
+
+    &__modulo{
+      margin-top: 3rem;
+    }
+
+    &__carrossel{
+      margin-top: 3rem;
+    }
+
     &__carrossel h1{
       font-size: $tam-font-36;
+    }
+
+    &__depoimentos{
+      margin-top: 1rem;
+    }
+
+    &__location{
+      margin-top: 3rem;
+    }
+
+    &__faq{
+      margin-top: 3rem;
     }
   }
 }
