@@ -1,0 +1,120 @@
+@use '../../../../styles/mixins/mixins' as *;
+@use '../../../../styles/variables/variables' as *;
+
+.palestrante{
+  @include flex-position(
+    flex,
+    column,
+    auto,
+    center,
+    center,
+    center
+  );
+  width: 80rem;
+  max-width: 98vw;
+
+  h1{
+    font-size: $tam-font-42;
+  }
+
+  span{
+    color: $cor-bg-vermelho;
+  }
+}
+
+.palestrante__content {
+  @include flex-position(
+    flex,
+    row,
+    auto,
+    center,
+    center,
+    center
+  );
+  gap: 3rem;
+  margin-top: 3rem;
+  max-width: 98vw;
+  
+  img {
+    object-fit: cover;
+    width: 35rem;
+    height: auto;
+    max-height: 25rem;
+    max-width: 90vw
+  }
+  
+  .palestrante__info{
+    @include flex-position(
+      flex,
+      column,
+      auto,
+      center,
+      center,
+      center
+    );
+    width: 35rem;
+    max-width: 90vw;
+    height: auto;
+    gap: 1rem;
+
+    p{
+      font-size: $tam-font-18;
+      text-align: start;
+    }
+
+    .info__btn{
+      margin-top: 2rem;
+    }
+
+    button{
+      max-width: 90vw;
+    }
+  }
+}
+
+@include viewport(xl){
+  .palestrante__content{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+
+    .palestrante__info .info__btn{
+      margin-top: 1.5rem;
+    }
+    
+  }
+}
+
+@include viewport(md){
+  .palestrante__content{
+    margin-top: 2rem;
+    gap: 2rem;
+
+    .palestrante__info .info__btn{
+      margin-top: .5rem;
+    }
+    
+  }
+
+  .palestrante h1{
+    font-size: $tam-font-36;
+  }
+
+  .palestrante__content .palestrante__info{
+    p{
+      font-size: $tam-font-16;
+    }
+  }
+}
+
+@include viewport(sm){
+  .palestrante h1{
+    font-size: $tam-font-30;
+  }
+
+  .palestrante__content .palestrante__info{
+    p{
+      font-size: $tam-font-14;
+    }
+  }
+}

@@ -1,0 +1,116 @@
+@use '../../../../styles/mixins/mixins' as *;
+@use '../../../../styles/variables/variables' as *;
+
+.location{
+  @include flex-position(
+    flex,
+    column,
+    auto,
+    center,
+    center,
+    center
+  );
+  width: 80rem;
+  max-width: 98vw;
+
+  span{
+    color: $cor-bg-vermelho;
+  }
+}
+
+.location__content {
+  @include flex-position(
+    flex,
+    row,
+    auto,
+    center,
+    center,
+    center
+  );
+  gap: 3rem;
+  max-width: 98vw;
+  
+  img {
+    object-fit: cover;
+    width: 35rem;
+    height: auto;
+    max-width: 90vw
+  }
+  
+  .location__info{
+    @include flex-position(
+      flex,
+      column,
+      auto,
+      center,
+      center,
+      flex-start
+    );
+    width: 35rem;
+    max-width: 90vw;
+    height: auto;
+    gap: 1rem;
+
+    h1{
+      font-size: $tam-font-42;
+      margin-left: .5rem;
+    }
+    
+    p{
+      font-size: $tam-font-18;
+      text-align: start;
+      margin-left: .5rem;
+    }
+
+    .info__btn{
+      margin-top: 2rem;
+    }
+
+    button{
+      max-width: 90vw;
+    }
+  }
+}
+
+@include viewport(xl){
+  .location__content{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+
+    .location__info .info__btn{
+      margin-top: 1.5rem;
+    }
+  }
+}
+
+@include viewport(md){
+  .location__content{
+    margin-top: 2rem;
+    gap: 2rem;
+
+    .location__info .info__btn{
+      margin-top: .5rem;
+    }
+    
+    .location__info h1{
+      font-size: $tam-font-36;
+    }
+
+    .location__info p{
+      font-size: $tam-font-16;
+    }
+  }
+}
+
+@include viewport(sm){
+  .location__content .location__info{
+    h1{
+      font-size: $tam-font-30;
+    }
+
+    p{
+      font-size: $tam-font-14;
+    }
+  }
+}

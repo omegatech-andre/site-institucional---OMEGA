@@ -1,0 +1,153 @@
+@use '../../../../styles/mixins/mixins' as *;
+@use '../../../../styles/variables/variables' as *;
+
+.pagecursos{
+  @include flex-position(
+    flex,
+    column,
+    auto,
+    center,
+    center,
+    center
+  );
+  width: 100vw;
+  height: auto;
+  background-color: $cor-bg-branco;
+
+  &__main{
+    width: 80rem;
+    max-width: 98vw;
+    margin-top: 9rem;
+    display: flex;
+    flex-direction: row;
+  }
+  
+  &__main--img{
+    @include flex-position(
+      flex,
+      column,
+      auto,
+      center,
+      center,
+      center
+    );
+
+    img{
+      width: 35rem;
+      height: 45rem;
+      object-fit: cover;
+    }
+  }
+
+  &__card{
+    margin-top: 5rem;
+    width: 100vw;
+    padding: 2rem;
+    background-color: $cor-bg-vermelho;
+  }
+
+  &__palestrante{
+    margin-top: 5rem;
+    width: 100vw;
+  }
+
+  &__modulo{
+    margin-top: 5rem;
+    width: 100vw;
+  }
+
+  &__carrossel{
+    margin-top: 5rem;
+    width: 100vw;
+
+    h1{
+      margin: auto;
+      max-width: 90vw;
+      font-size: $tam-font-42;
+      margin-bottom: 1rem;
+    }
+  
+    span{
+      color: $cor-bg-vermelho;
+    }
+  }
+
+  &__depoimentos{
+    margin-top: 3rem;
+    width: 100vw;
+  }
+
+  &__location{
+    margin-top: 5rem;
+    width: 100vw;
+  }
+
+  &__faq{
+    margin-top: 5rem;
+    width: 100vw;
+  }
+}
+
+@include viewport(xl){
+  .pagecursos{
+    &__main{
+      display: flex;
+      flex-direction: column;
+      gap: 3.5rem;
+    }
+  }
+}
+
+@include viewport(md){
+  .pagecursos{
+    &__main{
+      gap: 2.5rem;
+    }
+    
+    &__main--img img{
+      max-width: 90vw;
+      object-fit: contain;
+      height: max-content;
+    }
+
+    &__card{
+      margin-top: 3rem;
+    }
+
+    &__palestrante{
+      margin-top: 3rem;
+    }
+
+    &__modulo{
+      margin-top: 3rem;
+    }
+
+    &__carrossel{
+      margin-top: 3rem;
+    }
+
+    &__carrossel h1{
+      font-size: $tam-font-36;
+    }
+
+    &__depoimentos{
+      margin-top: 1rem;
+    }
+
+    &__location{
+      margin-top: 3rem;
+    }
+
+    &__faq{
+      margin-top: 3rem;
+    }
+  }
+}
+
+@include viewport(sm){
+  .pagecursos__carrossel{
+    h1{
+      font-size: $tam-font-30;
+    }
+  }
+}

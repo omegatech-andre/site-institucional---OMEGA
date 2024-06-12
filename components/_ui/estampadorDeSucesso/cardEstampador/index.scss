@@ -1,0 +1,108 @@
+@use '../../../../styles/mixins/mixins' as *;
+@use '../../../../styles/variables/variables' as *;
+
+.cardestampador{
+  @include flex-position(
+    flex,
+    row,
+    auto,
+    center,
+    center,
+    center
+  );
+  gap: 2rem;
+  
+  &__card{
+    @include flex-position(
+      flex,
+      column,
+      0,
+      center,
+      center,
+      center
+    );
+    width: 20rem;
+    height: 20rem;
+    background-color: aliceblue;
+    padding: 2rem;
+    gap: 1.5rem;
+    border-radius: 15px;
+
+    h2{
+      font-size: $tam-font-18;
+      font-weight: 800;
+      color: $cor-bg-vermelho;
+    }
+    
+    p{
+      font-size: $tam-font-16;
+      font-weight: 600;
+    }
+  }
+}
+
+@include viewport(xl){
+  .cardestampador{
+    &__card{
+      width: 18rem;
+      height: 18rem;
+  
+      h2{
+        font-size: $tam-font-18;
+        font-weight: 800;
+        color: $cor-bg-vermelho;
+      }
+      
+      p{
+        font-size: $tam-font-16;
+        font-weight: 600;
+      }
+    }
+  }
+}
+
+@include viewport(lg){
+  .cardestampador{
+    @include flex-position(
+      flex,
+      column,
+      auto,
+      center,
+      center,
+      center
+    );
+
+    &__card{
+      width: 70vw;
+      height: auto;
+  
+      h2{
+        font-size: $tam-font-18;
+        font-weight: 800;
+        color: $cor-bg-vermelho;
+      }
+      
+      p{
+        font-size: $tam-font-16;
+        font-weight: 600;
+      }
+    }
+  }
+}
+
+@include viewport(md){
+  .cardestampador{
+
+    &__card{
+      width: 80vw;
+  
+      h2{
+        font-size: $tam-font-18;
+      }
+      
+      p{
+        font-size: $tam-font-14;
+      }
+    }
+  }
+}

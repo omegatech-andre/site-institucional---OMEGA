@@ -1,0 +1,58 @@
+@use '../../../../styles/mixins/mixins' as *;
+@use '../../../../styles/variables/variables' as *;
+
+.depoimentos {
+  @include flex-position(
+    flex,
+    column,
+    auto,
+    center,
+    center,
+    center
+  );
+  width: 80rem;
+  max-width: 90vw;
+
+  h1{
+    font-size: $tam-font-42;
+  }
+
+  span{
+    color: $cor-bg-vermelho;
+  }
+
+  &__content{
+    gap: 4rem;
+    margin-top: 3rem;
+    max-width: 90vw;
+    width: 65rem;
+    height: 44rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+}
+
+@include viewport(xl){
+  .depoimentos h1{
+    font-size: $tam-font-36;
+  }
+
+  .depoimentos__content{
+    gap: 4rem;
+    margin-top: 3rem;
+    max-width: 90vw;
+    width: 65rem;
+    height: max-content;
+    flex-wrap: nowrap;
+    gap: 1rem;
+  }
+}
+
+@include viewport(sm){
+  .depoimentos h1{
+    font-size: $tam-font-30;
+  }
+}

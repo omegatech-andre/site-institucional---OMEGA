@@ -1,0 +1,64 @@
+@use '../../../../styles/mixins/mixins' as *;
+@use '../../../../styles/variables/variables' as *;
+
+.cta{
+  @include flex-position(
+    flex,
+    column,
+    auto,
+    center,
+    center,
+    center
+  );
+  width: max-content;
+  max-width: 90vw;
+  gap: 17px;
+  color: $cor-bg-vermelho;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+
+  h1{
+    font-size: $tam-font-42;
+  }
+
+  h2{
+    font-size: $tam-font-24;
+    font-weight: 500;
+  }
+
+  span{
+    color: $cor-bg-vermelho;
+  }
+
+  button{
+    padding: 1rem;
+    max-width: 90vw;
+  }
+}
+
+@include viewport(md){
+  .cta{
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+
+    h1{
+      font-size: $tam-font-36;
+    }
+    
+    h2{
+      font-size: $tam-font-20;
+    }
+  }
+}
+
+@include viewport(sm){
+  .cta{
+    h1{
+      font-size: $tam-font-30;
+    }
+
+    h2{
+      font-size: $tam-font-20;
+    }
+  }
+}

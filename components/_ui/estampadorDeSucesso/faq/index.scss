@@ -1,0 +1,52 @@
+@use '../../../../styles/mixins/mixins' as *;
+@use '../../../../styles/variables/variables' as *;
+
+.faq {
+  width: 80rem;
+  max-width: 98vw;
+
+  h1 {
+    font-size: $tam-font-42;
+  }
+
+  span {
+    color: $cor-bg-vermelho;
+    cursor: pointer;
+  }
+
+  &__accordion {
+    margin-top: 3rem;
+
+    .text {
+      font-size: $tam-font-18;
+    }
+  }
+}
+
+@include viewport(md) {
+  .faq {
+    h1 {
+      font-size: $tam-font-36;
+    }
+
+    &__accordion {
+      margin-top: 2rem;
+
+      .text {
+        font-size: $tam-font-16;
+      }
+    }
+  }
+}
+
+@include viewport(sm) {
+  .faq {
+    h1 {
+      font-size: $tam-font-30;
+    }
+
+    &__accordion .text {
+      font-size: $tam-font-14;
+    }
+  }
+}
