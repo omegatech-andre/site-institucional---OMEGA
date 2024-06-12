@@ -27,8 +27,7 @@
     center,
     center
   );
-  gap: 4rem;
-  margin-top: 3rem;
+  gap: 3rem;
   max-width: 98vw;
   
   img {
@@ -54,11 +53,13 @@
 
     h1{
       font-size: $tam-font-42;
+      margin-left: .5rem;
     }
-
+    
     p{
       font-size: $tam-font-18;
       text-align: start;
+      margin-left: .5rem;
     }
 
     .info__btn{

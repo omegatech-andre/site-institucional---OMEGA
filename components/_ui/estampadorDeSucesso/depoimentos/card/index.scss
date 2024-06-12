@@ -1,0 +1,39 @@
+@use '../../../../../styles/mixins/mixins' as *;
+@use '../../../../../styles/variables/variables' as *;
+
+.cardcomments{
+  width: 21rem;
+  max-width: 90vw;
+  text-align: start;
+  height: max-content;
+  
+  &__contentheader {
+    padding-left: 2rem;
+    padding-top: 1rem;
+    padding: 1rem 0 1rem 2rem;
+  } 
+
+  &__contentbody {
+    svg, path{
+      cursor: pointer;
+    }
+  } 
+  
+  .cardcomments__playpause {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    opacity: 1;
+    transition: opacity 0.2s ease-in-out;
+  }
+  
+  .cardcomments__playpause--fade {
+    opacity: 0;
+  }
+}
