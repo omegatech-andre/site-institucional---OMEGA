@@ -21,7 +21,7 @@ export default function HeaderSec() {
             <div className="headersec__mid--text">
               <Image className='imagelogo' src="/assets/images/logo-header.png" priority width={330} height={330} alt=''></Image>
               <h1>SOMOS A ÔMEGA</h1>
-              <h2>A Ômega é uma indústria especializada em tintas serigráficas, produzindo esse padrão desde 2021 é referência em Pernambuco.</h2>
+              <h2>A Ômega é uma Indústria especializada em tintas serigráficas, produzindo esse padrão de qualidade desde 2021, tornando-se referência em Caruaru - PE.</h2>
             </div>
             <Splide
               options={{

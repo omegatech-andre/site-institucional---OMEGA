@@ -11,33 +11,28 @@ export const data = [
   },
   {
     id: '3',
-    pergunta: 'Quais linhas de produtos disponíveis?',
-    resposta: 'Nossa linha de produtos conta com: linha base água, linha plastisol, linha auxiliar.'
-  },
-  {
-    id: '4',
     pergunta: 'A Ômega produz cores especiais?',
     resposta: 'Sim! Conforme a solicitação do cliente buscamos desenvolver o padrão ômega conforme a escala pantone e a cor que o cliente deseja!'
   },
   {
-    id: '5',
+    id: '4',
     pergunta: 'Terão mais lançamentos de novos produtos para serigrafia?',
     resposta: 'Sim! Iremos desenvolver novos lançamentos do Padrão Ômega em breve!'
   },
   {
-    id: '6',
-    pergunta: 'Como faço para ser cliente Ômega?',
-    resposta: ' Você pode ir no campo de atendimento e conversar com o Time Comercial'
-  },
-  {
-    id: '7',
+    id: '5',
     pergunta: 'Qual horário de funcionamento da Indústria Ômega?',
     resposta: 'O horário de funcionamento da Indústria é das 07 horas às 17h30. Na sexta, das 07 horas às 16h30.'
   },
   {
-    id: '8',
+    id: '6',
     pergunta: 'Posso solicitar uma visita técnica na minha estamparia ou revenda?',
     resposta: 'Sim! Entre em contato com o time comercial e verifique a disponibilidade do time de qualidade para agendar sua visita técnica.'
+  },
+  {
+    id: '7',
+    pergunta: 'Em caso de dúvidas sobre aplicação e usabilidade do produto?',
+    resposta: 'Você pode buscar diretamente pelo técnico responsável do Padrão Ômega, no produto tem um QR Code, onde você pode scannear com a câmera do seu telefone e entrar em contato. Temos vídeos explicativos no canal do Youtube demonstrando como utilizar nossa linha de produtos com mais cor e intensidade.'
   }
 ]
 
