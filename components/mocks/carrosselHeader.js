@@ -18,5 +18,9 @@ export const data = [
   {
     id: '5',
     image: '/assets/images/carrosselheader/picture_4.png'
+  },
+  {
+    id: '6',
+    image: '/assets/images/carrosselheader/picture_5.png'
   }
 ]

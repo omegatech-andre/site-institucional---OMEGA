@@ -17,9 +17,9 @@ export default function PageInstitucional() {
           <Image className='pageinstitucional__picture--img' src='/assets/images/equipe-omega.png' width={1900} height={762} alt=''/>
           <Image className='pageinstitucional__picture--logo' src='/assets/images/logo-header.png' width={200} height={200} alt=''/>
         </div>
-        <div className="pageinstitucional__content">
+        {/* <div className="pageinstitucional__content">
           <p>Eu sou o Alfa e o Ômega, o Principio e o Fim , diz o Senhor, que é, que era e que há de vir, O Todo Poderoso. <br></br> Apocalipse 1:8</p>
-        </div>
+        </div> */}
         <div className="pageinstitucional__about">
           <div className="pageabout">
             <CardAbout

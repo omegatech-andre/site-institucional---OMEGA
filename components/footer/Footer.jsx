@@ -93,7 +93,7 @@ export default function Footer() {
                             <div className="footerbottom__termos">
                                 <Link className="footerbottom__termos--link" href="/">Termos</Link> | <Link className="footerbottom__termos--link" href="/">Privacidade</Link>
                             </div>
-                            <p className="footerbottom__direitos">© 2021 - 2024 ÔmegaScreen. Todos os direitos reservados</p>
+                            <p className="footerbottom__direitos">© 2021 - 2024 Ômega Screen. Todos os direitos reservados</p>
                         </div>
                     </div>
                 </div>

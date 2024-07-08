@@ -13,7 +13,7 @@ export default function PageEstampador() {
         </div>
         <EstampadorDeSucesso/>
         <div className="pageestampador__content">
-          <p>CONHEÇA NOSSO CENTRO DE TREINAMENTO (C.T.):</p>
+          <p>Conheça nosso centro de treinamento, onde realizamos nosso curso (C.T.):</p>
           <video src="centro-de-treinamento-omega.mp4" muted loop autoPlay></video>
         </div>
       </div>

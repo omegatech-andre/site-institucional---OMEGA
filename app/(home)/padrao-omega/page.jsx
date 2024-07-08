@@ -7,10 +7,9 @@ export default function PagePadraoOmega() {
       <div className="pagepadraoomega">
         <div className="pagepadraoomega__indicador"></div>
         <div className="pagepadraoomega__content">
-          <h1>Nosso canal do Youtube mostra com propriedade como utilizar a linha de produtos Ômega e ter sucesso em sua estamparia. </h1>
-          <h2>Quer acompanhar com exclusividade sobre nossos produtos: como aplicar nas estampas e obter um resultado intenso com o Padrão Ômega?</h2>
+          <h1>No youtube você encontra como utilizar a linha de produtos do Padrão Ômega, todas recomendações e curiosidades sobre nossa empresa.</h1>
         </div>
-        <YouTube/>
+        <YouTube />
       </div>
     </>
   )

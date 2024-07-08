@@ -18,7 +18,7 @@ export const revendedores = {
       revendedor: [
         {
           id: '1',
-          imagem: '/assets/images/revendedores/default.png',
+          imagem: '/assets/images/revendedores/mwconfeccoes.png',
           nome: 'MW Confecções e Serigrafia',
           endereco: 'Rua 24 de Outubro, 126',
           cidade: 'Barreiras - BA',
@@ -26,20 +26,20 @@ export const revendedores = {
         },
         {
           id: '2',
-          nome: 'Central do Silk',
-          imagem: '/assets/images/revendedores/centraldosilk.png',
-          endereco: 'Tv. Jonathas Abbott, 07',
-          cidade: 'Salvador - BA',
-          tel: '(71) 3483-4073'
-        },
-        {
-          id: '3',
           imagem: '/assets/images/revendedores/pointdosilk.png',
           nome: 'Point do Silk',
           endereco: 'Rua São José, 38',
           cidade: 'Feira de Santana - BA',
           tel: '(82) 3027-8503'
-        }
+        },
+        // {
+        //   id: '3',
+        //   nome: 'Central do Silk',
+        //   imagem: '/assets/images/revendedores/centraldosilk.png',
+        //   endereco: 'Tv. Jonathas Abbott, 07',
+        //   cidade: 'Salvador - BA',
+        //   tel: '(71) 3483-4073'
+        // },
       ]
     },
     {
@@ -89,20 +89,20 @@ export const revendedores = {
         },
         {
           id: '2',
-          imagem: '/assets/images/revendedores/fecon.png',
-          nome: 'Fecon Fardamentos',
-          endereco: 'Rua Osmar de Aquino, 154',
-          cidade: 'Guarabira - PB',
-          tel: '(83) 98852-8125'
-        },
-        {
-          id: '3',
           imagem: '/assets/images/revendedores/wserigrafiasilk.png',
           nome: 'Wserigrafia',
           endereco: 'Rua Maria do Socorro Pegado de Sousa, 188',
           cidade: 'João Pessoa - PB',
           tel: '(83) 98650-4783'
-        }
+        },
+        // {
+        //   id: '3',
+        //   imagem: '/assets/images/revendedores/fecon.png',
+        //   nome: 'Fecon Fardamentos',
+        //   endereco: 'Rua Osmar de Aquino, 154',
+        //   cidade: 'Guarabira - PB',
+        //   tel: '(83) 98852-8125'
+        // }
       ]
     },
     {
@@ -159,7 +159,7 @@ export const revendedores = {
         {
           id: '7',
           imagem: '/assets/images/revendedores/torrefort.png',
-          nome: 'Torre Forte',
+          nome: 'Torre Fort',
           endereco: 'Rua Barão do Rio Branco, 797',
           cidade: 'Petrolina - PE',
           tel: '(87) 3861-0000'
