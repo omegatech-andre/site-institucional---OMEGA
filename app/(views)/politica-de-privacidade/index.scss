@@ -44,8 +44,8 @@
       center,
       flex-start
     );
-    width: 60vw;
-    max-width: 80vw;
+    width: 60rem;
+    max-width: 90vw;
     height: auto;
     padding: 2.2rem 0 5rem;
     background-color: $cor-bg-cinza-claro;
@@ -53,6 +53,7 @@
 
     p{
       text-align: start;
+      word-wrap: break-word;
     }
 
     a{

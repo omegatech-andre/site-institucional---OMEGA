@@ -1,3 +1,4 @@
+import { FiExternalLink } from "react-icons/fi";
 import './index.scss'
 
 export default function pagePoliticaDePrivacidade() {
@@ -9,10 +10,10 @@ export default function pagePoliticaDePrivacidade() {
         </div>
         <div className="pagepoliticadeprivacidade__content">
           <h2>LEI DE PROTEÇÃO DE DADOS (LGPD):</h2>
-          <p>Na Ômega Screen – Indústria Ômega Screen. CNPJ: 43.434.708/0001-63, temos o compromisso de proteger a sua privacidade. Por isso, através deste documento, buscamos esclarecer informações que são coletadas dos usuários que acessam o nosso site <a href='https://www.omegascreen.com.br/'>https://www.omegascreen.com.br/</a> e respectivos serviços que forma esses dados manipulados e utilizados.</p>
+          <p>Na Ômega Screen – Indústria Ômega Screen. CNPJ: 43.434.708/0001-63, temos o compromisso de proteger a sua privacidade. Por isso, através deste documento, buscamos esclarecer informações que são coletadas dos usuários que acessam o nosso <a href='https://www.omegascreen.com.br/'>Site Oficial <FiExternalLink /></a> e respectivos serviços que forma esses dados manipulados e utilizados.</p>
           <p>Reconhecemos que sua privacidade é muito importante, portanto, tomamos todas as medidas possíveis para protegê-las. Assim, este espaço expõe nossa Política de Privacidade é encarado como fundamental, para que você entenda como as suas informações e dados serão coletados, utilizados, compartilhados e armazenados por meio do site da Ômega Screen e seus respectivos serviços.</p>
           <p>Com maior acessibilidade este documento tem uma compreensão mais simples e acessível para que você consiga ler e entender. Estamos aqui para lhe atender e oferecer uma experiência segura e confortável no uso dos serviços que proporcionamos a você.</p>
-          <p>Em caso de dúvidas em relação a nossa política de privacidade pode ser esclarecida entrando em contato conosco em <a href="https://www.omegascreen.com.br/atendimento">https://www.omegascreen.com.br/atendimento</a></p>
+          <p>Em caso de dúvidas em relação a nossa política de privacidade pode ser esclarecida entrando em contato conosco em <a href="https://www.omegascreen.com.br/atendimento">Nosso atendimento <FiExternalLink /></a></p>
           <p>Estamos localizados no endereço Rua Ayrton Senna, 65 – Boa Vista, CEP: 55038-730.</p>
           <p><strong>Seguimos algumas diretrizes na construção da Política de Privacidade:</strong></p>
           <ul>
@@ -55,12 +56,12 @@ export default function pagePoliticaDePrivacidade() {
           <br />
           <ul><li><strong>UTILIZAÇÃO DE INFORMAÇÕES FORNECIDAS PARA OS CLIENTES:</strong></li></ul>
           <p>A Ômega Screen, por meio de serviços de marketing digital, oferece aos clientes envio de e-mail marketing, CRM, entre outras para nutrição de relacionamento e manutenção com seus usuários. Portanto, a Ômega Screen mantém também o gerenciamento de informações pessoais de usuário com seus clientes que temos relacionamento.</p>
-          <p>Em caso de dúvidas, entre em contato: <a href="https://www.omegascreen.com.br/atendimento">https://www.omegascreen.com.br/atendimento</a></p>
+          <p>Em caso de dúvidas, entre em contato: <a href="https://www.omegascreen.com.br/atendimento">Nosso atendimento <FiExternalLink /></a></p>
 
           <br />
           <ul><li><strong>CANCELAMENTO DA ASSINATURA OU ALTERAÇÃO/EXCLUSÃO DE INFORMAÇÕES PESSOAIS:</strong></li></ul>
           <p>A qualquer momento, você, usuário, pode optar por não receber mais os conteúdos da Ômega Screen. É apenas sinalizar após encaminharmos algum e-mail ou até mesmo entrar em contato.</p>
-          <p>Ressalvamos também, em caso de alteração nas informações em nossa base de dados ou até mesmo exclusão de informações é preciso entrar em contato através: <a href="https://www.omegascreen.com.br/atendimento">https://www.omegascreen.com.br/atendimento</a></p>
+          <p>Ressalvamos também, em caso de alteração nas informações em nossa base de dados ou até mesmo exclusão de informações é preciso entrar em contato através: <a href="https://www.omegascreen.com.br/atendimento">Nosso atendimento <FiExternalLink /></a></p>
 
           <br />
           <ul><li><strong>MUDANÇAS NA POLÍTICA DE PRIVACIDADE:</strong></li></ul>
