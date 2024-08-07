@@ -1,0 +1,103 @@
+@use '../../../styles/mixins/mixins' as *;
+@use '../../../styles/variables/variables' as *;
+
+.pagepoliticadeprivacidade{
+  @include flex-position(
+    flex,
+    column,
+    auto,
+    center,
+    center,
+    center
+  );
+  width: 100vw;
+  height: auto;
+  background-color: $cor-bg-cinza-claro;
+
+  &__header{
+    @include flex-position(
+      flex,
+      column,
+      auto,
+      center,
+      center,
+      center
+    );
+    width: 100vw;
+    height: 20rem;
+    margin-top: 6.25rem;
+    background-color: $cor-bg-branco;
+
+    h1{
+      margin: 2.2rem 0;
+      font-size: $tam-font-42;
+      font-weight: $font-regular;
+    }
+  }
+
+  &__content{
+    @include flex-position(
+      flex,
+      column,
+      auto,
+      center,
+      center,
+      flex-start
+    );
+    width: 60vw;
+    max-width: 80vw;
+    height: auto;
+    padding: 2.2rem 0 5rem;
+    background-color: $cor-bg-cinza-claro;
+    gap: 1rem;
+
+    p{
+      text-align: start;
+    }
+
+    a{
+      cursor: pointer;
+      color: $cor-font-vermelha;
+      text-decoration: underline;
+    }
+
+    ul{
+      padding: 0 30px;
+    }
+
+    li{
+      padding: 5px 0;
+      text-align: left;
+      list-style: disc;
+    }
+
+  }
+}
+
+@include viewport(xl){
+  .pagepoliticadeprivacidade{
+    &__header{
+      width: 96vw;
+      height: auto;
+
+      h1{
+        font-size: $tam-font-30;
+      }
+    }
+  
+    &__content{
+      table{
+        width: 96vw;
+      }
+    }
+  }
+}
+
+@include viewport(md){
+  .pagepoliticadeprivacidade{
+
+    &__header h1{
+      font-size: $tam-font-26;
+    }
+  }
+}
