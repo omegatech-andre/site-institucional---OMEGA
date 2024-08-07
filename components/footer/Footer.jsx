@@ -91,7 +91,7 @@ export default function Footer() {
                                 }}>voltar ao início<SlArrowUpCircle size={24} /></div>
                             </div>
                             <div className="footerbottom__termos">
-                                <Link className="footerbottom__termos--link" href="/">Termos</Link> | <Link className="footerbottom__termos--link" href="/">Privacidade</Link>
+                                <Link className="footerbottom__termos--link" href="/politica-de-privacidade">Termos | Privacidade</Link>
                             </div>
                             <p className="footerbottom__direitos">© 2021 - 2024 Ômega Screen. Todos os direitos reservados</p>
                         </div>
