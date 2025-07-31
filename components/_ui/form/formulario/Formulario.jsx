@@ -1,204 +1,202 @@
-'use client'
-import './index.scss'
-import { useForm } from 'react-hook-form'
-import { useEffect, useState } from 'react'
-import axios from 'axios'
-import { schema } from '@/components/schema/schema'
-import { yupResolver } from '@hookform/resolvers/yup'
-
+"use client";
+import "./index.scss";
+import { useForm } from "react-hook-form";
+import { useEffect, useState } from "react";
+import axios from "axios";
+import { schema } from "@/components/schema/schema";
+import { yupResolver } from "@hookform/resolvers/yup";
 
 export default function Formulario({ isSubmiting }) {
-  const [cep, setCep] = useState('')
-  const [uf, setUf] = useState('')
-  const [cidade, setCidade] = useState('')
-  const [endereco, setEndereco] = useState('')
-  const [isFetching, setIsFetching] = useState(true)
+  const {
+    register,
+    handleSubmit,
+    reset,
+    setValue,
+    watch,
+    formState: { errors },
+  } = useForm({
+    mode: "onBlur",
+    resolver: yupResolver(schema),
+    defaultValues: {
+      cep: "",
+      uf: "",
+      cidade: "",
+      endereco: "",
+    },
+  });
 
-  const { register, handleSubmit, reset, formState: { errors } } = useForm({
-    mode: 'onBlur',
-    resolver: yupResolver(schema)
-  })
+  const [isPosting, setIsPosting] = useState(false);
+  const cep = watch("cep");
 
   useEffect(() => {
-    if (cep.length === 8) {
-      axios.get(`https://viacep.com.br/ws/${cep}/json/`)
+    const sanitizedCep = cep?.replace(/\D/g, "");
+
+    if (sanitizedCep?.length === 8) {
+      axios
+        .get(`https://viacep.com.br/ws/${sanitizedCep}/json/`)
         .then(({ data }) => {
-          setUf(data.uf)
-          setCidade(data.localidade)
-          setEndereco(data.logradouro)
-        })
+          setValue("uf", data.uf || "");
+          setValue("cidade", data.localidade || "");
+          setValue("endereco", data.logradouro || "");
+        });
     }
-  }, [cep])
+  }, [cep, setValue]);
 
-  const submitForm = (data) => {
-    axios.post('https://api.sheetmonkey.io/form/u897mG5kWchHKrjADKioeZ', data, {
-      headers: {
-        'Accept': 'application/json',
-        'Content-Type': 'application/json'
-      }
-    })
-      .then(
-        setIsFetching(!isFetching)
-
-      )
-      .finally(() => {
-        isSubmiting(true)
-        reset()
-      })
-  }
-
+  const submitForm = async (data) => {
+    setIsPosting(true);
+    try {
+      await axios.post(
+        "https://api.sheetmonkey.io/form/u897mG5kWchHKrjADKioeZ",
+        {
+          ...data,
+          created_at: new Date().toISOString().split("T")[0],
+        },
+        {
+          headers: {
+            Accept: "application/json",
+            "Content-Type": "application/json",
+          },
+        }
+      );
+      isSubmiting(true);
+      reset();
+    } catch (error) {
+      console.error("Erro ao enviar:", error);
+    } finally {
+      setIsPosting(false);
+    }
+  };
 
   return (
-    <>
-      <div className='formulario'>
-        <h2>Envie o formulário abaixo com suas informações e entraremos em contato</h2>
-        <form onSubmit={handleSubmit(submitForm)}>
-          <div className='input__unico'>
+    <div className="formulario">
+      <h2>
+        Envie o formulário abaixo com suas informações e entraremos em contato
+      </h2>
+      <form onSubmit={handleSubmit(submitForm)}>
+        <div className="input__unico">
+          <input
+            {...register("razaoSocial")}
+            type="text"
+            placeholder="Razão Social / Nome"
+          />
+          {errors.razaoSocial && <span>{errors.razaoSocial.message}</span>}
+        </div>
+
+        <div className="input__duplo">
+          <div>
             <input
-              {...register('razaoSocial')}
+              {...register("cnpj")}
               type="text"
-              placeholder='Razão Social / Nome'
+              placeholder="CNPJ / CPF"
+              maxLength={14}
             />
-            {errors.razaoSocial && (<span>{errors.razaoSocial.message}</span>)}
+            {errors.cnpj && <span>{errors.cnpj.message}</span>}
           </div>
-          <div className='input__duplo'>
-            <div>
-              <input
-                {...register('cnpj')}
-                type="text"
-                placeholder='CNPJ / CPF'
-                maxLength={14}
-              />
-              {errors.cnpj && (<span>{errors.cnpj.message}</span>)}
-            </div>
-            <div>
-              <input
-                {...register('telFixo')}
-                type="tel"
-                placeholder='Telefone Fixo'
-                maxLength={10}
-              />
-            </div>
-          </div>
-          <div className='input__unico'>
+          <div>
             <input
-              {...register('email')}
-              type="email"
-              placeholder='E-mail'
-            />
-            {errors.email && (<span>{errors.email.message}</span>)}
-          </div>
-          <div className='input__unico'>
-            <input
-              {...register('nome')}
-              type="text"
-              placeholder='Nome'
+              {...register("telFixo")}
+              type="tel"
+              placeholder="Telefone Fixo"
+              maxLength={10}
             />
           </div>
-          <div className='input__duplo'>
-            <div>
-              <input
-                {...register('whatsapp')}
-                type="tel"
-                placeholder='Telefone Whatsapp'
-                maxLength={11}
-              />
-              {errors.whatsapp && (<span>{errors.whatsapp.message}</span>)}
-            </div>
-            <div>
-              <input
-                {...register('telSecundario')}
-                type="tel"
-                placeholder='Telefone Secundario'
-                maxLength={10}
-              />
-            </div>
+        </div>
+
+        <div className="input__unico">
+          <input {...register("email")} type="email" placeholder="E-mail" />
+          {errors.email && <span>{errors.email.message}</span>}
+        </div>
+
+        <div className="input__unico">
+          <input {...register("nome")} type="text" placeholder="Nome" />
+        </div>
+
+        <div className="input__duplo">
+          <div>
+            <input
+              {...register("whatsapp")}
+              type="tel"
+              placeholder="Telefone Whatsapp"
+              maxLength={11}
+            />
+            {errors.whatsapp && <span>{errors.whatsapp.message}</span>}
           </div>
-          <div className='input__triplo'>
+          <div>
             <input
-              {...register('cep')}
-              type="text"
-              placeholder='CEP'
-              maxLength={8}
-              value={cep}
-              onChange={(e) => setCep(e.target.value)}
-            />
-            {errors.cep && (<span>{errors.cep.message}</span>)}
-            <input
-              {...register('uf')}
-              type="text"
-              placeholder='UF'
-              list='estados'
-              autoComplete='off'
-              value={uf}
-            />
-            <datalist id='estados'>
-              <option value="AC"></option>
-              <option value="AL"></option>
-              <option value="AP"></option>
-              <option value="AM"></option>
-              <option value="BA"></option>
-              <option value="CE"></option>
-              <option value="ES"></option>
-              <option value="GO"></option>
-              <option value="MA"></option>
-              <option value="MT"></option>
-              <option value="MS"></option>
-              <option value="MG"></option>
-              <option value="PA"></option>
-              <option value="PB"></option>
-              <option value="PR"></option>
-              <option value="PE"></option>
-              <option value="PI"></option>
-              <option value="RJ"></option>
-              <option value="RN"></option>
-              <option value="RS"></option>
-              <option value="RO"></option>
-              <option value="RR"></option>
-              <option value="SC"></option>
-              <option value="SP"></option>
-              <option value="SE"></option>
-              <option value="TO"></option>
-            </datalist>
-            <input
-              {...register('cidade')}
-              type="text"
-              placeholder='Cidade'
-              value={cidade}
+              {...register("telSecundario")}
+              type="tel"
+              placeholder="Telefone Secundário"
+              maxLength={10}
             />
           </div>
-          <div className='input__duplo input__duplo--mod'>
-            <input
-              {...register('endereco')}
-              type="text"
-              placeholder='Endereço'
-              value={endereco}
-            />
-            <input
-              {...register('numero')}
-              type="text"
-              placeholder='Numero'
-            />
-          </div>
-          <div className="input__btn">
-            {
-              isFetching ? <>
-                <input
-                  className='btnenviar'
-                  type="submit"
-                  value="Enviar"
-                />
-              </> : <>
-                <input
-                  className='btnenviando'
-                  type="submit"
-                  value="enviando.."
-                />
-              </>
-            }
-          </div>
-        </form>
-      </div>
-    </>
-  )
+        </div>
+
+        <div className="input__triplo">
+          <input
+            {...register("cep")}
+            type="text"
+            placeholder="CEP"
+            maxLength={9}
+          />
+          {errors.cep && <span>{errors.cep.message}</span>}
+
+          <input
+            {...register("uf")}
+            type="text"
+            placeholder="UF"
+            list="estados"
+            autoComplete="off"
+          />
+          <datalist id="estados">
+            {[
+              "AC",
+              "AL",
+              "AP",
+              "AM",
+              "BA",
+              "CE",
+              "ES",
+              "GO",
+              "MA",
+              "MT",
+              "MS",
+              "MG",
+              "PA",
+              "PB",
+              "PR",
+              "PE",
+              "PI",
+              "RJ",
+              "RN",
+              "RS",
+              "RO",
+              "RR",
+              "SC",
+              "SP",
+              "SE",
+              "TO",
+            ].map((uf) => (
+              <option key={uf} value={uf} />
+            ))}
+          </datalist>
+
+          <input {...register("cidade")} type="text" placeholder="Cidade" />
+        </div>
+
+        <div className="input__duplo input__duplo--mod">
+          <input {...register("endereco")} type="text" placeholder="Endereço" />
+          <input {...register("numero")} type="text" placeholder="Número" />
+        </div>
+
+        <div className="input__btn">
+          <input
+            className={isPosting ? "btnenviar__disabled" : "btnenviar"}
+            type="submit"
+            value={isPosting ? "Enviando..." : "Enviar"}
+            disabled={isPosting}
+          />
+        </div>
+      </form>
+    </div>
+  );
 }

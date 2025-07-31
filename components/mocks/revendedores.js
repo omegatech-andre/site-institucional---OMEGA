@@ -24,14 +24,14 @@ export const revendedores = {
           cidade: 'Barreiras - BA',
           tel: '(77) 99910-8285'
         },
-        {
-          id: '2',
-          imagem: '/assets/images/revendedores/pointdosilk.png',
-          nome: 'Point do Silk',
-          endereco: 'Rua São José, 38',
-          cidade: 'Feira de Santana - BA',
-          tel: '(82) 3027-8503'
-        },
+        // {
+        //   id: '2',
+        //   imagem: '/assets/images/revendedores/pointdosilk.png',
+        //   nome: 'Point do Silk',
+        //   endereco: 'Rua São José, 38',
+        //   cidade: 'Feira de Santana - BA',
+        //   tel: '(82) 3027-8503'
+        // },
         // {
         //   id: '3',
         //   nome: 'Central do Silk',
@@ -42,27 +42,27 @@ export const revendedores = {
         // },
       ]
     },
-    {
-      nome: 'Ceará',
-      revendedor: [
-        {
-          id: '1',
-          imagem: '/assets/images/revendedores/armazemcomunicacaovisual.png',
-          nome: 'Armazém Comunicação Visual',
-          endereco: 'Rua São Pedro, 1913',
-          cidade: 'Juazeiro do Norte - CE',
-          tel: '(85) 99714-0087'
-        },
-        // {
-        //   id: '2',
-        //   imagem: '/assets/images/revendedores/default.png',
-        //   nome: 'WS Tintas Serigráficas',
-        //   endereco: 'Rua Florianopolis, 1112',
-        //   cidade: 'Fortaleza - CE',
-        //   tel: '(85) 99650-5225'
-        // },
-      ]
-    },
+    // {
+    //   nome: 'Ceará',
+    //   revendedor: [
+    //     {
+    //       id: '1',
+    //       imagem: '/assets/images/revendedores/armazemcomunicacaovisual.png',
+    //       nome: 'Armazém Comunicação Visual',
+    //       endereco: 'Rua São Pedro, 1913',
+    //       cidade: 'Juazeiro do Norte - CE',
+    //       tel: '(85) 99714-0087'
+    //     },
+    //     {
+    //       id: '2',
+    //       imagem: '/assets/images/revendedores/default.png',
+    //       nome: 'WS Tintas Serigráficas',
+    //       endereco: 'Rua Florianopolis, 1112',
+    //       cidade: 'Fortaleza - CE',
+    //       tel: '(85) 99650-5225'
+    //     },
+    //   ]
+    // },
     // {
     //   nome: 'Pará',
     //   revendedor: [
@@ -95,8 +95,16 @@ export const revendedores = {
           cidade: 'João Pessoa - PB',
           tel: '(83) 98650-4783'
         },
+        {
+          id: '3',
+          imagem: '/assets/images/revendedores/kmiza10.png',
+          nome: 'Kmiza10',
+          endereco: 'Rua Francimeire Rolim de Alburqueque, 361',
+          cidade: 'Cajazeiras - PB',
+          tel: '(83) 99994-8633'
+        }
         // {
-        //   id: '3',
+        //   id: '4',
         //   imagem: '/assets/images/revendedores/fecon.png',
         //   nome: 'Fecon Fardamentos',
         //   endereco: 'Rua Osmar de Aquino, 154',
@@ -177,14 +185,14 @@ export const revendedores = {
           cidade: 'Itabaianinha - SE',
           tel: '(79) 3544-2424'
         },
-        {
-          id: '2',
-          imagem: '/assets/images/revendedores/wsilk.png',
-          nome: 'WSilk',
-          endereco: 'Rua 103, 33',
-          cidade: 'Nossa Senhora do Socorro - SE',
-          tel: '(79) 98818-3224'
-        }
+        // {
+        //   id: '2',
+        //   imagem: '/assets/images/revendedores/wsilk.png',
+        //   nome: 'WSilk',
+        //   endereco: 'Rua 103, 33',
+        //   cidade: 'Nossa Senhora do Socorro - SE',
+        //   tel: '(79) 98818-3224'
+        // }
       ]
     }
   ]

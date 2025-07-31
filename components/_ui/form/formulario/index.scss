@@ -71,13 +71,20 @@
   }
   
   .btnenviar{
-    @include button-model();
+    @include button-model;
     font-size: 16px;
     padding: .5rem 6rem;
     margin-top: 1rem;
-
+    
     &:hover{
-      @include button-model-hover();
+      @include button-model-hover;
+    }
+    
+    &__disabled{
+      @include button-disabled-model;
+      font-size: 16px;
+      padding: .5rem 6rem;
+      margin-top: 1rem;
     }
   }
 

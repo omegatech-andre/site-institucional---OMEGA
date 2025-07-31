@@ -15,12 +15,4 @@ export const data = [
     id: '4',
     image: '/assets/images/carrosselheader/picture_3.png'
   },
-  {
-    id: '5',
-    image: '/assets/images/carrosselheader/picture_4.png'
-  },
-  {
-    id: '6',
-    image: '/assets/images/carrosselheader/picture_5.png'
-  }
 ]
