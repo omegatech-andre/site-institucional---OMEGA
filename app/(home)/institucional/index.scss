@@ -48,11 +48,12 @@
   }
 
   &__picture{
-    position: relative;
-    display: flex;
-    justify-content: center;
-    margin: 2.2rem;
-    max-width: 1630px;
+    // position: relative;
+    // display: flex;
+    // justify-content: center;
+    margin: 2.2rem 0 2.2rem 0;
+    // width: 100%;
+    // max-width: 1630px;
     
     &--img{
       // width: 100%;
@@ -60,14 +61,14 @@
       object-fit: cover;
     }
     
-    &--logo{
-      position: absolute;
-      bottom: 0;
-      margin: 1rem 1.2rem;
-      width: 10vw;
-      max-width: 200px;
-      height: auto;
-    }
+    // &--logo{
+    //   position: absolute;
+    //   bottom: 0;
+    //   margin: 1rem 1.2rem;
+    //   width: 10vw;
+    //   max-width: 200px;
+    //   height: auto;
+    // }
   }
 
   &__about{
