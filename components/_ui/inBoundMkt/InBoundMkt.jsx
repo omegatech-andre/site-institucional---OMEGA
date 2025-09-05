@@ -141,7 +141,7 @@ export default function InBoundMkt() {
             <div className="inboundmktmodal__content">
               <p>Receba o Manual clicando no botão abaixo</p>
               <Link
-                href="https://raw.githubusercontent.com/omegatech-andre/site-institucional---OMEGA-data/835f62b7491c85d98066589a306427bff1ed45d0/public/dataProducts/manual-das-tintas---OMEGA.pdf"
+                href="https://raw.githubusercontent.com/omegatech-andre/site-institucional---OMEGA-data/refs/heads/main/public/dataProducts/manual-das-tintas---OMEGA.pdf"
                 target="_blank"
               >
                 <input
