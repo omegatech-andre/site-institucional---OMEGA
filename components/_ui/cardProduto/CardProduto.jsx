@@ -3,7 +3,7 @@ import ButtonAtv from '../buttonAtv/ButtonAtv'
 import { RiArrowLeftSLine, RiArrowRightSLine } from "react-icons/ri"
 import './index.scss'
 
-export default function CardProduto({ nome, description, cores, pesos, images, fispq, boletim }) {
+export default function CardProduto({ nome, description, cores, pesos, images, fds, boletim }) {
   const [imagemPrincipal, setImagemPrincipal] = useState(images[0])
   const [inicio, setInicio] = useState(0)
   const [numImagens, setNumImagens] = useState(5)
@@ -89,7 +89,7 @@ export default function CardProduto({ nome, description, cores, pesos, images, f
             </>
           )}
           <div className="cardproduto__detalhes--boletins">
-            <ButtonAtv link={fispq} largura="" nome="fds" />
+            <ButtonAtv link={fds} largura="" nome="fds" />
             <ButtonAtv link={boletim} largura="" nome="boletim técnico" />
           </div>
         </div>
@@ -101,4 +101,4 @@ export default function CardProduto({ nome, description, cores, pesos, images, f
 
 //  componente de ser chamado da forma abaixo
 //
-//  <CardProduto nome="" description="" cores="" pesos="" images="" fispq="" boletim=""/>
+//  <CardProduto nome="" description="" cores="" pesos="" images="" fds="" boletim=""/>

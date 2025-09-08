@@ -45,7 +45,7 @@ export default function pageBoletimTecnico() {
                             <tr className={`pageboletimtecnico__tablecontent ${rowClass}`} key={product._id.$oid}>
                               <td className='pageboletimtecnico__tablecontent--name'>{product.name}</td>
                               <td>
-                                <ButtonAtv link={product.fispq} target="_blank" largura="" nome="fds" />
+                                <ButtonAtv link={product.fds} target="_blank" largura="" nome="fds" />
                                 <ButtonAtv link={product.boletim} target="_blank" largura="" nome="boletim tecnico" />
                               </td>
                             </tr>

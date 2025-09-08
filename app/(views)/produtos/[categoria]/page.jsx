@@ -89,7 +89,7 @@ export default function PageProdutos({ params }) {
                 cores={produtoAtual.colors}
                 pesos={produtoAtual.sizes}
                 images={produtoAtual.image}
-                fispq={produtoAtual.fispq}
+                fds={produtoAtual.fds}
                 boletim={produtoAtual.boletim}
               />
             </div>
