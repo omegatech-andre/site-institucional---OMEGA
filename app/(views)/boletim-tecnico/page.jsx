@@ -12,7 +12,7 @@ export default function pageBoletimTecnico() {
     <>
       <div className="pageboletimtecnico">
         <div className="pageboletimtecnico__header">
-          <h1>Consulte FISPQ e boletim técnico de todos os produtos</h1>
+          <h1>Consulte FDS e boletim técnico de todos os produtos</h1>
         </div>
         {
           error ? (
@@ -45,7 +45,7 @@ export default function pageBoletimTecnico() {
                             <tr className={`pageboletimtecnico__tablecontent ${rowClass}`} key={product._id.$oid}>
                               <td className='pageboletimtecnico__tablecontent--name'>{product.name}</td>
                               <td>
-                                <ButtonAtv link={product.fispq} target="_blank" largura="" nome="fispq" />
+                                <ButtonAtv link={product.fispq} target="_blank" largura="" nome="fds" />
                                 <ButtonAtv link={product.boletim} target="_blank" largura="" nome="boletim tecnico" />
                               </td>
                             </tr>

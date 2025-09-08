@@ -4,7 +4,6 @@ export const revendedores = {
       nome: 'Alagoas',
       revendedor: [
         {
-          id: '1',
           imagem: '/assets/images/revendedores/torreforthome.png',
           nome: 'Torre Fort Home',
           endereco: 'Rua do sol, 543',
@@ -17,7 +16,6 @@ export const revendedores = {
       nome: 'Bahia',
       revendedor: [
         {
-          id: '1',
           imagem: '/assets/images/revendedores/mwconfeccoes.png',
           nome: 'MW Confecções e Serigrafia',
           endereco: 'Rua 24 de Outubro, 126',
@@ -25,7 +23,6 @@ export const revendedores = {
           tel: '(77) 99910-8285'
         },
         // {
-        //   id: '2',
         //   imagem: '/assets/images/revendedores/pointdosilk.png',
         //   nome: 'Point do Silk',
         //   endereco: 'Rua São José, 38',
@@ -33,7 +30,6 @@ export const revendedores = {
         //   tel: '(82) 3027-8503'
         // },
         // {
-        //   id: '3',
         //   nome: 'Central do Silk',
         //   imagem: '/assets/images/revendedores/centraldosilk.png',
         //   endereco: 'Tv. Jonathas Abbott, 07',
@@ -46,7 +42,6 @@ export const revendedores = {
     //   nome: 'Ceará',
     //   revendedor: [
     //     {
-    //       id: '1',
     //       imagem: '/assets/images/revendedores/armazemcomunicacaovisual.png',
     //       nome: 'Armazém Comunicação Visual',
     //       endereco: 'Rua São Pedro, 1913',
@@ -54,7 +49,6 @@ export const revendedores = {
     //       tel: '(85) 99714-0087'
     //     },
     //     {
-    //       id: '2',
     //       imagem: '/assets/images/revendedores/default.png',
     //       nome: 'WS Tintas Serigráficas',
     //       endereco: 'Rua Florianopolis, 1112',
@@ -67,7 +61,6 @@ export const revendedores = {
     //   nome: 'Pará',
     //   revendedor: [
     //     {
-    //       id: '1',
     //       imagem: '/assets/images/revendedores/default.png',
     //       nome: 'Malharia Fênix',
     //       endereco: 'Av. Getúlio Vargas, 313',
@@ -80,7 +73,6 @@ export const revendedores = {
       nome: 'Paraiba',
       revendedor: [
         {
-          id: '1',
           imagem: '/assets/images/revendedores/etigrafia.png',
           nome: 'Etigrafia',
           endereco: 'Rua Judivan Cabral, 29',
@@ -88,7 +80,6 @@ export const revendedores = {
           tel: '(83) 98659-4142'
         },
         {
-          id: '2',
           imagem: '/assets/images/revendedores/wserigrafiasilk.png',
           nome: 'Wserigrafia',
           endereco: 'Rua Maria do Socorro Pegado de Sousa, 188',
@@ -96,7 +87,6 @@ export const revendedores = {
           tel: '(83) 98650-4783'
         },
         {
-          id: '3',
           imagem: '/assets/images/revendedores/kmiza10.png',
           nome: 'Kmiza10',
           endereco: 'Rua Francimeire Rolim de Alburqueque, 361',
@@ -104,7 +94,6 @@ export const revendedores = {
           tel: '(83) 99994-8633'
         }
         // {
-        //   id: '4',
         //   imagem: '/assets/images/revendedores/fecon.png',
         //   nome: 'Fecon Fardamentos',
         //   endereco: 'Rua Osmar de Aquino, 154',
@@ -117,15 +106,6 @@ export const revendedores = {
       nome: 'Pernambuco',
       revendedor: [
         {
-          id: '1',
-          imagem: '/assets/images/revendedores/alfasilksign.png',
-          nome: 'Alfa Silk Sign',
-          endereco: 'Tv. Joaquim Távora, 418',
-          cidade: 'Caruaru - PE',
-          tel: '(81) 99703-5048'
-        },
-        {
-          id: '2',
           imagem: '/assets/images/revendedores/alfasilksign.png',
           nome: 'Alfa Silk Sign',
           endereco: 'Av. Bela Vista, 47',
@@ -133,7 +113,6 @@ export const revendedores = {
           tel: '(81) 99664-1508'
         },
         {
-          id: '3',
           imagem: '/assets/images/revendedores/alfasilksign.png',
           nome: 'Alfa Silk Sign',
           endereco: 'Av. Cesário Aragão, 307',
@@ -141,7 +120,6 @@ export const revendedores = {
           tel: '(81) 99233-5613'
         },
         {
-          id: '4',
           imagem: '/assets/images/revendedores/alfasilksign.png',
           nome: 'Alfa Silk Sign',
           endereco: 'Av. José Joventino Silva, 359',
@@ -149,7 +127,6 @@ export const revendedores = {
           tel: '(81) 99664-9413'
         },
         {
-          id: '5',
           imagem: '/assets/images/revendedores/fortcollor.png',
           nome: 'FortCollor',
           endereco: 'Rua 24 de Maio, 192',
@@ -157,7 +134,6 @@ export const revendedores = {
           tel: '(81) 98849-5451'
         },
         {
-          id: '6',
           imagem: '/assets/images/revendedores/megasilksign.png',
           nome: 'Mega Silk Sign',
           endereco: 'Rua Tobias Barreto, 218',
@@ -165,7 +141,13 @@ export const revendedores = {
           tel: '(81) 3019-6771'
         },
         {
-          id: '7',
+          imagem: '/assets/images/revendedores/oficinadosilk.png',
+          nome: 'Oficina do Silk',
+          endereco: 'Rua Treze de Maio, 285',
+          cidade: 'Caruaru - PE',
+          tel: '(81) 99703-5048'
+        },
+        {
           imagem: '/assets/images/revendedores/torrefort.png',
           nome: 'Torre Fort',
           endereco: 'Rua Barão do Rio Branco, 797',
@@ -178,7 +160,6 @@ export const revendedores = {
       nome: 'Sergipe',
       revendedor: [
         {
-          id: '1',
           imagem: '/assets/images/revendedores/textilnordeste.png',
           nome: 'Textil Nordeste',
           endereco: 'Rua José Primo, 31',
@@ -186,7 +167,6 @@ export const revendedores = {
           tel: '(79) 3544-2424'
         },
         // {
-        //   id: '2',
         //   imagem: '/assets/images/revendedores/wsilk.png',
         //   nome: 'WSilk',
         //   endereco: 'Rua 103, 33',

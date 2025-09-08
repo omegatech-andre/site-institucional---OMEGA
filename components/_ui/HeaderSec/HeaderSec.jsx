@@ -30,8 +30,8 @@ export default function HeaderSec() {
                 pauseOnHover: false,
               }}
             >
-              {data.map((item) => (
-                <SplideSlide key={item.id}>
+              {data.map((item, index) => (
+                <SplideSlide key={index}>
                   <img className='imageslide' src={item.image} alt="imagem" />
                 </SplideSlide>
               ))}

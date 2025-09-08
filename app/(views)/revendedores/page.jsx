@@ -39,9 +39,9 @@ export default function PageRevendedores() {
           ) : (
             <div className="pagerevendedores__resposta">
               {
-                estadoObj.revendedor.map((item) => (
+                estadoObj.revendedor.map((item, index) => (
                   <CardRevendedores
-                    key={item.id}
+                    key={index}
                     src={item.imagem}
                     nome={item.nome}
                     rua={item.endereco}

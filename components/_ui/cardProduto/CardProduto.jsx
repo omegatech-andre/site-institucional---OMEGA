@@ -89,7 +89,7 @@ export default function CardProduto({ nome, description, cores, pesos, images, f
             </>
           )}
           <div className="cardproduto__detalhes--boletins">
-            <ButtonAtv link={fispq} largura="" nome="fispq" />
+            <ButtonAtv link={fispq} largura="" nome="fds" />
             <ButtonAtv link={boletim} largura="" nome="boletim técnico" />
           </div>
         </div>
