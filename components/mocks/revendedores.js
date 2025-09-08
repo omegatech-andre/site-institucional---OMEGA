@@ -112,13 +112,13 @@ export const revendedores = {
           cidade: 'Santa Cruz do Capibaribe - PE',
           tel: '(81) 99664-1508'
         },
-        {
-          imagem: '/assets/images/revendedores/alfasilksign.png',
-          nome: 'Alfa Silk Sign',
-          endereco: 'Av. Cesário Aragão, 307',
-          cidade: 'Santa Cruz do Capibaribe - PE',
-          tel: '(81) 99233-5613'
-        },
+        // {
+        //   imagem: '/assets/images/revendedores/alfasilksign.png',
+        //   nome: 'Alfa Silk Sign',
+        //   endereco: 'Av. Cesário Aragão, 307',
+        //   cidade: 'Santa Cruz do Capibaribe - PE',
+        //   tel: '(81) 99233-5613'
+        // },
         {
           imagem: '/assets/images/revendedores/alfasilksign.png',
           nome: 'Alfa Silk Sign',
