@@ -1,8 +1,5 @@
 export const data = [
   {
-    image: '/assets/images/carrosselheader/picture_5.png'
-  },
-  {
     image: '/assets/images/carrosselheader/picture_0.png'
   },
   {
