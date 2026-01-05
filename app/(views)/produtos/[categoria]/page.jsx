@@ -1,6 +1,6 @@
 "use client";
 import "./index.scss";
-import { useEffect, useState } from "react";
+import { use, useEffect, useState } from "react";
 import CardProduto from "@/components/_ui/cardProduto/CardProduto";
 import CardCategoria from "@/components/_ui/cardCategoria/CardCategoria";
 import useFetch from "@/components/hooks/useFetch";
@@ -9,8 +9,9 @@ import { IoMdRefresh } from "react-icons/io";
 const FIRST_ELEMENT = 0;
 
 export default function PageProdutos({ params }) {
+  const unwrappedParams = use(params);
   const [linhaEscolhida, setLinhaEscolhida] = useState(
-    decodeURIComponent(params.categoria)
+    decodeURIComponent(unwrappedParams.categoria)
   );
   const [categoriaSelecionada, setCategoriaSelecionada] = useState("");
   const [produtoSelecionado, setProdutoSelecionado] = useState("");
