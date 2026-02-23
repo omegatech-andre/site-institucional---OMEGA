@@ -11,4 +11,10 @@ export const data = [
   {
     image: '/assets/images/carrosselheader/picture_3.png'
   },
+  {
+    image: '/assets/images/carrosselheader/picture_4.png'
+  },
+  {
+    image: '/assets/images/carrosselheader/picture_5.png'
+  },
 ]

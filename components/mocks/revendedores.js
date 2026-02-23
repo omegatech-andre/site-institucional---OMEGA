@@ -12,32 +12,32 @@ export const revendedores = {
         }
       ]
     },
-    {
-      nome: 'Bahia',
-      revendedor: [
-        {
-          imagem: '/assets/images/revendedores/mwconfeccoes.png',
-          nome: 'MW Confecções e Serigrafia',
-          endereco: 'Rua 24 de Outubro, 126',
-          cidade: 'Barreiras - BA',
-          tel: '(77) 99910-8285'
-        },
-        // {
-        //   imagem: '/assets/images/revendedores/pointdosilk.png',
-        //   nome: 'Point do Silk',
-        //   endereco: 'Rua São José, 38',
-        //   cidade: 'Feira de Santana - BA',
-        //   tel: '(82) 3027-8503'
-        // },
-        // {
-        //   nome: 'Central do Silk',
-        //   imagem: '/assets/images/revendedores/centraldosilk.png',
-        //   endereco: 'Tv. Jonathas Abbott, 07',
-        //   cidade: 'Salvador - BA',
-        //   tel: '(71) 3483-4073'
-        // },
-      ]
-    },
+    // {
+    //   nome: 'Bahia',
+    //   revendedor: [
+    //     {
+    //       imagem: '/assets/images/revendedores/mwconfeccoes.png',
+    //       nome: 'MW Confecções e Serigrafia',
+    //       endereco: 'Rua 24 de Outubro, 126',
+    //       cidade: 'Barreiras - BA',
+    //       tel: '(77) 99910-8285'
+    //     },
+    //     {
+    //       imagem: '/assets/images/revendedores/pointdosilk.png',
+    //       nome: 'Point do Silk',
+    //       endereco: 'Rua São José, 38',
+    //       cidade: 'Feira de Santana - BA',
+    //       tel: '(82) 3027-8503'
+    //     },
+    //     {
+    //       nome: 'Central do Silk',
+    //       imagem: '/assets/images/revendedores/centraldosilk.png',
+    //       endereco: 'Tv. Jonathas Abbott, 07',
+    //       cidade: 'Salvador - BA',
+    //       tel: '(71) 3483-4073'
+    //     },
+    //   ]
+    // },
     // {
     //   nome: 'Ceará',
     //   revendedor: [
@@ -79,13 +79,13 @@ export const revendedores = {
           cidade: 'Campina Grande - PB',
           tel: '(83) 98659-4142'
         },
-        {
-          imagem: '/assets/images/revendedores/wserigrafiasilk.png',
-          nome: 'Wserigrafia',
-          endereco: 'Rua Maria do Socorro Pegado de Sousa, 188',
-          cidade: 'João Pessoa - PB',
-          tel: '(83) 98650-4783'
-        },
+        // {
+        //   imagem: '/assets/images/revendedores/wserigrafiasilk.png',
+        //   nome: 'Wserigrafia',
+        //   endereco: 'Rua Maria do Socorro Pegado de Sousa, 188',
+        //   cidade: 'João Pessoa - PB',
+        //   tel: '(83) 98650-4783'
+        // },
         {
           imagem: '/assets/images/revendedores/kmiza10.png',
           nome: 'Kmiza10',
