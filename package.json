@@ -2,9 +2,6 @@
   "name": "site-institucional---omega",
   "version": "0.1.0",
   "private": true,
-  "engines": {
-    "node": "22.x"
-  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -19,9 +16,9 @@
     "@vercel/analytics": "^1.1.1",
     "axios": "^1.6.1",
     "dotenv": "^16.4.1",
-    "next": "^16.0.10",
-    "react": "^19.2.3",
-    "react-dom": "^19.2.3",
+    "next": "^16.2.4",
+    "react": "19.2.0",
+    "react-dom": "19.2.0",
     "react-hook-form": "^7.48.2",
     "react-icons": "^4.11.0",
     "react-player": "^2.16.0",
