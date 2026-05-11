@@ -12,6 +12,18 @@ export const revendedores = {
         }
       ]
     },
+    {
+      nome: 'Rio Grande do Norte',
+      revendedor: [
+        {
+          imagem: '/assets/images/revendedores/jasaviamentos.png',
+          nome: 'JAS Aviamentos',
+          // endereco: 'Rua do sol, 543',
+          cidade: 'Caico - RN',
+          tel: '(84) 9601-4070'
+        }
+      ]
+    },
     // {
     //   nome: 'Bahia',
     //   revendedor: [
